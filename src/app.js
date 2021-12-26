@@ -1389,4 +1389,3 @@ class DocumentHoverProvider {
   }
 }
 exports.DocumentHoverProvider = DocumentHoverProvider;
-//# sourceMappingURL=app.js.map

@@ -11,4 +11,3 @@ exports.default = {
     "router-link/exact-active-class": { "options": ["router-link-exact-active"], "description": "" },
     "router-view/name": { "options": ["default", "componentsName"], "description": "" },
 };
-//# sourceMappingURL=vue.js.map

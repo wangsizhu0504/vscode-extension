@@ -12,4 +12,3 @@ exports.default = {
         "framework": "vue"
     },
 };
-//# sourceMappingURL=vue.js.map

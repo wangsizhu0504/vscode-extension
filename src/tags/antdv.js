@@ -296,4 +296,3 @@ exports.default = {
         "attributes": ["closable", "destroyOnClose", "maskClosable", "mask", "title", "visible", "placement", "afterVisibleChange"]
     }
 };
-//# sourceMappingURL=antdv.js.map

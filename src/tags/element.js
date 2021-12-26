@@ -336,4 +336,3 @@ exports.default = {
         "attributes": ["append-to-body", "before-close", "close-on-press-escape", "custom-class", "destroy-on-close", "modal", "modal-append-to-body", "direction", "show-close", "size", "title", "visible", "wrapperClosable", "open", "opened", "close", "closed"]
     }
 };
-//# sourceMappingURL=element.js.map

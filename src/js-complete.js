@@ -219,4 +219,3 @@ class JsCompletionItemProvider {
 }
 JsCompletionItemProvider.document = null;
 exports.JsCompletionItemProvider = JsCompletionItemProvider;
-//# sourceMappingURL=js-complete.js.map

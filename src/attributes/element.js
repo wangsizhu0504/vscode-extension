@@ -473,4 +473,3 @@ exports.default = {
     "el-divider/content-position": ["left", "right", "center"],
     "el-image/fit": ["fill", "contain", "cover", "none", "scale-down"]
 };
-//# sourceMappingURL=element.js.map

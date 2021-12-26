@@ -398,4 +398,3 @@ exports.default = {
     "x-header/on-click-back": { type: "method", "description": "当left-options.preventGoBack为true,点击左边返回时触发" },
     "x-header/on-click-title": { type: "method", "description": "点击标题时触发" }
 };
-//# sourceMappingURL=vux.js.map

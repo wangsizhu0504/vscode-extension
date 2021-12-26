@@ -1052,4 +1052,3 @@ exports.default = {
 | close | Drawer 关闭的回调 | - |
 | closed | Drawer 关闭动画结束时的回调 | - |`,
 };
-//# sourceMappingURL=element-ui.js.map

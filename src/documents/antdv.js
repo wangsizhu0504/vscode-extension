@@ -186,52 +186,52 @@ Breadcrumb.Item\n
 | visibleChange | 菜单显示状态改变时调用，参数为 visible | function(visible) |`,
     "a-menu": `[antd-design-vue :https://www.antdv.com/components/dropdown-cn/#components-dropdown-demo-button-with-dropdown-menu](https://www.antdv.com/components/dropdown-cn/#components-dropdown-demo-button-with-dropdown-menu) \n
 
-    为页面和功能提供导航的菜单列表。
+为页面和功能提供导航的菜单列表。
 
-    ## 何时使用
-    
-    导航菜单是一个网站的灵魂，用户依赖导航在各个页面中进行跳转。一般分为顶部导航和侧边导航，顶部导航提供全局性的类目和功能，侧边导航提供多级结构来收纳和排列网站架构。
-    
-    更多布局和导航的使用可以参考：[通用布局](/components/layout-cn)。
-    
-    ## API
-    
-    '''html
-    <template>
-      <a-menu>
-        <a-menu-item>菜单项</a-menu-item>
-        <a-sub-menu key="sub1" title="子菜单">
-          <a-menu-item>子菜单项</a-menu-item>
-        </a-sub-menu>
-      </a-menu>
-    </template>
-    '''
-    
-    ### Menu
-    
-    | 参数 | 说明 | 类型 | 默认值 |
-    | --- | --- | --- | --- |
-    | forceSubMenuRender | 在子菜单展示之前就渲染进 DOM | boolean | false |
-    | inlineCollapsed | inline 时菜单是否收起状态 | boolean | - |
-    | inlineIndent | inline 模式的菜单缩进宽度 | number | 24 |
-    | mode | 菜单类型，现在支持垂直、水平、和内嵌模式三种 | string: 'vertical' 'vertical-right' 'horizontal' 'inline' | 'vertical' |
-    | multiple | 是否允许多选 | boolean | false |
-    | openKeys(v-model) | 当前展开的 SubMenu 菜单项 key 数组 | string\[] |  |
-    | selectable | 是否允许选中 | boolean | true |
-    | selectedKeys(v-model) | 当前选中的菜单项 key 数组 | string\[] |  |
-    | subMenuCloseDelay | 用户鼠标离开子菜单后关闭延时，单位：秒 | number | 0.1 |
-    | subMenuOpenDelay | 用户鼠标进入子菜单后开启延时，单位：秒 | number | 0 |
-    | theme | 主题颜色 | string: 'light' 'dark' | 'light' |
-    | overflowedIndicator | 自定义 Menu 折叠时的图标 | DOM | '<span>···</span>' |
-    
-    ### Menu 事件
-    
-    | 事件名称   | 说明                               | 回调参数                              |
-    | ---------- | ---------------------------------- | ------------------------------------- |
-    | click      | 点击 MenuItem 调用此函数           | function({ item, key, keyPath })      |
-    | deselect   | 取消选中时调用，仅在 multiple 生效 | function({ item, key, selectedKeys }) |
-    | openChange | SubMenu 展开/关闭的回调            | function(openKeys: string\[])         |
-    | select     | 被选中时调用                       | function({ item, key, selectedKeys }) |
+## 何时使用
+
+导航菜单是一个网站的灵魂，用户依赖导航在各个页面中进行跳转。一般分为顶部导航和侧边导航，顶部导航提供全局性的类目和功能，侧边导航提供多级结构来收纳和排列网站架构。
+
+更多布局和导航的使用可以参考：[通用布局](/components/layout-cn)。
+
+## API
+
+'''html
+<template>
+    <a-menu>
+    <a-menu-item>菜单项</a-menu-item>
+    <a-sub-menu key="sub1" title="子菜单">
+        <a-menu-item>子菜单项</a-menu-item>
+    </a-sub-menu>
+    </a-menu>
+</template>
+'''
+
+### Menu
+
+| 参数 | 说明 | 类型 | 默认值 |
+| :-- | :-- | :-- | :-- |
+| forceSubMenuRender | 在子菜单展示之前就渲染进 DOM | boolean | false |
+| inlineCollapsed | inline 时菜单是否收起状态 | boolean | - |
+| inlineIndent | inline 模式的菜单缩进宽度 | number | 24 |
+| mode | 菜单类型，现在支持垂直、水平、和内嵌模式三种 | string: 'vertical' 'vertical-right' 'horizontal' 'inline' | 'vertical' |
+| multiple | 是否允许多选 | boolean | false |
+| openKeys(v-model) | 当前展开的 SubMenu 菜单项 key 数组 | string\[] |  |
+| selectable | 是否允许选中 | boolean | true |
+| selectedKeys(v-model) | 当前选中的菜单项 key 数组 | string\[] |  |
+| subMenuCloseDelay | 用户鼠标离开子菜单后关闭延时，单位：秒 | number | 0.1 |
+| subMenuOpenDelay | 用户鼠标进入子菜单后开启延时，单位：秒 | number | 0 |
+| theme | 主题颜色 | string: 'light' 'dark' | 'light' |
+| overflowedIndicator | 自定义 Menu 折叠时的图标 | DOM | '<span>···</span>' |
+
+### Menu 事件
+
+| 事件名称   | 说明                               | 回调参数                              |
+| :--------- | :--------------------------------- | :------------------------------------ |
+| click      | 点击 MenuItem 调用此函数           | function({ item, key, keyPath })      |
+| deselect   | 取消选中时调用，仅在 multiple 生效 | function({ item, key, selectedKeys }) |
+| openChange | SubMenu 展开/关闭的回调            | function(openKeys: string\[])         |
+| select     | 被选中时调用                       | function({ item, key, selectedKeys }) |
 `,
     "a-menu-item": `[antd-design-vue :https://www.antdv.com/components/menu-cn/#components-menu-demo-collapsed-inline-menu](https://www.antdv.com/components/menu-cn/#components-menu-demo-collapsed-inline-menu) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
@@ -1238,7 +1238,7 @@ carousel旋转木马，一组轮播的区域。\n
 ## API\n
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | afterChange | 切换面板的回调 | function(current) | 无 |  |
 | autoplay | 是否自动切换 | boolean | false |  |
 | beforeChange | 切换面板的回调 | function(from, to) | 无 |  |
@@ -1251,7 +1251,7 @@ carousel旋转木马，一组轮播的区域。\n
 ## 方法\n
 
 | 名称                           | 描述                                              | 版本 |
-| ------------------------------ | ------------------------------------------------- | ---- |
+| :----------------------------- | :------------------------------------------------ | :--- |
 | goTo(slideNumber, dontAnimate) | 切换到指定面板, dontAnimate = true 时，不使用动画 |      |
 | next()                         | 切换到下一面板                                    |      |
 | prev()                         | 切换到上一面板                                    |      |
@@ -1269,12 +1269,12 @@ carousel旋转木马，一组轮播的区域。\n
 ### Collapse
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- |
-| activeKey(v-model) | 当前激活 tab 面板的 key | string\[]\|string | 默认无，accordion 模式下默认第一个元素 |  |
+| :--- | :--- | :--- | :--- | :--- |
+| activeKey(v-model) | 当前激活 tab 面板的 key | string\[],string | 默认无，accordion 模式下默认第一个元素 |  |
 | bordered | 带边框风格的折叠面板 | boolean | 'true' |  |
-| collapsible | 所有子面板是否可折叠或指定可折叠触发区域 | 'header' \| 'disabled' | - | 3.0 |
+| collapsible | 所有子面板是否可折叠或指定可折叠触发区域 | 'header' , 'disabled' | - | 3.0 |
 | accordion | 手风琴模式 | boolean | 'false' |  |
-| expandIcon | 自定义切换图标 | Function(props):VNode \| slot="expandIcon" slot-scope="props"\|#expandIcon="props" |  |
+| expandIcon | 自定义切换图标 | Function(props):VNode , slot="expandIcon" slot-scope="props",#expandIcon="props" |  |
 | expandIconPosition | 设置图标位置： 'left', 'right' | 'left' | - | 1.5.0 |
 | ghost | 使折叠面板透明且无边框 | boolean | false | 3.0 |
 | destroyInactivePanel | 销毁折叠隐藏的面板 | boolean | 'false' |  |
@@ -1282,18 +1282,18 @@ carousel旋转木马，一组轮播的区域。\n
 ### 事件
 
 | 事件名称 | 说明           | 回调参数      | 版本 |
-| -------- | -------------- | ------------- | ---- |
+| :------- | :------------- | :------------ | :--- |
 | change   | 切换面板的回调 | function(key) |      |
 `,
     "a-collapse-panel": `[antd-design-vue :https://www.antdv.com/components/collapse-cn/](https://www.antdv.com/components/collapse-cn/) \n
 | 参数        | 说明                           | 类型                   | 默认值 | 版本  |
-| ----------- | ------------------------------ | ---------------------- | ------ | ----- |
-| collapsible | 是否可折叠或指定可折叠触发区域 | 'header' \| 'disabled' | -      | 3.0   |
+| :---------- | :----------------------------- | :--------------------- | :----- | :---- |
+| collapsible | 是否可折叠或指定可折叠触发区域 | 'header' , 'disabled' | -      | 3.0   |
 | forceRender | 被隐藏时是否渲染 DOM 结构      | boolean                | false  |       |
-| header      | 面板头内容                     | string\|slot           | 无     |       |
-| key         | 对应 activeKey                 | string \| number       | 无     |       |
+| header      | 面板头内容                     | string,slot           | 无     |       |
+| key         | 对应 activeKey                 | string , number       | 无     |       |
 | showArrow   | 是否展示当前面板上的箭头       | boolean                | 'true' |       |
-| extra       | 自定义渲染每个面板右上角的内容 | VNode \| slot          | -      | 1.5.0 |
+| extra       | 自定义渲染每个面板右上角的内容 | VNode , slot          | -      | 1.5.0 |
 `,
     "a-comment": `[antd-design-vue :https://www.antdv.com/components/comment-cn//](https://www.antdv.com/components/comment-cn/) \n
 对网站内容的反馈、评价和讨论。
@@ -1305,11 +1305,11 @@ carousel旋转木马，一组轮播的区域。\n
 ## API
 
 | Property | Description                                            | Type         | Default |
-| -------- | ------------------------------------------------------ | ------------ | ------- |
-| actions  | 在评论内容下面呈现的操作项列表                         | Array\|slot  | -       |
-| author   | 要显示为注释作者的元素                                 | string\|slot | -       |
-| avatar   | 要显示为评论头像的元素 - 通常是 antd 'Avatar' 或者 src | string\|slot | -       |
-| content  | 评论的主要内容                                         | string\|slot | -       |
+| :------- | :----------------------------------------------------- | :----------- | :------ |
+| actions  | 在评论内容下面呈现的操作项列表                         | Array,slot  | -       |
+| author   | 要显示为注释作者的元素                                 | string,slot | -       |
+| avatar   | 要显示为评论头像的元素 - 通常是 antd 'Avatar' 或者 src | string,slot | -       |
+| content  | 评论的主要内容                                         | string,slot | -       |
 | datetime | 展示时间描述   
 `,
     "a-descriptions": `[antd-design-vue :https://www.antdv.com/components/descriptions-cn/](https://www.antdv.com/components/descriptions-cn/) \n
@@ -1324,36 +1324,36 @@ carousel旋转木马，一组轮播的区域。\n
 ### Descriptions props
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :-- | :-- |
 | bordered | 是否展示边框 | boolean | false |  |
 | colon | 配置 'Descriptions.Item' 的 'colon' 的默认值 | boolean | true |  |
 | column | 一行的 'DescriptionItems' 数量，可以写成像素值或支持响应式的对象写法 '{ xs: 8, sm: 16, md: 24}' | number | 3 |  |
 | layout | 描述布局 | 'horizontal | vertical' | 'horizontal' |  |
 | size | 设置列表的大小。可以设置为 'middle' 、'small', 或不填（只有设置 'bordered={true}' 生效） | 'default | middle | small' | 'default' |  |
-| title | 描述列表的标题，显示在最顶部 | string \| VNode \| slot | - |  |
+| title | 描述列表的标题，显示在最顶部 | string , VNode , slot | - |  |
 `,
     "a-descriptions-item": `[antd-design-vue :https://www.antdv.com/components/descriptions-cn/](https://www.antdv.com/components/descriptions-cn/) \n
 | 参数         | 说明           | 类型                    | 默认值 | 版本  |
-| ------------ | -------------- | ----------------------- | ------ | ----- |
-| label        | 内容的描述     | string \| VNode \| slot | -      |
+| :------------ | :------------- | :---------------------- | :----- | :---- |
+| label        | 内容的描述     | string , VNode , slot | -      |
 | span         | 包含列的数量   | number                  | 1      |
 
 > span 是 Descriptions.Item 的数量。 span={2} 会占用两个 DescriptionsItem 的宽度。
 `,
     "a-empty": `[antd-design-vue :https://www.antdv.com/components/empty-cn/](https://www.antdv.com/components/empty-cn/) \n
 
-    ## 何时使用
+## 何时使用
 
-    - 当目前没有数据时，用于显式的用户提示。
-    - 初始化场景时的引导创建流程。
-    
-    ## API
-    
-    | 参数        | 说明                                         | 类型             | 默认值 | 版本 |
-    | ----------- | -------------------------------------------- | ---------------- | ------ | ---- |
-    | description | 自定义描述内容                               | string \| v-slot | -      |      |
-    | imageStyle  | 图片样式                                     | CSSProperties    | -      |      |
-    | image       | 设置显示图片，为 string 时表示自定义图片地址 | string \| v-slot | false  |      |
+- 当目前没有数据时，用于显式的用户提示。
+- 初始化场景时的引导创建流程。
+
+## API
+
+| 参数        | 说明                                         | 类型             | 默认值 | 版本 |
+| :----------- | :-------------------------------------------- | :---------------- | :------ | :--- |
+| description | 自定义描述内容                               | string , v-slot | -      |      |
+| imageStyle  | 图片样式                                     | CSSProperties    | -      |      |
+| image       | 设置显示图片，为 string 时表示自定义图片地址 | string , v-slot | false  |      |
 `,
     "a-list": `[antd-design-vue :https://www.antdv.com/components/list-cn/](https://www.antdv.com/components/list-cn/) \n
 通用列表。
@@ -1367,34 +1367,34 @@ carousel旋转木马，一组轮播的区域。\n
 ### List
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | bordered | 是否展示边框 | boolean | false |  |
-| footer | 列表底部 | string\|slot | - |  |
+| footer | 列表底部 | string,slot | - |  |
 | grid | 列表栅格配置 | object | - |  |
-| header | 列表头部 | string\|slot | - |  |
+| header | 列表头部 | string,slot | - |  |
 | itemLayout | 设置 'List.Item' 布局, 设置成 'vertical' 则竖直样式显示, 默认横排 | string | - |  |
-| loading | 当卡片内容还在加载中时，可以用 'loading' 展示一个占位 | boolean\|[object](https://www.antdv.com/components/spin-cn/#API) | false |  |
-| loadMore | 加载更多 | string\|slot | - |  |
+| loading | 当卡片内容还在加载中时，可以用 'loading' 展示一个占位 | boolean,[object](https://www.antdv.com/components/spin-cn/#API) | false |  |
+| loadMore | 加载更多 | string,slot | - |  |
 | locale | 默认文案设置，目前包括空数据文案 | object | emptyText: '暂无数据' |  |
-| pagination | 对应的 'pagination' [配置](https://www.antdv.com/components/pagination-cn/#API), 设置 'false' 不显示 | boolean\|object | false |  |
-| size | list 的尺寸 | 'default' \| 'middle' \| 'small' | 'default' |  |
+| pagination | 对应的 'pagination' [配置](https://www.antdv.com/components/pagination-cn/#API), 设置 'false' 不显示 | boolean,object | false |  |
+| size | list 的尺寸 | 'default' , 'middle' , 'small' | 'default' |  |
 | split | 是否展示分割线 | boolean | true |  |
 | dataSource | 列表数据源 | any[] | - | 1.5.0 |
 | renderItem | 自定义'Item'函数，也可使用 #renderItem="{item, index}" | ({item, index}) => vNode |  | - |  |
-| rowKey | 各项 key 的取值，可以是字符串或一个函数 | item => string\|number |  |  |
+| rowKey | 各项 key 的取值，可以是字符串或一个函数 | item => string,number |  |  |
 
 ### pagination
 
 分页的配置项。
 
 | 参数     | 说明               | 类型                        | 默认值   |
-| -------- | ------------------ | --------------------------- | -------- |
-| position | 指定分页显示的位置 | 'top' \| 'bottom' \| 'both' | 'bottom' |
+| :------- | :----------------- | :-------------------------- | :------- |
+| position | 指定分页显示的位置 | 'top' , 'bottom' , 'both' | 'bottom' |
 
 更多配置项，请查看 ['Pagination'](https://www.antdv.com/components/pagination-cn/#API)。 
 ### List grid
 | 参数   | 说明                 | 类型                                     | 默认值 | 版本 |
-| ------ | -------------------- | ---------------------------------------- | ------ | ---- |
+| :----- | :------------------- | :--------------------------------------- | :----- | :--- |
 | column | 列数                 | number oneOf [ 1, 2, 3, 4, 6, 8, 12, 24] | -      |      |
 | gutter | 栅格间隔             | number                                   | 0      |      |
 | xs     | '<576px' 展示的列数  | number                                   | -      |      |
@@ -1408,16 +1408,16 @@ carousel旋转木马，一组轮播的区域。\n
 `,
     "a-list-item": `[antd-design-vue :https://www.antdv.com/components/list-cn/](https://www.antdv.com/components/list-cn/) \n
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | actions | 列表操作组，根据 'itemLayout' 的不同, 位置在卡片底部或者最右侧 | Array\<vNode>/ | slot | - |
-| extra | 额外内容, 通常用在 'itemLayout' 为 'vertical' 的情况下, 展示右侧内容; 'horizontal' 展示在列表元素最右侧 | string\|slot | - |    
+| extra | 额外内容, 通常用在 'itemLayout' 为 'vertical' 的情况下, 展示右侧内容; 'horizontal' 展示在列表元素最右侧 | string,slot | - |    
 `,
     "a-list-item-meta": `[antd-design-vue :https://www.antdv.com/components/list-cn/](https://www.antdv.com/components/list-cn/) \n
 | 参数        | 说明               | 类型         | 默认值 |
-| ----------- | ------------------ | ------------ | ------ |
+| :---------- | :----------------- | :----------- | :----- |
 | avatar      | 列表元素的图标     | slot         | -      |
-| description | 列表元素的描述内容 | string\|slot | -      |
-| title       | 列表元素的标题     | string\|slot | -      | 
+| description | 列表元素的描述内容 | string,slot | -      |
+| title       | 列表元素的标题     | string,slot | -      | 
 `,
     "a-popover": `[antd-design-vue :https://www.antdv.com/components/popover-cn/](https://www.antdv.com/components/popover-cn/) \n
 
@@ -1432,9 +1432,9 @@ carousel旋转木马，一组轮播的区域。\n
 ## API
 
 | 参数    | 说明     | 类型                | 默认值 | 版本 |
-| ------- | -------- | ------------------- | ------ | ---- |
-| content | 卡片内容 | string\|slot\|VNode | -      |      |
-| title   | 卡片标题 | string\|slot\|VNode | -      |      |
+| :------ | :------- | :------------------ | :----- | :--- |
+| content | 卡片内容 | string,slot,VNode | -      |      |
+| title   | 卡片标题 | string,slot,VNode | -      |      |
 
 更多属性请参考 [Tooltip](/components/tooltip-cn/#API)。
 
@@ -1455,31 +1455,31 @@ carousel旋转木马，一组轮播的区域。\n
 ### Statistic
 
 | 参数             | 说明             | 类型                         | 默认值 |
-| ---------------- | ---------------- | ---------------------------- | ------ |
+| :--------------- | :--------------- | :--------------------------- | :----- |
 | decimalSeparator | 设置小数点       | string                       | .      |
-| formatter        | 自定义数值展示   | v-slot \| ({value}) => VNode | -      |
+| formatter        | 自定义数值展示   | v-slot , ({value}) => VNode | -      |
 | groupSeparator   | 设置千分位标识符 | string                       | ,      |
 | precision        | 数值精度         | number                       | -      |
-| prefix           | 设置数值的前缀   | string \| v-slot             | -      |
-| suffix           | 设置数值的后缀   | string \| v-slot             | -      |
-| title            | 数值的标题       | string \| v-slot             | -      |
-| value            | 数值内容         | string \| number             | -      |
+| prefix           | 设置数值的前缀   | string , v-slot             | -      |
+| suffix           | 设置数值的后缀   | string , v-slot             | -      |
+| title            | 数值的标题       | string , v-slot             | -      |
+| value            | 数值内容         | string , number             | -      |
 | valueStyle       | 设置数值的样式   | style                        | -      | 
 `,
     "a-statistic-countdown": `[antd-design-vue :https://www.antdv.com/components/statistic-cn/](https://www.antdv.com/components/statistic-cn/) \n
    
 | 参数       | 说明                                                | 类型             | 默认值     |
-| ---------- | --------------------------------------------------- | ---------------- | ---------- |
+| :--------- | :-------------------------------------------------- | :--------------- | :--------- |
 | format     | 格式化倒计时展示，参考 [dayjs](https://day.js.org/) | string           | 'HH:mm:ss' |
-| prefix     | 设置数值的前缀                                      | string \| v-slot | -          |
-| suffix     | 设置数值的后缀                                      | string \| v-slot | -          |
-| title      | 数值的标题                                          | string \| v-slot | -          |
-| value      | 数值内容                                            | number \| dayjs  | -          |
+| prefix     | 设置数值的前缀                                      | string , v-slot | -          |
+| suffix     | 设置数值的后缀                                      | string , v-slot | -          |
+| title      | 数值的标题                                          | string , v-slot | -          |
+| value      | 数值内容                                            | number , dayjs  | -          |
 | valueStyle | 设置数值的样式                                      | style            | -          |
 #### Statistic.Countdown 事件
 
 | 事件名称 | 说明             | 回调参数   |
-| -------- | ---------------- | ---------- |
+| :------- | :--------------- | :--------- |
 | finish   | 倒计时完成时触发 | () => void |
 `,
     "a-table": `[antd-design-vue :https://www.antdv.com/components/table-cn/](https://www.antdv.com/components/table-cn/) \n
@@ -1493,7 +1493,7 @@ carousel旋转木马，一组轮播的区域。\n
     ### Table
     
     | 参数 | 说明 | 类型 | 默认值 | 版本 |
-    | --- | --- | --- | --- | --- |
+    | :--- | :--- | :--- | :--- | :--- |
     | bordered | 是否展示外边框和列边框 | boolean | false |  |
     | columns | 表格列的配置描述，具体项见[下表](#Column) | array | - |  |
     | components | 覆盖默认的 table 元素 | object | - |  |
@@ -1502,28 +1502,28 @@ carousel旋转木马，一组轮播的区域。\n
     | defaultExpandAllRows | 初始时，是否展开所有行 | boolean | false |  |
     | defaultExpandedRowKeys | 默认展开的行 | string\[] | - |  |
     | expandedRowKeys | 展开的行，控制属性 | string\[] | - |  |
-    | expandedRowRender | 额外的展开行 | Function(record, index, indent, expanded):VNode \| v-slot:expandedRowRender="{record, index, indent, expanded}" | - |  |
-    | expandIcon | 自定义展开图标 | Function(props):VNode \| v-slot:expandIcon="props" | - |  |
+    | expandedRowRender | 额外的展开行 | Function(record, index, indent, expanded):VNode , v-slot:expandedRowRender="{record, index, indent, expanded}" | - |  |
+    | expandIcon | 自定义展开图标 | Function(props):VNode , v-slot:expandIcon="props" | - |  |
     | expandRowByClick | 通过点击行来展开子行 | boolean | 'false' |  |
     | expandIconColumnIndex | 自定义展开按钮的列顺序，'-1' 时不展示 | number | - |  |
-    | footer | 表格尾部 | Function(currentPageData)\|v-slot:footer="currentPageData" |  |  |
+    | footer | 表格尾部 | Function(currentPageData),v-slot:footer="currentPageData" |  |  |
     | getPopupContainer | 设置表格内各类浮层的渲染节点，如筛选菜单 | (triggerNode) => HTMLElement | '() => TableHtmlElement' | 1.5.0 |
-    | loading | 页面是否加载中 | boolean\|[object](/components/spin-cn) | false |  |
+    | loading | 页面是否加载中 | boolean,[object](/components/spin-cn) | false |  |
     | locale | 默认文案设置，目前包括排序、过滤、空数据文案 | object | filterConfirm: '确定' <br> filterReset: '重置' <br> emptyText: '暂无数据' |  |
     | pagination | 分页器，参考[配置项](#pagination)或 [pagination](/components/pagination-cn/)文档，设为 false 时不展示和进行分页 | object |  |  |
     | rowClassName | 表格行的类名 | Function(record, index):string | - |  |
-    | rowKey | 表格行 key 的取值，可以是字符串或一个函数 | string\|Function(record):string | 'key' |  |
+    | rowKey | 表格行 key 的取值，可以是字符串或一个函数 | string,Function(record):string | 'key' |  |
     | rowSelection | 列表项是否可选择，[配置项](#rowSelection) | object | null |  |
     | scroll | 表格是否可滚动，也可以指定滚动区域的宽、高，[配置项](#scroll) | object | - |  |
     | showHeader | 是否显示表头 | boolean | true |  |
-    | size | 表格大小 | default \| middle \| small | default |  |
+    | size | 表格大小 | default , middle , small | default |  |
     | sortDirections | 支持的排序方式，取值为 'ascend' 'descend' | Array | \['ascend', 'descend'] |  |
-    | tableLayout | 表格元素的 [table-layout](https://developer.mozilla.org/zh-CN/docs/Web/CSS/table-layout) 属性，设为 'fixed' 表示内容不会影响列的布局 | - \| 'auto' \| 'fixed' | 无<hr />固定表头/列或使用了 'column.ellipsis' 时，默认值为 'fixed' | 1.5.0 |
-    | title | 表格标题 | Function(currentPageData)\|v-slot:title="currentPageData" |  |  |
+    | tableLayout | 表格元素的 [table-layout](https://developer.mozilla.org/zh-CN/docs/Web/CSS/table-layout) 属性，设为 'fixed' 表示内容不会影响列的布局 | - , 'auto' , 'fixed' | 无<hr />固定表头/列或使用了 'column.ellipsis' 时，默认值为 'fixed' | 1.5.0 |
+    | title | 表格标题 | Function(currentPageData),v-slot:title="currentPageData" |  |  |
     | indentSize | 展示树形数据时，每层缩进的宽度，以 px 为单位 | number | 15 |  |
     | customHeaderRow | 设置头部行属性 | Function(columns, index) | - |  |
     | customRow | 设置行属性 | Function(record, index) | - |  |
-    | transformCellText | 数据渲染前可以再次改变，一般用于空数据的默认配置，可以通过 [ConfigProvider](/components/config-provider-cn/) 全局统一配置 | Function({ text, column, record, index }) => any，此处的 text 是经过其它定义单元格 api 处理后的数据，有可能是 VNode \| string \| number 类型 | - | 1.5.4 |
+    | transformCellText | 数据渲染前可以再次改变，一般用于空数据的默认配置，可以通过 [ConfigProvider](/components/config-provider-cn/) 全局统一配置 | Function({ text, column, record, index }) => any，此处的 text 是经过其它定义单元格 api 处理后的数据，有可能是 VNode , string , number 类型 | - | 1.5.4 |
     
     - 'expandFixed'
       - 当设置为 true 或 'left' 且 'expandIconColumnIndex' 未设置或为 0 时，开启固定
@@ -1534,14 +1534,14 @@ carousel旋转木马，一组轮播的区域。\n
       选择功能的配置。
       
       | 参数 | 说明 | 类型 | 默认值 | 版本 |
-      | --- | --- | --- | --- | --- |
-      | columnWidth | 自定义列表选择框宽度 | string\|number | - |  |
-      | columnTitle | 自定义列表选择框标题 | string\|VNode | - |  |
+      | :--- | :--- | :--- | :--- | :--- |
+      | columnWidth | 自定义列表选择框宽度 | string,number | - |  |
+      | columnTitle | 自定义列表选择框标题 | string,VNode | - |  |
       | fixed | 把选择框列固定在左边 | boolean | - |  |
       | getCheckboxProps | 选择框的默认属性配置 | Function(record) | - |  |
       | hideDefaultSelections | 去掉『全选』『反选』两个默认选项 | boolean | false |
       | selectedRowKeys | 指定选中项的 key 数组，需要和 onChange 进行配合 | string\[] | \[] |
-      | selections | 自定义选择项 [配置项](#selection), 设为 'true' 时使用默认选择项 | object\[] \| boolean | true |  |
+      | selections | 自定义选择项 [配置项](#selection), 设为 'true' 时使用默认选择项 | object\[] , boolean | true |  |
       | type | 多选/单选，'checkbox' or 'radio' | string | 'checkbox' |
       | onChange | 选中项发生变化时的回调 | Function(selectedRowKeys, selectedRows) | - |
       | onSelect | 用户手动选择/取消选择某列的回调 | Function(record, selected, selectedRows, nativeEvent) | - |
@@ -1550,25 +1550,25 @@ carousel旋转木马，一组轮播的区域。\n
         ### scroll
 
         | 参数 | 说明 | 类型 | 默认值 |
-        | --- | --- | --- | --- |
+        | :-- | :-- | :-- | :-- |
         | scrollToFirstRowOnChange | 当分页、排序、筛选变化后是否滚动到表格顶部 | boolean | - |
-        | x | 设置横向滚动，也可用于指定滚动区域的宽，可以设置为像素值，百分比，true 和 ['max-content'](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width#max-content) | string \| number \| true | - |
-        | y | 设置纵向滚动，也可用于指定滚动区域的高，可以设置为像素值 | string \| number | - |
+        | x | 设置横向滚动，也可用于指定滚动区域的宽，可以设置为像素值，百分比，true 和 ['max-content'](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width#max-content) | string , number , true | - |
+        | y | 设置纵向滚动，也可用于指定滚动区域的高，可以设置为像素值 | string , number | - |
 
         ### selection
 
         自定义选择配置项
 
         | 参数     | 说明                     | 类型                        | 默认值 |
-        | -------- | ------------------------ | --------------------------- | ------ |
+        | :------- | :----------------------- | :-------------------------- | :----- |
         | key      | Vue 需要的 key，建议设置 | string                      | -      |
-        | text     | 选择项显示的文字         | string\|VNode               | -      |
+        | text     | 选择项显示的文字         | string,VNode               | -      |
         | onSelect | 选择项点击回调           | Function(changeableRowKeys) | -      |
             
     ### 事件
     
     | 事件名称 | 说明 | 回调参数 |
-    | --- | --- | --- |
+    | :-- | :-- | :-- |
     | expandedRowsChange | 展开的行变化时触发 | Function(expandedRows) |
     | change | 分页、排序、筛选变化时触发 | Function(pagination, filters, sorter, { currentDataSource }) |
     | expand | 点击展开图标时触发 | Function(expanded, record) |
@@ -1652,28 +1652,28 @@ carousel旋转木马，一组轮播的区域。\n
     列描述数据对象，是 columns 中的一项，Column 使用相同的 API。
 
     | 参数 | 说明 | 类型 | 默认值 | 版本 |
-    | --- | --- | --- | --- | --- |
-    | align | 设置列的对齐方式 | 'left' \| 'right' \| 'center' | 'left' |  |
+    | :--- | :--- | :--- | :--- | :--- |
+    | align | 设置列的对齐方式 | 'left' , 'right' , 'center' | 'left' |  |
     | colSpan | 表头列合并,设置为 0 时，不渲染 | number |  |  |
-    | dataIndex | 列数据在数据项中对应的路径，支持通过数组查询嵌套路径 | string \| string\[] | - |  |
+    | dataIndex | 列数据在数据项中对应的路径，支持通过数组查询嵌套路径 | string , string\[] | - |  |
     | defaultFilteredValue | 默认筛选值 | string\[] | - | 1.5.0 |
-    | defaultSortOrder | 默认排序顺序 | 'ascend' \| 'descend' | - |  |
+    | defaultSortOrder | 默认排序顺序 | 'ascend' , 'descend' | - |  |
     | filterDropdown | 可以自定义筛选菜单，此函数只负责渲染图层，需要自行编写各种交互 | VNode | - |  | 
     | filterDropdownVisible | 用于控制自定义筛选菜单是否可见 | boolean | - |  |
     | filtered | 标识数据是否经过过滤，筛选图标会高亮 | boolean | false |  |
     | filteredValue | 筛选的受控属性，外界可用此控制列的筛选状态，值为已筛选的 value 数组 | string\[] | - |  |
-    | filterIcon | 自定义 filter 图标。 | VNode \| ({filtered: boolean, column: Column}) => vNode | false |  |
+    | filterIcon | 自定义 filter 图标。 | VNode , ({filtered: boolean, column: Column}) => vNode | false |  |
     | filterMultiple | 是否多选 | boolean | true |  |
     | filters | 表头的筛选菜单项 | object\[] | - |  |
-    | fixed | 列是否固定，可选 'true'(等效于 left) ''left'' ''right'' | boolean\|string | false |  |
+    | fixed | 列是否固定，可选 'true'(等效于 left) ''left'' ''right'' | boolean,string | false |  |
     | key | Vue 需要的 key，如果已经设置了唯一的 'dataIndex'，可以忽略这个属性 | string | - |  |
     | customRender | 生成复杂数据的渲染函数，参数分别为当前行的值，当前行数据，行索引，@return 里面可以设置表格行/列合并,可参考 demo 表格行/列合并 | Function({text, record, index, column}) {} | - |  |
-    | showSorterTooltip | 表头显示下一次排序的 tooltip 提示, 覆盖 table 中 'showSorterTooltip' | boolean \| [Tooltip props](/components/tooltip/#API) | true |  |
-    | sorter | 排序函数，本地排序使用一个函数(参考 [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) 的 compareFunction)，需要服务端排序可设为 true | Function\|boolean | - |  |
-    | sortOrder | 排序的受控属性，外界可用此控制列的排序，可设置为 ''ascend'' ''descend'' 'false' | boolean\|string | - |  |
+    | showSorterTooltip | 表头显示下一次排序的 tooltip 提示, 覆盖 table 中 'showSorterTooltip' | boolean , [Tooltip props](/components/tooltip/#API) | true |  |
+    | sorter | 排序函数，本地排序使用一个函数(参考 [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) 的 compareFunction)，需要服务端排序可设为 true | Function,boolean | - |  |
+    | sortOrder | 排序的受控属性，外界可用此控制列的排序，可设置为 ''ascend'' ''descend'' 'false' | boolean,string | - |  |
     | sortDirections | 支持的排序方式，取值为 ''ascend'' ''descend'' | Array | '['ascend', 'descend']' | 1.5.0 |
     | title | 列头显示文字 | string | - |  |
-    | width | 列宽度 | string\|number | - |  |
+    | width | 列宽度 | string,number | - |  |
     | customHeaderCell | 设置头部单元格属性 | Function(column) | - |  |
     | onFilter | 本地模式下，确定筛选的运行函数, 使用 template 或 jsx 时作为'filter'事件使用 | Function | - |  |
     | onFilterDropdownVisibleChange | 自定义筛选菜单可见变化时调用，使用 template 或 jsx 时作为'filterDropdownVisibleChange'事件使用 | function(visible) {} | - |  |
@@ -1699,9 +1699,9 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### Tabs
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :-- |
 | activeKey(v-model) | 当前激活 tab 面板的 key | string | 无 |  |
-| animated | 是否使用动画切换 Tabs，在 'tabPosition=top | bottom' 时有效 | boolean \| {inkBar:boolean, tabPane:boolean} | true, 当 type="card" 时为 false |  |
+| animated | 是否使用动画切换 Tabs，在 'tabPosition=top | bottom' 时有效 | boolean , {inkBar:boolean, tabPane:boolean} | true, 当 type="card" 时为 false |  |
 | hideAdd | 是否隐藏加号图标，在 'type="editable-card"' 时有效 | boolean | false |  |
 | size | 大小，提供 'large' 'default' 和 'small' 三种大小 | string | 'default' |  |
 | tabBarStyle | tab bar 的样式对象 | object | - |  |
@@ -1712,7 +1712,7 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### Tabs 插槽
 
 | 插槽名称     | 说明                            | 参数              |
-| ------------ | ------------------------------- | ----------------- | --- |
+| :----------- | :------------------------------ | :---------------- | :-- |
 | renderTabBar | 替换 TabBar，用于二次封装标签头 | { DefaultTabBar } |     |
 | leftExtra    | tab bar 上左侧额外的元素        | -                 | -   |
 | rightExtra   | tab bar 上右侧额外的元素        | -                 | -   |
@@ -1722,25 +1722,25 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### Tabs 事件
 
 | 事件名称 | 说明 | 回调参数 |
-| --- | --- | --- |
+| :-- | :-- | :-- |
 | change | 切换面板的回调 | Function(activeKey) {} |
 | edit | 新增和删除页签的回调，在 'type="editable-card"' 时有效 | (targetKey, action): void |
-| tabScroll | 滚动 TabBar 是触发 | { direction: 'left' \| 'right' \| 'top' \| 'bottom' } |
+| tabScroll | 滚动 TabBar 是触发 | { direction: 'left' , 'right' , 'top' , 'bottom' } |
 | tabClick | tab 被点击的回调 | Function |
 
 `,
     "a-tab-pane": `[antd-design-vue :https://www.antdv.com/components/tabs-cn/](https://www.antdv.com/components/tabs-cn/) \n
 
 | 参数        | 说明                      | 类型         | 默认值 |
-| ----------- | ------------------------- | ------------ | ------ |
+| :---------- | :------------------------ | :----------- | :----- |
 | forceRender | 被隐藏时是否渲染 DOM 结构 | boolean      | false  |
 | key         | 对应 activeKey            | string       | 无     |
-| tab         | 选项卡头显示文字          | string\|slot | 无     |
+| tab         | 选项卡头显示文字          | string,slot | 无     |
 
 ### Tabs.TabPane 插槽
 
 | 插槽名称  | 说明                                            | 参数 |
-| --------- | ----------------------------------------------- | ---- |
+| :-------- | :---------------------------------------------- | :--- |
 | closeIcon | 自定义关闭图标，'在 type="editable-card"'时有效 | -    |
 | tab       | 选项卡头显示文字                                | -    |
 
@@ -1759,7 +1759,7 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### Tag
 
 | 参数             | 说明             | 类型                | 默认值 | 版本  |
-| ---------------- | ---------------- | ------------------- | ------ | ----- |
+| :--------------- | :--------------- | :------------------ | :----- | :---- |
 | closable         | 标签是否可以关闭 | boolean             | false  |       |
 | color            | 标签色           | string              | -      |       |
 | visible(v-model) | 是否显示标签     | boolean             | 'true' |       |
@@ -1767,19 +1767,19 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### 事件
 
 | 事件名称 | 说明         | 回调参数    |
-| -------- | ------------ | ----------- |
+| :------- | :----------- | :---------- |
 | close    | 关闭时的回调 | (e) => void |
 `,
     "a-checkable-tag": `[antd-design-vue :https://www.antdv.com/components/tag-cn/#components-tag-demo-basic-usage](https://www.antdv.com/components/tag-cn/#components-tag-demo-basic-usage) \n
 
 | 参数             | 说明               | 类型    | 默认值 |
-| ---------------- | ------------------ | ------- | ------ |
+| :--------------- | :----------------- | :------ | :----- |
 | checked(v-model) | 设置标签的选中状态 | boolean | false  |
 
 ### 事件
 
 | 事件名称 | 说明                 | 回调参数          |
-| -------- | -------------------- | ----------------- |
+| :------- | :------------------- | :---------------- |
 | change   | 点击标签时触发的回调 | (checked) => void |
 `,
     "a-timeline": `[antd-design-vue :https://www.antdv.com/components/timeline-cn/](https://www.antdv.com/components/timeline-cn/) \n
@@ -1795,11 +1795,11 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 时间轴。
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| pending | 指定最后一个幽灵节点是否存在或内容 | boolean\|string\|slot | false |
-| pendingDot | 当最后一个幽灵节点存在時，指定其时间图点 | string\|slot | '<LoadingOutlined />' |
+| :-- | :-- | :-- | :-- |
+| pending | 指定最后一个幽灵节点是否存在或内容 | boolean,string,slot | false |
+| pendingDot | 当最后一个幽灵节点存在時，指定其时间图点 | string,slot | '<LoadingOutlined />' |
 | reverse | 节点排序 | boolean | false |
-| mode | 通过设置 'mode' 可以改变时间轴和内容的相对位置 | 'left' \| 'alternate' \| 'right' |
+| mode | 通过设置 'mode' 可以改变时间轴和内容的相对位置 | 'left' , 'alternate' , 'right' |
 
 '''html
 <a-timeline>
@@ -1814,10 +1814,10 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
     "a-timeline-item": `[antd-design-vue :https://www.antdv.com/components/timeline-cn/](https://www.antdv.com/components/timeline-cn/) \n
 
 | 参数     | 说明                                            | 类型              | 默认值 | 版本 |
-| -------- | ----------------------------------------------- | ----------------- | ------ | ---- |
+| :------- | :---------------------------------------------- | :---------------- | :----- | :--- |
 | color    | 指定圆圈颜色 'blue, red, green'，或自定义的色值 | string            | blue   |      |
-| dot      | 自定义时间轴点                                  | string\|slot      | -      |      |
-| position | 自定义节点位置                                  | 'left' \| 'right' | -      |      |
+| dot      | 自定义时间轴点                                  | string,slot      | -      |      |
+| position | 自定义节点位置                                  | 'left' , 'right' | -      |      |
 
 `,
     "a-tooltip": `[antd-design-vue :https://www.antdv.com/components/tooltip-cn/](https://www.antdv.com/components/tooltip-cn/) \n
@@ -1832,15 +1832,15 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ## API
 
 | 参数  | 说明     | 类型         | 默认值 |
-| ----- | -------- | ------------ | ------ |
-| title | 提示文字 | string\|slot | 无     |
+| :---- | :------- | :----------- | :----- |
+| title | 提示文字 | string,slot | 无     |
 
 ### 共同的 API
 
 以下 API 为 Tooltip、Popconfirm、Popover 共享的 API。
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- |
 | arrowPointAtCenter | 箭头是否指向目标元素中心 | boolean | 'false' |
 | autoAdjustOverflow | 气泡被遮挡时自动调整位置 | boolean | 'true' |
 | color | 背景颜色 | string | 无 |
@@ -1859,7 +1859,7 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### 事件
 
 | 事件名称      | 说明           | 回调参数          |
-| ------------- | -------------- | ----------------- |
+| :------------ | :------------- | :---------------- |
 | visibleChange | 显示隐藏的回调 | (visible) => void |
 
 ## 注意
@@ -1880,24 +1880,24 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### Tree props
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :-- |
 | blockNode | 是否节点占据一行 | boolean | false |  |
 | treeData | treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（key 在整个树范围内唯一） | [TreeNode[]](#TreeNode) | -- |  |
 | replaceFields | 替换 treeNode 中 title,key,children 字段为 treeData 中对应的字段 | object | {children:'children', title:'title', key:'key' } | - |
 | autoExpandParent | 是否自动展开父节点 | boolean | true |  |
 | checkable | 节点前添加 Checkbox 复选框 | boolean | false |  |
-| checkedKeys(v-model) | （受控）选中复选框的树节点（注意：父子节点有关联，如果传入父节点 key，则子节点自动选中；相应当子节点 key 都传入，父节点也自动选中。当设置'checkable'和'checkStrictly'，它是一个有'checked'和'halfChecked'属性的对象，并且父子节点的选中与否不再关联 | string\[] \| number\[] \| {checked: string\[] \| number\[], halfChecked: string\[] \| number\[]} | \[] |  |
+| checkedKeys(v-model) | （受控）选中复选框的树节点（注意：父子节点有关联，如果传入父节点 key，则子节点自动选中；相应当子节点 key 都传入，父节点也自动选中。当设置'checkable'和'checkStrictly'，它是一个有'checked'和'halfChecked'属性的对象，并且父子节点的选中与否不再关联 | string\[] , number\[] , {checked: string\[] , number\[], halfChecked: string\[] , number\[]} | \[] |  |
 | checkStrictly | checkable 状态下节点选择完全受控（父子节点选中状态不再关联） | boolean | false |  |
 | defaultExpandAll | 默认展开所有树节点, 如果是异步数据，需要在数据返回后再实例化，建议用 v-if="data.length"；当有 expandedKeys 时，defaultExpandAll 将失效 | boolean | false |  |
 | disabled | 将树禁用 | bool | false |  |
 | draggable | 设置节点可拖拽 | boolean | false |  |
-| expandedKeys(v-model) | （受控）展开指定的树节点 | string\[] \| number\[] | \[] |  |
+| expandedKeys(v-model) | （受控）展开指定的树节点 | string\[] , number\[] | \[] |  |
 | filterTreeNode | 按需筛选树节点（高亮），返回 true | function(node) | - |  |
 | loadData | 异步加载数据 | function(node) | - |  |
-| loadedKeys | （受控）已经加载的节点，需要配合 'loadData' 使用 | string\[] \| number\[] | \[] |  |
+| loadedKeys | （受控）已经加载的节点，需要配合 'loadData' 使用 | string\[] , number\[] | \[] |  |
 | multiple | 支持点选多个节点（节点本身） | boolean | false |  |
 | selectable | 是否可选中 | boolean | true |  |  |
-| selectedKeys(v-model) | （受控）设置选中的树节点 | string\[] \| number\[] | - |  |
+| selectedKeys(v-model) | （受控）设置选中的树节点 | string\[] , number\[] | - |  |
 | showIcon | 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式 | boolean | false |  |
 | switcherIcon | 自定义树节点的展开/折叠图标 | slot | - |  |
 | showLine | 是否展示连接线 | boolean | false |  |
@@ -1906,7 +1906,7 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### 事件
 
 | 事件名称 | 说明 | 回调参数 |
-| --- | --- | --- |
+| :-- | :-- | :-- |
 | check | 点击复选框触发 | function(checkedKeys, e:{checked: bool, checkedNodes, node, event}) |
 | dragend | dragend 触发时调用 | function({event, node}) |
 | dragenter | dragenter 触发时调用 | function({event, node, expandedKeys}) |
@@ -1922,22 +1922,22 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### TreeNode
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | class | 节点的 class | string | - |  |
-| style | 节点的 style | string\|object | - |  |
+| style | 节点的 style | string,object | - |  |
 | checkable | 当树为 checkable 时，设置独立节点是否展示 Checkbox | boolean | - |  |
 | disableCheckbox | 禁掉 checkbox | boolean | false |  |
 | disabled | 禁掉响应 | boolean | false |  |
-| icon | 自定义图标。可接收组件，props 为当前节点 props | slot\|slot-scope | - |  |
+| icon | 自定义图标。可接收组件，props 为当前节点 props | slot,slot-scope | - |  |
 | isLeaf | 设置为叶子节点(设置了'loadData'时有效) | boolean | false |  |
-| key | 被树的 (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys 属性所用。注意：整个树范围内的所有节点的 key 值不能重复！ | string \| number | 内部计算出的节点位置 |  |
+| key | 被树的 (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys 属性所用。注意：整个树范围内的所有节点的 key 值不能重复！ | string , number | 内部计算出的节点位置 |  |
 | selectable | 设置节点是否可被选中 | boolean | true |  |
 | title | 标题 | string | '---' |  |
 
 ### DirectoryTree props
 
 | 参数         | 说明                                              | 类型   | 默认值 |
-| ------------ | ------------------------------------------------- | ------ | ------ |
+| :----------- | :------------------------------------------------ | :----- | :----- |
 | expandAction | 目录展开逻辑，可选 'false' ''click'' ''dblclick'' | string | click  |
 
 ## FAQ
@@ -1947,33 +1947,32 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 文件图标通过 switcherIcon 来实现，如果不需要你可以覆盖对应的样式
 `,
     "a-alert": `[antd-design-vue :https://www.antdv.com/components/alert-cn/](https://www.antdv.com/components/alert-cn/) \n
+警告提示，展现需要关注的信息。
 
-    警告提示，展现需要关注的信息。
+## 何时使用
 
-    ## 何时使用
-    
-    - 当某个页面需要向用户显示警告的信息时。
-    - 非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。
-    
-    ## API
-    
-    | 参数 | 说明 | 类型 | 默认值 | 版本 |
-    | --- | --- | --- | --- | --- |
-    | afterClose | 关闭动画结束后触发的回调函数 | () => void | - |  |
-    | banner | 是否用作顶部公告 | boolean | false |  |
-    | closable | 默认不显示关闭按钮 | boolean | 无 |  |
-    | closeText | 自定义关闭按钮 | string\|slot | 无 |  |
-    | description | 警告提示的辅助性文字介绍 | string\|slot | 无 |  |
-    | icon | 自定义图标，'showIcon' 为 'true' 时有效 | vnode\|slot | - |  |
-    | message | 警告提示内容 | string\|slot | 无 |  |
-    | showIcon | 是否显示辅助图标 | boolean | false,'banner' 模式下默认值为 true |  |
-    | type | 指定警告提示的样式，有四种选择 'success'、'info'、'warning'、'error' | string | 'info','banner' 模式下默认值为 'warning' |  |
-    
-    ### 事件
-    
-    | 事件名称 | 说明                 | 回调参数                | 版本 |
-    | -------- | -------------------- | ----------------------- | ---- |
-    | close    | 关闭时触发的回调函数 | (e: MouseEvent) => void | -    |
+- 当某个页面需要向用户显示警告的信息时。
+- 非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。
+
+## API
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| afterClose | 关闭动画结束后触发的回调函数 | () => void | - |  |
+| banner | 是否用作顶部公告 | boolean | false |  |
+| closable | 默认不显示关闭按钮 | boolean | 无 |  |
+| closeText | 自定义关闭按钮 | string,slot | 无 |  |
+| description | 警告提示的辅助性文字介绍 | string,slot | 无 |  |
+| icon | 自定义图标，'showIcon' 为 'true' 时有效 | vnode,slot | - |  |
+| message | 警告提示内容 | string,slot | 无 |  |
+| showIcon | 是否显示辅助图标 | boolean | false,'banner' 模式下默认值为 true |  |
+| type | 指定警告提示的样式，有四种选择 'success'、'info'、'warning'、'error' | string | 'info','banner' 模式下默认值为 'warning' |  |
+
+### 事件
+
+| 事件名称 | 说明                 | 回调参数                | 版本 |
+| :------- | :------------------- | :---------------------- | :--- |
+| close    | 关闭时触发的回调函数 | (e: MouseEvent) => void | -    |
 `,
     "a-drawer": `[antd-design-vue :https://www.antdv.com/components/drawer-cn/](https://www.antdv.com/components/drawer-cn/) \n
 
@@ -1989,82 +1988,80 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
     ## API
     
     | 参数 | 说明 | 类型 | 默认值 | 版本 |
-    | --- | --- | --- | --- | --- |
+    | :--- | :--- | :--- | :--- | :--- |
     | closable | 是否显示右上角的关闭按钮 | boolean | true |  |
     | destroyOnClose | 关闭时销毁 Drawer 里的子元素 | boolean | false |  |
     | bodyStyle | 可用于设置 Drawer 内容部分的样式 | CSSProperties | - |  |
-    | getContainer | 指定 Drawer 挂载的 HTML 节点 | HTMLElement \| '() => HTMLElement' \| Selectors | 'body' |  |
+    | getContainer | 指定 Drawer 挂载的 HTML 节点 | HTMLElement , '() => HTMLElement' , Selectors | 'body' |  |
     | maskClosable | 点击蒙层是否允许关闭 | boolean | true |  |
     | mask | 是否展示遮罩 | Boolean | true |  |
     | maskStyle | 遮罩样式 | CSSProperties | {} |  |
-    | title | 标题 | string \| slot | - |  |
+    | title | 标题 | string , slot | - |  |
     | visible(v-model) | Drawer 是否可见 | boolean | - |  |
     | wrapClassName | 对话框外层容器的类名 | string | - |  |
     | wrapStyle | 可用于设置 Drawer 最外层容器的样式，和 drawerStyle 的区别是作用节点包括 mask | Object | - |  |
     | drawerStyle | 用于设置 Drawer 弹出层的样式 | object | - |  |
     | headerStyle | 用于设置 Drawer 头部的样式 | object | - |  |
     | bodyStyle | 可用于设置 Drawer 内容部分的样式 | object | - |  |
-    | width | 宽度 | string \| number | 378 |  |
-    | height | 高度, 在 'placement' 为 'top' 或 'bottom' 时使用 | string \| number | 378 |  |
+    | width | 宽度 | string , number | 378 |  |
+    | height | 高度, 在 'placement' 为 'top' 或 'bottom' 时使用 | string , number | 378 |  |
     | zIndex | 设置 Drawer 的 'z-index' | Number | 1000 |  |
-    | placement | 抽屉的方向 | 'top' \| 'right' \| 'bottom' \| 'left' | 'right' |  |
-    | handle | 设置后抽屉直接挂载到 DOM 上，你可以通过该 handle 控制抽屉打开关闭 | VNode \| slot| - |  |
+    | placement | 抽屉的方向 | 'top' , 'right' , 'bottom' , 'left' | 'right' |  |
+    | handle | 设置后抽屉直接挂载到 DOM 上，你可以通过该 handle 控制抽屉打开关闭 | VNode , slot| - |  |
     | keyboard | 是否支持键盘 esc 关闭 | boolean | true |  |
     | afterVisibleChange | 切换抽屉时动画结束后的回调 | function(visible) | - |  |
     
     ## 事件
     
     | 名称               | 描述                                 | 类型              | 默认值 | 版本 |
-    | ------------------ | ------------------------------------ | ----------------- | ------ | ---- |
+    | :----------------- | :----------------------------------- | :---------------- | :----- | :--- |
     | close              | 点击遮罩层或右上角叉或取消按钮的回调 | function(e)       | 无     |      |
 `,
     "a-modal": `[antd-design-vue :https://www.antdv.com/components/modal-cn/](https://www.antdv.com/components/modal-cn/) \n
 
-    模态对话框。
+模态对话框。
 
-    ## 何时使用
-    
-    需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 'Modal' 在当前页面正中打开一个浮层，承载相应的操作。
-    
-    另外当需要一个简洁的确认框询问用户时，可以使用 'Modal.confirm()' 等语法糖方法。
-    
-    ## API
-    
-    | 参数 | 说明 | 类型 | 默认值 | 版本 |
-    | --- | --- | --- | --- | --- |
-    | afterClose | Modal 完全关闭后的回调 | function | 无 |  |
-    | bodyStyle | Modal body 样式 | object | {} |  |
-    | cancelText | 取消按钮文字 | string\| slot | 取消 |  |
-    | centered | 垂直居中展示 Modal | Boolean | 'false' |  |
-    | closable | 是否显示右上角的关闭按钮 | boolean | true |  |
-    | closeIcon | 自定义关闭图标 | VNode \| slot | - |  |
-    | confirmLoading | 确定按钮 loading | boolean | 无 |  |
-    | destroyOnClose | 关闭时销毁 Modal 里的子元素 | boolean | false |  |
-    | footer | 底部内容，当不需要默认底部按钮时，可以设为 ':footer="null"' | string\|slot | 确定取消按钮 |  |
-    | forceRender | 强制渲染 Modal | boolean | false |  |
-    | getContainer | 指定 Modal 挂载的 HTML 节点 | (instance): HTMLElement | () => document.body |  |
-    | keyboard | 是否支持键盘 esc 关闭 | boolean | true |  |
-    | mask | 是否展示遮罩 | Boolean | true |  |
-    | maskClosable | 点击蒙层是否允许关闭 | boolean | true |  |
-    | maskStyle | 遮罩样式 | object | {} |  |
-    | okText | 确认按钮文字 | string\|slot | 确定 |  |
-    | okType | 确认按钮类型 | string | primary |  |
-    | okButtonProps | ok 按钮 props | [ButtonProps](/components/button/#API) | - |  |
-    | cancelButtonProps | cancel 按钮 props | [ButtonProps](/components/button/#API) | - |  |
-    | title | 标题 | string\|slot | 无 |  |
-    | visible(v-model) | 对话框是否可见 | boolean | 无 |  |
-    | width | 宽度 | string\|number | 520 |  |
-    | wrapClassName | 对话框外层容器的类名 | string | - |  |
-    | zIndex | 设置 Modal 的 'z-index' | Number | 1000 |  |
-    | dialogStyle | 可用于设置浮层的样式，调整浮层位置等 | object | - |  |
-    | dialogClass | 可用于设置浮层的类名 | string | - |  |
-    
-    ### 事件
-    
-    | 事件名称 | 说明                                 | 回调参数    |
-    | -------- | ------------------------------------ | ----------- |
-    | cancel   | 点击遮罩层或右上角叉或取消按钮的回调 | function(e) |
-    | ok       | 点击确定回调                         | function(e) |
+## 何时使用
+
+需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 'Modal' 在当前页面正中打开一个浮层，承载相应的操作。
+
+另外当需要一个简洁的确认框询问用户时，可以使用 'Modal.confirm()' 等语法糖方法。
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| afterClose | Modal 完全关闭后的回调 | function | 无 | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| bodyStyle | Modal body 样式 | object | {} |  |
+| cancelText | 取消按钮文字 | string, slot | 取消 |  |
+| centered | 垂直居中展示 Modal | Boolean | 'false' |  |
+| closable | 是否显示右上角的关闭按钮 | boolean | true |  |
+| closeIcon | 自定义关闭图标 | VNode , slot | - |  |
+| confirmLoading | 确定按钮 loading | boolean | 无 |  |
+| destroyOnClose | 关闭时销毁 Modal 里的子元素 | boolean | false |  |
+| footer | 底部内容，当不需要默认底部按钮时，可以设为 ':footer="null"' | string,slot | 确定取消按钮 |  |
+| forceRender | 强制渲染 Modal | boolean | false |  |
+| getContainer | 指定 Modal 挂载的 HTML 节点 | (instance): HTMLElement | () => document.body |  |
+| keyboard | 是否支持键盘 esc 关闭 | boolean | true |  |
+| mask | 是否展示遮罩 | Boolean | true |  |
+| maskClosable | 点击蒙层是否允许关闭 | boolean | true |  |
+| maskStyle | 遮罩样式 | object | {} |  |
+| okText | 确认按钮文字 | string,slot | 确定 |  |
+| okType | 确认按钮类型 | string | primary |  |
+| okButtonProps | ok 按钮 props | [ButtonProps](/components/button/#API) | - |  |
+| cancelButtonProps | cancel 按钮 props | [ButtonProps](/components/button/#API) | - |  |
+| title | 标题 | string,slot | 无 |  |
+| visible(v-model) | 对话框是否可见 | boolean | 无 |  |
+| width | 宽度 | string,number | 520 |  |
+| wrapClassName | 对话框外层容器的类名 | string | - |  |
+| zIndex | 设置 Modal 的 'z-index' | Number | 1000 |  |
+| dialogStyle | 可用于设置浮层的样式，调整浮层位置等 | object | - |  |
+| dialogClass | 可用于设置浮层的类名 | string | - |  |
+
+### 事件
+
+| 事件名称 | 说明                                 | 回调参数    |
+| :------- | :----------------------------------- | :---------- |
+| cancel   | 点击遮罩层或右上角叉或取消按钮的回调 | function(e) |
+| ok       | 点击确定回调                         | function(e) |
 `,
     "a-popconfirm": `[antd-design-vue :https://www.antdv.com/components/popconfirm-cn/](https://www.antdv.com/components/popconfirm-cn/) \n
 
@@ -2077,13 +2074,13 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | cancelButtonProps | cancel 按钮 props | [ButtonProps](/components/button/#API) | - |
-| cancelText | 取消按钮文字 | string\|slot | 取消 |  |
+| cancelText | 取消按钮文字 | string,slot | 取消 |  |
 | okButtonProps | ok 按钮 props | [ButtonProps](/components/button/#API) | - |
-| okText | 确认按钮文字 | string\|slot | 确定 |  |
+| okText | 确认按钮文字 | string,slot | 确定 |  |
 | okType | 确认按钮类型 | string | primary |  |
-| title | 确认框的描述 | string\|slot | 无 |  |
+| title | 确认框的描述 | string,slot | 无 |  |
 | visible (v-model) | 是否显示 | boolean | - |  |
 | icon | 自定义弹出气泡 Icon 图标 | vNode | &lt;Icon type="exclamation-circle" /&gt; |  |
 | disabled | 点击 Popconfirm 子元素是否弹出气泡确认框 | boolean | false |  |
@@ -2091,7 +2088,7 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### 事件
 
 | 事件名称      | 说明           | 回调参数          |
-| ------------- | -------------- | ----------------- |
+| :------------ | :------------- | :---------------- |
 | cancel        | 点击取消的回调 | function(e)       |
 | confirm       | 点击确认的回调 | function(e)       |
 | visibleChange | 显示隐藏的回调 | function(visible) |
@@ -2118,13 +2115,13 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
     各类型共用的属性。
     
     | 属性 | 说明 | 类型 | 默认值 |
-    | --- | --- | --- | --- |
+    | :-- | :-- | :-- | :-- |
     | format | 内容的模板函数 | function(percent, successPercent) | (percent) => percent + '%' |
     | percent | 百分比 | number | 0 |
     | showInfo | 是否显示进度数值或状态图标 | boolean | true |
     | status | 状态，可选：'success' 'exception' 'normal' 'active'(仅限 line) | string | - |
     | strokeColor | 进度条的色彩 | string | - |
-    | strokeLinecap | 进度条的样式 | 'round' \| 'square' | 'round' |
+    | strokeLinecap | 进度条的样式 | 'round' , 'square' | 'round' |
     | success | 成功进度条相关配置 | { percent: number, strokeColor: string } | - |
     | trailColor | 未完成的分段的颜色 | string | - |
     | type | 类型，可选 'line' 'circle' 'dashboard' | string | 'line' |
@@ -2132,25 +2129,25 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
     ### 'type="line"'
     
     | 属性 | 说明 | 类型 | 默认值 |
-    | --- | --- | --- | --- |
+    | :-- | :-- | :-- | :-- |
     | steps | 进度条总共步数 | number | - |
-    | strokeColor | 进度条的色彩，传入 object 时为渐变 | string \| { from: string; to: string; direction: string } | - |
+    | strokeColor | 进度条的色彩，传入 object 时为渐变 | string , { from: string; to: string; direction: string } | - |
     | strokeWidth | 进度条线的宽度，单位 px | number | 10 |
     
     ### 'type="circle"'
     
     | 属性        | 说明                                             | 类型             | 默认值 |
-    | ----------- | ------------------------------------------------ | ---------------- | ------ |
-    | strokeColor | 圆形进度条线的色彩，传入 object 时为渐变         | string \| object | -      |
+    | :---------- | :----------------------------------------------- | :--------------- | :----- |
+    | strokeColor | 圆形进度条线的色彩，传入 object 时为渐变         | string , object | -      |
     | strokeWidth | 圆形进度条线的宽度，单位是进度条画布宽度的百分比 | number           | 6      |
     | width       | 圆形进度条画布宽度，单位 px                      | number           | 132    |
     
     ### 'type="dashboard"'
     
     | 属性 | 说明 | 类型 | 默认值 |
-    | --- | --- | --- | --- |
+    | :-- | :-- | :-- | :-- |
     | gapDegree | 仪表盘进度条缺口角度，可取值 0 ~ 295 | number | 75 |
-    | gapPosition | 仪表盘进度条缺口位置 | 'top' \| 'bottom' \| 'left' \| 'right' | 'bottom' |
+    | gapPosition | 仪表盘进度条缺口位置 | 'top' , 'bottom' , 'left' , 'right' | 'bottom' |
     | strokeWidth | 仪表盘进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 |
     | width | 仪表盘进度条画布宽度，单位 px | number | 132 |
 `,
@@ -2165,56 +2162,56 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
     ## API
     
     | 参数     | 说明                      | 类型                         | 默认值  |
-    | -------- | ------------------------- | ---------------------------- | ------- | ------ | --------- | ----- | ----- | ------ | ------ |
-    | title    | title 文字                | string \| VNode \| #title    | -       |
-    | subTitle | subTitle 文字             | string \| VNode \| #subTitle | -       |
+    | :------- | :------------------------ | :--------------------------- | :------ | :----- | :-------- | :---- | :---- | :----- | :----- |
+    | title    | title 文字                | string , VNode , #title    | -       |
+    | subTitle | subTitle 文字             | string , VNode , #subTitle | -       |
     | status   | 结果的状态,决定图标和颜色 | ''success'                   | 'error' | 'info' | 'warning' | '404' | '403' | '500'' | 'info' |
     | icon     | 自定义 icon               | #icon                        | -       |
     | extra    | 操作区                    | #extra                       | -       | 
 `,
     "a-skeleton": `[antd-design-vue :https://www.antdv.com/components/skeleton-cn/](https://www.antdv.com/components/skeleton-cn/) \n
 
-    在需要等待加载内容的位置提供一个占位图形组合。
+在需要等待加载内容的位置提供一个占位图形组合。
 
-    ## 何时使用
-    
-    - 网络较慢，需要长时间等待加载处理的情况下。
-    - 图文信息内容较多的列表/卡片中。
-    - 只在第一次加载数据的时候使用。
-    - 可以被 Spin 完全代替，但是在可用的场景下可以比 Spin 提供更好的视觉效果和用户体验。
-    
-    ## API
-    
-    ### Skeleton
-    
-    | 属性 | 说明 | 类型 | 默认值 |
-    | --- | --- | --- | --- |
-    | active | 是否展示动画效果 | boolean | false |
-    | avatar | 是否显示头像占位图 | boolean \| [SkeletonAvatarProps](#SkeletonAvatarProps) | false |
-    | loading | 为 'true' 时，显示占位图。反之则直接展示子组件 | boolean | - |
-    | paragraph | 是否显示段落占位图 | boolean \| [SkeletonParagraphProps](#SkeletonParagraphProps) | true |
-    | title | 是否显示标题占位图 | boolean \| [SkeletonTitleProps](#SkeletonTitleProps) | true |
-    
-    ### SkeletonAvatarProps
-    
-    | 属性  | 说明                 | 类型                                      | 默认值 |
-    | ----- | -------------------- | ----------------------------------------- | ------ |
-    | size  | 设置头像占位图的大小 | number \| 'large' \| 'small' \| 'default' | -      |
-    | shape | 指定头像的形状       | 'circle' \| 'square'                      | -      |
-    
-    ### SkeletonTitleProps
-    
-    | 属性  | 说明                 | 类型             | 默认值 |
-    | ----- | -------------------- | ---------------- | ------ |
-    | width | 设置标题占位图的宽度 | number \| string | -      |
-    
-    ### SkeletonParagraphProps
-    
-    | 属性 | 说明 | 类型 | 默认值 |
-    | --- | --- | --- | --- |
-    | rows | 设置段落占位图的行数 | number | - |
-    | width | 设置段落占位图的宽度，若为数组时则为对应的每行宽度，反之则是最后一行的宽度 | number \| string \| Array<number \| string> | - |
-    `,
+## 何时使用
+
+- 网络较慢，需要长时间等待加载处理的情况下。
+- 图文信息内容较多的列表/卡片中。
+- 只在第一次加载数据的时候使用。
+- 可以被 Spin 完全代替，但是在可用的场景下可以比 Spin 提供更好的视觉效果和用户体验。
+
+## API
+
+### Skeleton
+
+| 属性 | 说明 | 类型 | 默认值 |
+| :-- | :-- | :-- | :-- |
+| active | 是否展示动画效果 | boolean | false |
+| avatar | 是否显示头像占位图 | boolean , [SkeletonAvatarProps](#SkeletonAvatarProps) | false |
+| loading | 为 'true' 时，显示占位图。反之则直接展示子组件 | boolean | - |
+| paragraph | 是否显示段落占位图 | boolean , [SkeletonParagraphProps](#SkeletonParagraphProps) | true |
+| title | 是否显示标题占位图 | boolean , [SkeletonTitleProps](#SkeletonTitleProps) | true |
+
+### SkeletonAvatarProps
+
+| 属性  | 说明                 | 类型                                      | 默认值 |
+| :---- | :------------------- | :---------------------------------------- | :----- |
+| size  | 设置头像占位图的大小 | number , 'large' , 'small' , 'default' | -      |
+| shape | 指定头像的形状       | 'circle' , 'square'                      | -      |
+
+### SkeletonTitleProps
+
+| 属性  | 说明                 | 类型             | 默认值 |
+| :---- | :------------------- | :--------------- | :----- |
+| width | 设置标题占位图的宽度 | number , string | -      |
+
+### SkeletonParagraphProps
+
+| 属性 | 说明 | 类型 | 默认值 |
+| :-- | :-- | :-- | :-- |
+| rows | 设置段落占位图的行数 | number | - |
+| width | 设置段落占位图的宽度，若为数组时则为对应的每行宽度，反之则是最后一行的宽度 | number , string , Array<number , string> | - |
+`,
 
     "a-spin": `[antd-design-vue :https://www.antdv.com/components/spin-cn/](https://www.antdv.com/components/spin-cn/) \n
   
@@ -2227,9 +2224,9 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ## API
 
 | 参数             | 说明                                         | 类型          | 默认值    |
-| ---------------- | -------------------------------------------- | ------------- | --------- |
+| :--------------- | :------------------------------------------- | :------------ | :-------- |
 | delay            | 延迟显示加载效果的时间（防止闪烁）           | number (毫秒) | -         |
-| indicator        | 加载指示符                                   | vNode \| slot | -         |
+| indicator        | 加载指示符                                   | vNode , slot | -         |
 | size             | 组件大小，可选值为 'small' 'default' 'large' | string        | 'default' |
 | spinning         | 是否为加载中状态                             | boolean       | true      |
 | tip              | 当作为包裹元素时，可以自定义描述文案         | string        | -         |
@@ -2248,7 +2245,7 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### Anchor Props
 
 | 成员 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | affix | 固定模式 | boolean | true |  |
 | bounds | 锚点区域边界 | number | 5(px) |  |
 | getContainer | 指定滚动的容器 | () => HTMLElement | () => window |  |
@@ -2263,15 +2260,15 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ### 事件
 
 | 事件名称 | 说明                   | 回调参数                            | 版本 |
-| -------- | ---------------------- | ----------------------------------- | ---- | ----- |
+| :------- | :--------------------- | :---------------------------------- | :--- | :---- |
 | click    | 'click' 事件的 handler | Function(e: Event, link: Object)    |      |
 | change   | 监听锚点链接改变       | (currentActiveLink: string) => void |      | 1.5.0 |`,
     "a-anchor-link": `[antd-design-vue :https://www.antdv.com/components/anchor-cn/](https://www.antdv.com/components/anchor-cn/) \n
   
 | 成员   | 说明                             | 类型         | 默认值 | 版本  |
-| ------ | -------------------------------- | ------------ | ------ | ----- |
+| :----- | :------------------------------- | :----------- | :----- | :---- |
 | href   | 锚点链接                         | string       |        |       |
-| title  | 文字内容                         | string\|slot |        |       |
+| title  | 文字内容                         | string,slot |        |       |
 | target | 该属性指定在何处显示链接的资源。 | string       |        | 1.5.0 |`,
     "a-back-top": `[antd-design-vue :https://www.antdv.com/components/back-top-cn/](https://www.antdv.com/components/back-top-cn/) \n
 返回页面顶部的操作按钮。
@@ -2288,87 +2285,85 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 > 自定义样式宽高不大于 40px \* 40px。
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | target | 设置需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 | Function | () => window |  |
 | visibilityHeight | 滚动高度达到此参数值才出现 'BackTop' | number | 400 |  |
 
 ### 事件
 
 | 事件名称 | 说明               | 回调参数 | 版本 |
-| -------- | ------------------ | -------- | ---- |
+| :------- | :----------------- | :------- | :--- |
 | click    | 点击按钮的回调函数 | Function |      |
     `,
     "a-config-provider": `[antd-design-vue :https://www.antdv.com/components/config-provider-cn/](https://www.antdv.com/components/config-provider-cn/) \n
 
-    为组件提供统一的全局化配置。
+为组件提供统一的全局化配置。
 
-    ## 使用
-    
-    ConfigProvider 使用 Vue 的 [provide / inject](https://vuejs.org/v2/api/#provide-inject) 特性，只需在应用外围包裹一次即可全局生效。
-    
-    '''html
-    <template>
-      <a-config-provider :getPopupContainer="getPopupContainer">
-        <app />
-      </a-config-provider>
-    </template>
-    <script>
-      export default {
-        methods: {
-          getPopupContainer(el, dialogContext) {
-            if (dialogContext) {
-              return dialogContext.getDialogWrap();
-            } else {
-              return document.body;
-            }
-          },
-        },
-      };
-    </script>
-    '''
-    
-    ### Content Security Policy
-    
-    部分组件为了支持波纹效果，使用了动态样式。如果开启了 Content Security Policy (CSP)，你可以通过 'csp' 属性来进行配置：
-    
-    '''html
-    <a-config-provider :csp="{ nonce: 'YourNonceCode' }">
-      <a-button>My Button</a-button>
+## 使用
+
+ConfigProvider 使用 Vue 的 [provide / inject](https://vuejs.org/v2/api/#provide-inject) 特性，只需在应用外围包裹一次即可全局生效。
+
+'''html
+<template>
+    <a-config-provider :getPopupContainer="getPopupContainer">
+    <app />
     </a-config-provider>
-    '''
-    
-    ## API
-    
-    | 参数 | 说明 | 类型 | 默认值 | 版本 |
-    | --- | --- | --- | --- | --- |
-    | autoInsertSpaceInButton | 设置为 'false' 时，移除按钮中 2 个汉字之间的空格 | boolean | true |  |
-    | csp | 设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置 | { nonce: string } | - |  |
-    | renderEmpty | 自定义组件空状态。参考 [空状态](/components/empty/) | slot-scope \| Function(componentName: string): VNode | - |  |
-    | getPopupContainer | 弹出框（Select, Tooltip, Menu 等等）渲染父节点，默认渲染到 body 上。 | Function(triggerNode, dialogContext) | () => document.body |  |
-    | locale | 语言包配置，语言包可到 [ant-design-vue/es/locale](http://unpkg.com/ant-design-vue/es/locale/) 目录下寻找 | object | - | 1.5.0 |
-    | pageHeader | 统一设置 pageHeader 的 ghost，参考 [pageHeader](<(/components/page-header)>) | { ghost: boolean } | 'true' | 1.5.0 |
-    | transformCellText | Table 数据渲染前可以再次改变，一般用户空数据的默认配置 | Function({ text, column, record, index }) => any | - | 1.5.4 ｜ |
-    `,
+</template>
+<script>
+    export default {
+    methods: {
+        getPopupContainer(el, dialogContext) {
+        if (dialogContext) {
+            return dialogContext.getDialogWrap();
+        } else {
+            return document.body;
+        }
+        },
+    },
+    };
+</script>
+'''
+
+### Content Security Policy
+
+部分组件为了支持波纹效果，使用了动态样式。如果开启了 Content Security Policy (CSP)，你可以通过 'csp' 属性来进行配置：
+
+'''html
+<a-config-provider :csp="{ nonce: 'YourNonceCode' }">
+    <a-button>My Button</a-button>
+</a-config-provider>
+'''
+
+## API
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| autoInsertSpaceInButton | 设置为 'false' 时，移除按钮中 2 个汉字之间的空格 | boolean | true |  |
+| csp | 设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置 | { nonce: string } | - |  |
+| renderEmpty | 自定义组件空状态。参考 [空状态](/components/empty/) | slot-scope , Function(componentName: string): VNode | - |  |
+| getPopupContainer | 弹出框（Select, Tooltip, Menu 等等）渲染父节点，默认渲染到 body 上。 | Function(triggerNode, dialogContext) | () => document.body |  |
+| locale | 语言包配置，语言包可到 [ant-design-vue/es/locale](http://unpkg.com/ant-design-vue/es/locale/) 目录下寻找 | object | - | 1.5.0 |
+| pageHeader | 统一设置 pageHeader 的 ghost，参考 [pageHeader](<(/components/page-header)>) | { ghost: boolean } | 'true' | 1.5.0 |
+| transformCellText | Table 数据渲染前可以再次改变，一般用户空数据的默认配置 | Function({ text, column, record, index }) => any | - | 1.5.4 ｜ |`,
     "a-divider": `[antd-design-vue :https://www.antdv.com/components/divider-cn/](https://www.antdv.com/components/divider-cn/) \n
 
-    区隔内容的分割线。
+区隔内容的分割线。
 
-    ## 何时使用
-    
-    - 对不同章节的文本段落进行分割。
-    - 对行内文字/链接进行分割，例如表格的操作列。
-    
-    ## API
-    
-    | 参数        | 说明                       | 类型                          | 默认值       | 版本  |
-    | ----------- | -------------------------- | ----------------------------- | ------------ | ----- |
-    | dashed      | 是否虚线                   | Boolean                       | false        |       |
-    | orientation | 分割线标题的位置           | enum: 'left' 'right'          | 'center'     |       |
-    | type        | 水平还是垂直类型           | enum: 'horizontal' 'vertical' | 'horizontal' |       |
-    `,
+## 何时使用
+
+- 对不同章节的文本段落进行分割。
+- 对行内文字/链接进行分割，例如表格的操作列。
+
+## API
+
+| 参数        | 说明                       | 类型                          | 默认值       | 版本  |
+| :---------- | :------------------------- | :---------------------------- | :----------- | :---- |
+| dashed      | 是否虚线                   | Boolean                       | false        |       |
+| orientation | 分割线标题的位置           | enum: 'left' 'right'          | 'center'     |       |
+| type        | 水平还是垂直类型           | enum: 'horizontal' 'vertical' | 'horizontal' |       |
+`,
     "a-locale-provider": `[antd-design-vue :https://www.antdv.com/components/locale-provider-cn/](https://www.antdv.com/components/locale-provider-cn/) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | locale | 语言包配置，语言包可到 ant-design-vue/lib/locale-provider/ 目录下寻找 | object | - | — |`
 };
-//# sourceMappingURL=antdv.js.map

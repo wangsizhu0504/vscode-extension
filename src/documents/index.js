@@ -4,4 +4,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const element_ui = require("./element-ui");
 const antdv_ui = require("./antdv");
 exports.default = Object.assign({}, element_ui.default, antdv_ui.default);
-//# sourceMappingURL=index.js.map

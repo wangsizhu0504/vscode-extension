@@ -409,4 +409,3 @@ class vueHelperDefinitionProvider {
     }
 }
 exports.vueHelperDefinitionProvider = vueHelperDefinitionProvider;
-//# sourceMappingURL=definitionProvider.js.map

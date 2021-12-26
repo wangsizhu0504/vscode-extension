@@ -304,4 +304,3 @@ exports.default = {
         "framework": "vux"
     }
 };
-//# sourceMappingURL=vux.js.map
