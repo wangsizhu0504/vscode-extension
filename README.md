@@ -1,6 +1,6 @@
 # web-dev-package README
 
-自用vscode 前端开发工具集合
+自用vscode 前端插件
 
 ## Features
 

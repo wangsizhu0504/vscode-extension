@@ -1,9 +1,8 @@
-# Change Log
+# 更改日志
 
-All notable changes to the "web-dev-package" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## 0.0.2
+- 更改显示图片
+## 0.0.1
+- 添加element ui 悬浮语法提示
+- 添加antdv ui语法悬浮提示
+- 增加antdv 代码片段
