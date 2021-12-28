@@ -2,14 +2,20 @@
 	"name": "wsz-vscode-plugin",
 	"displayName": "wsz-vscode-plugin",
 	"description": "web开发工具集合(自用)",
+	"publisher":"wangsizhu",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.63.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gitee.com/wangsizhu0504/wsz-vscode-plugin.git"
 	},
 	"categories": [
 		"Snippets",
 		"Other"
 	],
+	"icon": "logo.png",
 	"activationEvents": [
 		"onLanguage:html",
 		"onLanguage:vue",
@@ -19,12 +25,6 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "wsz-vscode-plugin.helloWorld",
-				"title": "Hello World"
-			}
-		],
 		"snippets": [
 			{
 				"language": "javascript",
@@ -53,6 +53,8 @@
 		]
 	},
 	"scripts": {
+		"package": "vsce package",
+		"publish": "vsce publish",
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"test": "node ./test/runTest.js"
