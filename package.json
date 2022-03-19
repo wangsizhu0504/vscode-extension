@@ -2,7 +2,7 @@
 	"name": "wsz-vscode-plugin",
 	"displayName": "wsz-vscode-plugin",
 	"description": "web开发工具集合(自用)",
-	"publisher":"wangsizhu",
+	"publisher": "wangsizhu",
 	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.63.0"
@@ -17,11 +17,15 @@
 	],
 	"icon": "logo.png",
 	"activationEvents": [
+		"*",
 		"onLanguage:html",
 		"onLanguage:vue",
-		"onCommand:wsz-vscode-plugin.helloWorld",
-		"onCommand:wsz-vscode-plugin.deleteComplete",
-		"onCommand:wsz-vscode-plugin.blockSelect"
+		"onCommand:wsz-vscode-plugin.wszfileheader",
+		"onCommand:wsz-vscode-plugin.wszfilecursorTip",
+		"onCommand:wsz-vscode-plugin.displayLogMessage",
+		"onCommand:wsz-vscode-plugin.commentAllLogMessages",
+		"onCommand:wsz-vscode-plugin.uncommentAllLogMessages",
+		"onCommand:wsz-vscode-plugin.deleteAllLogMessages"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -50,6 +54,277 @@
 				"language": "vue-html",
 				"path": "./snippets/vue-html.json"
 			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "配置文件",
+			"properties": {
+				"wsz-vscode-plugin.customMade": {
+					"type": "object",
+					"default": {},
+					"description": "头部注释,默认设置：{'Author':'your name','Date':'Do not edit','LastEditors':'your name','LastEditTime':'Do not edit','Description':'file content'}"
+				},
+				"wsz-vscode-plugin.cursorMode": {
+					"type": "object",
+					"default": {},
+					"description": "在光标处插入函数注释,默认配置:{'description':'','param':'','return':''}"
+				},
+				"wsz-vscode-plugin.configObj": {
+					"type": "object",
+					"default": {
+						"createFileTime": true,
+						"language": {
+							"languagetest": {
+								"head": "/$$",
+								"middle": " $ @",
+								"end": " $/",
+								"functionSymbol": {
+									"head": "/** ",
+									"middle": " * @",
+									"end": " */"
+								},
+								"functionParams": "js"
+							}
+						},
+						"autoAdd": true,
+						"autoAddLine": 100,
+						"autoAlready": true,
+						"annotationStr": {
+							"head": "/*",
+							"middle": " * @",
+							"end": " */",
+							"use": false
+						},
+						"headInsertLine": {
+							"php": 2,
+							"sh": 2
+						},
+						"beforeAnnotation": {
+							"文件后缀": "该文件后缀的头部注释之前添加某些内容"
+						},
+						"afterAnnotation": {
+							"文件后缀": "该文件后缀的头部注释之后添加某些内容"
+						},
+						"specialOptions": {
+							"特殊字段": "自定义比如LastEditTime/LastEditors"
+						},
+						"switch": {
+							"newlineAddAnnotation": true
+						},
+						"supportAutoLanguage": [],
+						"prohibitAutoAdd": [
+							"json"
+						],
+						"folderBlacklist": [
+							"node_modules",
+							"文件夹禁止自动添加头部注释"
+						],
+						"prohibitItemAutoAdd": [
+							"项目的全称, 整个项目禁止自动添加头部注释, 可以使用快捷键添加"
+						],
+						"moveCursor": true,
+						"dateFormat": "YYYY-MM-DD HH:mm:ss",
+						"atSymbol": [
+							"@",
+							"@"
+						],
+						"atSymbolObj": {
+							"文件后缀": [
+								"头部注释@符号",
+								"函数注释@符号"
+							]
+						},
+						"colon": [
+							": ",
+							": "
+						],
+						"colonObj": {
+							"文件后缀": [
+								"头部注释冒号",
+								"函数注释冒号"
+							]
+						},
+						"filePathColon": "路径分隔符替换",
+						"showErrorMessage": false,
+						"writeLog": false,
+						"wideSame": false,
+						"wideNum": 13,
+						"functionWideNum": 0,
+						"CheckFileChange": false,
+						"createHeader": true,
+						"useWorker": false,
+						"designAddHead": false,
+						"headDesignName": "random",
+						"headDesign": false,
+						"cursorModeInternalAll": {},
+						"openFunctionParamsCheck": true,
+						"functionParamsShape": [
+							"{",
+							"}"
+						],
+						"functionBlankSpaceAll": {},
+						"functionTypeSymbol": "*",
+						"typeParamOrder": "type param",
+						"customHasHeadEnd": {},
+						"throttleTime": 60000
+					},
+					"description": "插件配置选项,readme:https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE"
+				},
+				"wsz-vscode-plugin.wrapLogMessage": {
+					"type": "boolean",
+					"default": false,
+					"description": "确定是否应该对日志消息进行包装."
+				},
+				"wsz-vscode-plugin.logMessagePrefix": {
+					"type": "string",
+					"default": "🚀",
+					"description": "日志输出前缀."
+				},
+				"wsz-vscode-plugin.includeFileNameAndLineNum": {
+					"type": "boolean",
+					"default": true,
+					"description": "是否包含日志消息的文件名和行号."
+				},
+				"wsz-vscode-plugin.addSemicolonInTheEnd": {
+					"type": "boolean",
+					"default": false,
+					"description": "是否在日志消息的末尾添加分号."
+				},
+				"wsz-vscode-plugin.insertEnclosingClass": {
+					"type": "boolean",
+					"default": true,
+					"description": "是否在日志消息中插入所选变量的外围类."
+				},
+				"wsz-vscode-plugin.insertEnclosingFunction": {
+					"type": "boolean",
+					"default": true,
+					"description": "是否在日志消息中插入所选变量的封闭函数."
+				},
+				"wsz-vscode-plugin.delimiterInsideMessage": {
+					"type": "string",
+					"default": "~",
+					"description": "分隔不同日志消息元素(文件名、行号、类、函数和变量)的分隔符"
+				},
+				"wsz-vscode-plugin.quote": {
+					"type": "string",
+					"enum": [
+						"\"",
+						"'",
+						"`"
+					],
+					"default": "`",
+					"description": "双引号，单引号或反引号"
+				},
+				"wsz-vscode-plugin.webview": {
+					"type": "object",
+					"default": {
+						"Vue": "https://cn.vuejs.org/v2/guide/",
+						"Vuex": "https://vuex.vuejs.org/zh/",
+						"Vue Router": "https://router.vuejs.org/zh/",
+						"Vue SSR": "https://ssr.vuejs.org/zh/",
+						"Nuxt.js": "https://zh.nuxtjs.org/",
+						"Vue CLI 3": "https://cli.vuejs.org/zh/",
+						"VuePress": "https://vuepress.vuejs.org/zh/"
+					},
+					"description": "双引号，单引号或反引号"
+				}
+			}
+		},
+		"menus": {
+			"editor/context": [
+				{
+					"command": "wsz-vscode-plugin.displayLogMessage",
+					"when": "editorHasSelection",
+					"group": "navigation@2"
+				},
+				{
+					"command": "wsz-vscode-plugin.commentAllLogMessages",
+					"when": "editorFocus",
+					"group": "navigation@3"
+				},
+				{
+					"command": "wsz-vscode-plugin.deleteAllLogMessages",
+					"when": "editorFocus",
+					"group": "navigation@4"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "wsz-vscode-plugin.wszfileheader",
+				"title": "文件头部注释"
+			},
+			{
+				"command": "wsz-vscode-plugin.wszfilecursorTip",
+				"title": "函数注释"
+			},
+			{
+				"command": "wsz-vscode-plugin.errPathSet",
+				"title": "设置报错日志储存",
+				"category": "errPath"
+			},
+			{
+				"command": "wsz-vscode-plugin.displayLogMessage",
+				"title": "输出 console log "
+			},
+			{
+				"command": "wsz-vscode-plugin.commentAllLogMessages",
+				"title": "注释 console log "
+			},
+			{
+				"command": "wsz-vscode-plugin.uncommentAllLogMessages",
+				"title": "解除console log注释"
+			},
+			{
+				"command": "wsz-vscode-plugin.deleteAllLogMessages",
+				"title": "删除console log"
+			},
+			{
+				"command": "wsz-vscode-plugin.openWebview",
+				"title": "百度一下"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "wsz-vscode-plugin.wszfileheader",
+				"key": "shift+alt+1",
+				"mac": "shift+alt+1",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wsz-vscode-plugin.wszfilecursorTip",
+				"key": "shift+alt+2",
+				"mac": "shift+alt+2",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wsz-vscode-plugin.displayLogMessage",
+				"key": "ctrl+cmd+[",
+				"mac": "ctrl+cmd+[",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "wsz-vscode-plugin.commentAllLogMessages",
+				"key": "ctrl+alt+/",
+				"mac": "ctrl+cmd+/"
+			},
+			{
+				"command": "wsz-vscode-plugin.uncommentAllLogMessages",
+				"key": "",
+				"mac": "ctrl+alt+/"
+			},
+			{
+				"command": "wsz-vscode-plugin.deleteAllLogMessages",
+				"key": "ctrl+shift+delete",
+				"mac": "ctrl+cmd+delete"
+			}
+		],
+		"themes": [
+			{
+				"label": "Taurus Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Taurus-Dark.json"
+			}
 		]
 	},
 	"scripts": {
@@ -77,6 +352,7 @@
 		"lodash": "^4.17.15",
 		"param-case": "^2.1.1",
 		"pretty": "^2.0.0",
+		"moment": "^2.29.1",
 		"shelljs": "^0.8.3"
 	}
 }

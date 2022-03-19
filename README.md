@@ -1,7 +1,7 @@
 # web-dev-package README
 
 自用vscode 前端插件
-
+ Developer: Inspect TM Scopes
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
