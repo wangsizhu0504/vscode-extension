@@ -3,7 +3,7 @@
 	"displayName": "wsz-vscode-plugin",
 	"description": "web开发工具集合(自用)",
 	"publisher": "wangsizhu",
-	"version": "0.0.2",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
@@ -15,7 +15,7 @@
 		"Snippets",
 		"Other"
 	],
-	"icon": "logo.png",
+	"icon": "taurus.png",
 	"activationEvents": [
 		"*",
 		"onLanguage:html",
