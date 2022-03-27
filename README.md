@@ -1,4 +1,4 @@
-# web-dev-package README
+# wsz-vscode README
 
 自用vscode 前端插件, 包含自用主题，fileheader(沿用koro1FileHeader), console (turbo)插件
 

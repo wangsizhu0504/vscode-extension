@@ -14,7 +14,7 @@ const global = require('./CONST')
 
 // 将字段弄得一样长
 const sameLengthFn = (data, type = 'head') => {
-  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin')
+  const config = vscode.workspace.getConfiguration('wsz-vscode')
   let maxNum = config.configObj.functionWideNum // 函数长度
   if (type === 'head') {
     maxNum = config.configObj.wideNum // 头部长度
@@ -87,7 +87,7 @@ const getAnnotationTemplate = (madeName, config) => {
 
 // 获取语言注释的符号对象
 const getLanguageSymbol = (fileEnd) => {
-  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
+  const config = vscode.workspace.getConfiguration('wsz-vscode') // 配置项默认值
   let languageOption = {}
   // 匹配用户定义语言符号
   if (fileEnd.userLanguage) {
@@ -114,7 +114,7 @@ const getLanguageSymbol = (fileEnd) => {
  */
 function getLanguageOrFileSetting (options) {
   const { optionsName, globalSetting = '', defaultValue } = options
-  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项
+  const config = vscode.workspace.getConfiguration('wsz-vscode') // 配置项
   const editor = vscode.editor || vscode.window.activeTextEditor // 选中文件
   const languageId = editor.document.languageId
   const language = config.configObj[optionsName]

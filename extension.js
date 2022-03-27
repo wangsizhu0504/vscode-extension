@@ -22,14 +22,14 @@ const js_2 = require("./src/logout/line-code-processing");
 function registerCommand (context) {
   // 注册命令
   const wszfileheader = vscode.commands.registerCommand(
-    'wsz-vscode-plugin.wszfileheader',
+    'wsz-vscode.wszfileheader',
     () => {
       const editor = vscode.editor || vscode.window.activeTextEditor // 每次运行选中文件
       createAnnotation.headerAnnotation(editor)
     }
   )
   const wszfilecursorTip = vscode.commands.registerCommand(
-    'wsz-vscode-plugin.wszfilecursorTip',
+    'wsz-vscode.wszfilecursorTip',
     createAnnotation.functionAnnotation
   )
   context.subscriptions.push(wszfileheader)
@@ -41,14 +41,14 @@ function registerTaurusConsoleLog () {
   const jsLineCodeProcessing = new js_2.JSLineCodeProcessing();
   const jsDebugMessage = new js_1.JSDebugMessage(jsLineCodeProcessing);
   // 插入
-  vscode.commands.registerCommand("wsz-vscode-plugin.displayLogMessage", () =>{
+  vscode.commands.registerCommand("wsz-vscode.displayLogMessage", () =>{
     const editor = vscode.window.activeTextEditor;
     if (!editor) {
       return;
     }
     const tabSize = getTabSize(editor.options.tabSize);
     const document = editor.document;
-    const config = vscode.workspace.getConfiguration("wsz-vscode-plugin");
+    const config = vscode.workspace.getConfiguration("wsz-vscode");
     const properties = getExtensionProperties(config);
     for (let index = 0; index < editor.selections.length; index++) {
       const selection = editor.selections[index];
@@ -64,14 +64,14 @@ function registerTaurusConsoleLog () {
     }
   });
   // 注释所有输出
-  vscode.commands.registerCommand("wsz-vscode-plugin.commentAllLogMessages", () => {
+  vscode.commands.registerCommand("wsz-vscode.commentAllLogMessages", () => {
     const editor = vscode.window.activeTextEditor;
     if (!editor) {
       return;
     }
     const tabSize = getTabSize(editor.options.tabSize);
     const document = editor.document;
-    const config = vscode.workspace.getConfiguration("wsz-vscode-plugin");
+    const config = vscode.workspace.getConfiguration("wsz-vscode");
     const properties = getExtensionProperties(config);
     const logMessages = jsDebugMessage.detectAll(document, tabSize, properties.delimiterInsideMessage, properties.quote);
     editor.edit((editBuilder) => {
@@ -84,14 +84,14 @@ function registerTaurusConsoleLog () {
     });
   });
   // 展开所有注释
-  vscode.commands.registerCommand("wsz-vscode-plugin.uncommentAllLogMessages", () => {
+  vscode.commands.registerCommand("wsz-vscode.uncommentAllLogMessages", () => {
     const editor = vscode.window.activeTextEditor;
     if (!editor) {
       return;
     }
     const tabSize = getTabSize(editor.options.tabSize);
     const document = editor.document;
-    const config = vscode.workspace.getConfiguration("wsz-vscode-plugin");
+    const config = vscode.workspace.getConfiguration("wsz-vscode");
     const properties = getExtensionProperties(config);
     const logMessages = jsDebugMessage.detectAll(document, tabSize, properties.delimiterInsideMessage, properties.quote);
     editor.edit((editBuilder) => {
@@ -104,14 +104,14 @@ function registerTaurusConsoleLog () {
     });
   });
   // 删除所有debug输出
-  vscode.commands.registerCommand("wsz-vscode-plugin.deleteAllLogMessages", () => {
+  vscode.commands.registerCommand("wsz-vscode.deleteAllLogMessages", () => {
     const editor = vscode.window.activeTextEditor;
     if (!editor) {
       return;
     }
     const tabSize = getTabSize(editor.options.tabSize);
     const document = editor.document;
-    const config = vscode.workspace.getConfiguration("wsz-vscode-plugin");
+    const config = vscode.workspace.getConfiguration("wsz-vscode");
     const properties = getExtensionProperties(config);
     const logMessages = jsDebugMessage.detectAll(document, tabSize, properties.delimiterInsideMessage, properties.quote);
     editor.edit((editBuilder) => {
@@ -141,9 +141,9 @@ function registerElementTips(context){
 // webview打开网页
 function registerOpenInWebView(context){
   let disposable = vscode.commands.registerCommand(
-    'wsz-vscode-plugin.openWebview',
+    'wsz-vscode.openWebview',
     function() {
-      let bookmarks = vscode.workspace.getConfiguration("wsz-vscode-plugin").webview;
+      let bookmarks = vscode.workspace.getConfiguration("wsz-vscode").webview;
       vscode.window.showQuickPick(defaultMenuItems).then(selectedMenuItem => {
         switch (selectedMenuItem) {
           case 'open bookmarks':

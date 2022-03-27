@@ -1,9 +1,9 @@
 {
-	"name": "wsz-vscode-plugin",
-	"displayName": "wsz-vscode-plugin",
+	"name": "wsz-vscode",
+	"displayName": "wsz-vscode",
 	"description": "web开发工具集合(自用)",
-	"publisher": "wangsizhu",
-	"version": "1.0.1",
+	"publisher": "wangsizhu1996",
+	"version": "1.0.2",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
@@ -20,12 +20,12 @@
 		"*",
 		"onLanguage:html",
 		"onLanguage:vue",
-		"onCommand:wsz-vscode-plugin.wszfileheader",
-		"onCommand:wsz-vscode-plugin.wszfilecursorTip",
-		"onCommand:wsz-vscode-plugin.displayLogMessage",
-		"onCommand:wsz-vscode-plugin.commentAllLogMessages",
-		"onCommand:wsz-vscode-plugin.uncommentAllLogMessages",
-		"onCommand:wsz-vscode-plugin.deleteAllLogMessages"
+		"onCommand:wsz-vscode.wszfileheader",
+		"onCommand:wsz-vscode.wszfilecursorTip",
+		"onCommand:wsz-vscode.displayLogMessage",
+		"onCommand:wsz-vscode.commentAllLogMessages",
+		"onCommand:wsz-vscode.uncommentAllLogMessages",
+		"onCommand:wsz-vscode.deleteAllLogMessages"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -59,17 +59,17 @@
 			"type": "object",
 			"title": "配置文件",
 			"properties": {
-				"wsz-vscode-plugin.customMade": {
+				"wsz-vscode.customMade": {
 					"type": "object",
 					"default": {},
 					"description": "头部注释,默认设置：{'Author':'your name','Date':'Do not edit','LastEditors':'your name','LastEditTime':'Do not edit','Description':'file content'}"
 				},
-				"wsz-vscode-plugin.cursorMode": {
+				"wsz-vscode.cursorMode": {
 					"type": "object",
 					"default": {},
 					"description": "在光标处插入函数注释,默认配置:{'description':'','param':'','return':''}"
 				},
-				"wsz-vscode-plugin.configObj": {
+				"wsz-vscode.configObj": {
 					"type": "object",
 					"default": {
 						"createFileTime": true,
@@ -170,42 +170,42 @@
 					},
 					"description": "插件配置选项,readme:https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE"
 				},
-				"wsz-vscode-plugin.wrapLogMessage": {
+				"wsz-vscode.wrapLogMessage": {
 					"type": "boolean",
 					"default": false,
 					"description": "确定是否应该对日志消息进行包装."
 				},
-				"wsz-vscode-plugin.logMessagePrefix": {
+				"wsz-vscode.logMessagePrefix": {
 					"type": "string",
 					"default": "🚀",
 					"description": "日志输出前缀."
 				},
-				"wsz-vscode-plugin.includeFileNameAndLineNum": {
+				"wsz-vscode.includeFileNameAndLineNum": {
 					"type": "boolean",
 					"default": true,
 					"description": "是否包含日志消息的文件名和行号."
 				},
-				"wsz-vscode-plugin.addSemicolonInTheEnd": {
+				"wsz-vscode.addSemicolonInTheEnd": {
 					"type": "boolean",
 					"default": false,
 					"description": "是否在日志消息的末尾添加分号."
 				},
-				"wsz-vscode-plugin.insertEnclosingClass": {
+				"wsz-vscode.insertEnclosingClass": {
 					"type": "boolean",
 					"default": true,
 					"description": "是否在日志消息中插入所选变量的外围类."
 				},
-				"wsz-vscode-plugin.insertEnclosingFunction": {
+				"wsz-vscode.insertEnclosingFunction": {
 					"type": "boolean",
 					"default": true,
 					"description": "是否在日志消息中插入所选变量的封闭函数."
 				},
-				"wsz-vscode-plugin.delimiterInsideMessage": {
+				"wsz-vscode.delimiterInsideMessage": {
 					"type": "string",
 					"default": "~",
 					"description": "分隔不同日志消息元素(文件名、行号、类、函数和变量)的分隔符"
 				},
-				"wsz-vscode-plugin.quote": {
+				"wsz-vscode.quote": {
 					"type": "string",
 					"enum": [
 						"\"",
@@ -215,7 +215,7 @@
 					"default": "`",
 					"description": "双引号，单引号或反引号"
 				},
-				"wsz-vscode-plugin.webview": {
+				"wsz-vscode.webview": {
 					"type": "object",
 					"default": {
 						"Vue": "https://cn.vuejs.org/v2/guide/",
@@ -233,27 +233,27 @@
 		"menus": {
 			"editor/context": [
 				{
-					"command": "wsz-vscode-plugin.displayLogMessage",
+					"command": "wsz-vscode.displayLogMessage",
 					"when": "editorHasSelection",
 					"group": "navigation@2"
 				},
 				{
-					"command": "wsz-vscode-plugin.commentAllLogMessages",
+					"command": "wsz-vscode.commentAllLogMessages",
 					"when": "editorFocus",
 					"group": "navigation@3"
 				},
 				{
-					"command": "wsz-vscode-plugin.deleteAllLogMessages",
+					"command": "wsz-vscode.deleteAllLogMessages",
 					"when": "editorFocus",
 					"group": "navigation@4"
 				},
 				{
-					"command": "wsz-vscode-plugin.wszfileheader",
+					"command": "wsz-vscode.wszfileheader",
 					"when": "editorFocus",
 					"group": "navigation@5"
 				},
 				{
-					"command": "wsz-vscode-plugin.wszfilecursorTip",
+					"command": "wsz-vscode.wszfilecursorTip",
 					"when": "editorFocus",
 					"group": "navigation@6"
 				}
@@ -261,70 +261,70 @@
 		},
 		"commands": [
 			{
-				"command": "wsz-vscode-plugin.wszfileheader",
+				"command": "wsz-vscode.wszfileheader",
 				"title": "文件头部注释"
 			},
 			{
-				"command": "wsz-vscode-plugin.wszfilecursorTip",
+				"command": "wsz-vscode.wszfilecursorTip",
 				"title": "函数注释"
 			},
 			{
-				"command": "wsz-vscode-plugin.errPathSet",
+				"command": "wsz-vscode.errPathSet",
 				"title": "设置报错日志储存",
 				"category": "errPath"
 			},
 			{
-				"command": "wsz-vscode-plugin.displayLogMessage",
+				"command": "wsz-vscode.displayLogMessage",
 				"title": "输出 console log "
 			},
 			{
-				"command": "wsz-vscode-plugin.commentAllLogMessages",
+				"command": "wsz-vscode.commentAllLogMessages",
 				"title": "注释 console log "
 			},
 			{
-				"command": "wsz-vscode-plugin.uncommentAllLogMessages",
+				"command": "wsz-vscode.uncommentAllLogMessages",
 				"title": "解除console log注释"
 			},
 			{
-				"command": "wsz-vscode-plugin.deleteAllLogMessages",
+				"command": "wsz-vscode.deleteAllLogMessages",
 				"title": "删除console log"
 			},
 			{
-				"command": "wsz-vscode-plugin.openWebview",
+				"command": "wsz-vscode.openWebview",
 				"title": "百度一下"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "wsz-vscode-plugin.wszfileheader",
+				"command": "wsz-vscode.wszfileheader",
 				"key": "shift+alt+1",
 				"mac": "shift+alt+1",
 				"when": "editorTextFocus"
 			},
 			{
-				"command": "wsz-vscode-plugin.wszfilecursorTip",
+				"command": "wsz-vscode.wszfilecursorTip",
 				"key": "shift+alt+2",
 				"mac": "shift+alt+2",
 				"when": "editorTextFocus"
 			},
 			{
-				"command": "wsz-vscode-plugin.displayLogMessage",
+				"command": "wsz-vscode.displayLogMessage",
 				"key": "ctrl+cmd+[",
 				"mac": "ctrl+cmd+[",
 				"when": "editorTextFocus"
 			},
 			{
-				"command": "wsz-vscode-plugin.commentAllLogMessages",
+				"command": "wsz-vscode.commentAllLogMessages",
 				"key": "ctrl+alt+/",
 				"mac": "ctrl+cmd+/"
 			},
 			{
-				"command": "wsz-vscode-plugin.uncommentAllLogMessages",
+				"command": "wsz-vscode.uncommentAllLogMessages",
 				"key": "",
 				"mac": "ctrl+alt+/"
 			},
 			{
-				"command": "wsz-vscode-plugin.deleteAllLogMessages",
+				"command": "wsz-vscode.deleteAllLogMessages",
 				"key": "ctrl+shift+delete",
 				"mac": "ctrl+cmd+delete"
 			}

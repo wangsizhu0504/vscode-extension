@@ -16,7 +16,7 @@ const documents_attr = require("./documents-attr");
 const fs = require('fs');
 const path = require('path');
 const prettyHTML = require('pretty');
-exports.SCHEME = 'wsz-vscode-plugin';
+exports.SCHEME = 'wsz-vscode';
 ;
 ;
 function encodeDocsUri (query) {
@@ -195,7 +195,7 @@ class App {
   }
   // 遍历组件
   static traverse (poster, search) {
-    const config = vscode.workspace.getConfiguration('wsz-vscode-plugin');
+    const config = vscode.workspace.getConfiguration('wsz-vscode');
     let vueFiles = [];
     let cond = null;
     if (config.componentPath && Array.isArray(config.componentPath) && config.componentPath.length > 0) {
@@ -1190,7 +1190,7 @@ class ElementCompletionItemProvider {
     if (pathRegArr && pathRegArr.length > 0) {
       let tagPath = pathRegArr[0];
       tagPath = tagPath.replace(/(.*['"])/, '');
-      const config = vscode.workspace.getConfiguration('wsz-vscode-plugin');
+      const config = vscode.workspace.getConfiguration('wsz-vscode');
       tagPath = tagPath.replace(config.componentPrefix.alias, config.componentPrefix.path);
       if (!tagPath.endsWith('.vue')) {
         tagPath += '.vue';
@@ -1287,7 +1287,7 @@ class ElementCompletionItemProvider {
       this.getCloseTagSuggestion();
       return null;
     }
-    const config = vscode.workspace.getConfiguration('wsz-vscode-plugin');
+    const config = vscode.workspace.getConfiguration('wsz-vscode');
     this.size = config.get('indent-size');
     this.quotes = config.get('quotes') === 'double' ? '"' : "'";
     // 标签、属性

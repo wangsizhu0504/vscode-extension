@@ -13,7 +13,7 @@ const logicUtil = require('./logicUtil')
 const LanguageDifferent = require('../languageOutPut/languageDifferent')
 
 const createFilePath = (FilePath) => {
-  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin')
+  const config = vscode.workspace.getConfiguration('wsz-vscode')
   const { itemName, fileItemPath } = util.getFileRelativeSite()
   let res = `${path.sep}${itemName}${fileItemPath}` // 拼接项目名称和相对于项目的路径
   if (FilePath === 'no item name') {
@@ -44,7 +44,7 @@ const createFilePath = (FilePath) => {
 
 // 模拟生成中间部分
 const mockCreateMiddle = (FilePath, fileEnd) => {
-  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin')
+  const config = vscode.workspace.getConfiguration('wsz-vscode')
   FilePath = createFilePath(FilePath) // 生成FilePath
   const specialFileName = config.configObj.specialOptions.FilePath
   const name = specialFileName || 'FilePath'

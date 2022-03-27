@@ -275,7 +275,7 @@ const moveCursorDesFn = (fileEnd, config, fontTpl, lineNum) => {
  * @Created_time: 2019-06-18 14:28:13
  */
 const moveCursor = (tpl) => {
-  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
+  const config = vscode.workspace.getConfiguration('wsz-vscode') // 配置项默认值
   if (config.configObj.moveCursor) {
     const editor = vscode.editor || vscode.window.activeTextEditor // 每次运行选中文件
     const specialOptions = config.configObj.specialOptions // 时间字段重命名配置

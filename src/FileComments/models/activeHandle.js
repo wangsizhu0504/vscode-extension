@@ -39,7 +39,7 @@ class ActiveHandle {
   // 监听用户输入的错误日志地址
   errPath () {
     const errPath = vscode.commands.registerCommand(
-      'wsz-vscode-plugin.errPathSet',
+      'wsz-vscode.errPathSet',
       () => {
         vscode.window
           .showOpenDialog({
@@ -68,7 +68,7 @@ class ActiveHandle {
   // 创建文件 自动添加注释
   createFile () {
     vscode.workspace.onDidCreateFiles((file) => {
-      const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
+      const config = vscode.workspace.getConfiguration('wsz-vscode') // 配置项默认值
       if (!config.configObj.createHeader) return // 关闭
       const filePath = file.files[0].fsPath
       const openPath = vscode.Uri.file(filePath)

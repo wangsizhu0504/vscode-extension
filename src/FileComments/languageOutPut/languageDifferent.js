@@ -68,7 +68,7 @@ TplJudge.prototype = {
     this.setSymbol(obj.fileEnd)
     this.vscode = require('vscode')
     const editor = this.vscode.editor || this.vscode.window.activeTextEditor // 每次运行选中文件
-    this.config = this.vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
+    this.config = this.vscode.workspace.getConfiguration('wsz-vscode') // 配置项默认值
     this.annotationSymbol = this.config.configObj.annotationStr // 默认注释配置
     this.languageObj = this.config.configObj.language // 自定义语言项
     this.fsPath = this.fsPathEndFn(editor.document.uri.fsPath)

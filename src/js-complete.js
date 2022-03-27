@@ -16,7 +16,7 @@ class JsCompletionItemProvider {
         if (pathRegArr && pathRegArr.length > 0) {
             let tagPath = pathRegArr[0];
             tagPath = tagPath.replace(/(.*['"])/, '');
-            const config = vscode_1.workspace.getConfiguration('wsz-vscode-plugin');
+            const config = vscode_1.workspace.getConfiguration('wsz-vscode');
             tagPath = tagPath.replace(config.componentPrefix.alias, config.componentPrefix.path);
             if (!tagPath.endsWith('.vue')) {
                 tagPath += '.vue';
@@ -144,7 +144,7 @@ class JsCompletionItemProvider {
             });
             return res;
         }
-        let config = vscode_1.workspace.getConfiguration('wsz-vscode-plugin');
+        let config = vscode_1.workspace.getConfiguration('wsz-vscode');
         if (config.tips) {
             let filePath = path.resolve(vscode_1.workspace.rootPath, config.tips);
             if (fs.existsSync(filePath)) {
