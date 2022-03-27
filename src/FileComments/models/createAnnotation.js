@@ -19,7 +19,7 @@ const global = require('../utils/CONST')
 
 // 在对应文件头部添加头部注释
 function headerAnnotation (editor, option = {}) {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项默认值
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
 
   // 默认合并
   editor.edit((editBuilder) => {
@@ -57,7 +57,7 @@ function headerAnnotation (editor, option = {}) {
 // 在对应文件添加函数注释
 const functionAnnotation = () => {
   try {
-    const config = vscode.workspace.getConfiguration('fileheader') // 配置项默认值
+    const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
     const editor = vscode.editor || vscode.window.activeTextEditor // 选中文件
     const fileEnd = util.fileEndMatch(editor.document.languageId)
     const [lineSpace, line, nextLine, lineProperty] = logic.lineSpaceFn(editor, config)

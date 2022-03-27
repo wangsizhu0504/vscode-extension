@@ -50,7 +50,7 @@ const fsPathFn = (fsPath) => {
  * return: 特殊文件的后缀/文件后缀
  */
 const getFsNameEnd = (fileName) => {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项
   const language = config.configObj.language // 自定义语言项
   const fileNameArr = fileName.split('.')
   // 多个.的文件名 从多到少匹配自定义注释
@@ -73,7 +73,7 @@ const getFsNameEnd = (fileName) => {
  * 3. 无法识别的语言 默认的注释符号
  */
 const fileEndMatch = (fileEnd) => {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项
   const editor = vscode.editor || vscode.window.activeTextEditor // 选中文件
   const fsName = fsPathFn(editor.document.uri.fsPath) // 文件后缀
   //  匹配用户自定义语言
@@ -157,7 +157,7 @@ function matchProperty (matchObj, matchStr) {
 
 // 项目使用特殊库/规则，导致文件语言跟注释形式不匹配 如：变量.blade.php与test.php的注释不同
 function specialLanguageFn (fsPath, name = 'language') {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项
   const options = config.configObj[name]
   const pathArr = fsPath.split('/')
   const fileName = pathArr[pathArr.length - 1] // 取/最后一位
@@ -174,7 +174,7 @@ function specialLanguageFn (fsPath, name = 'language') {
 // 修改时间格式
 // eslint-disable-next-line no-extend-native
 Date.prototype.format = function (formatStr) {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项
   if (!formatStr) formatStr = config.configObj.dateFormat
   return moment(this).local().format(formatStr)
 }
@@ -188,7 +188,7 @@ Date.prototype.format = function (formatStr) {
  * @return {*}
  */
 const getColon = (options) => {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项
   const obj = {
     atSymbol: ['atSymbol', 'atSymbolObj'],
     colon: ['colon', 'colonObj']
@@ -271,7 +271,7 @@ const replaceSymbolStr = (tpl, fileEnd, customName = 'head') => {
  * 使用空格填充字符
  */
 const spaceStringFn = (oldStr, maxNum) => {
-  const config = vscode.workspace.getConfiguration('fileheader')
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin')
   if (!config.configObj.wideSame) return oldStr // 不改变长度
   if (maxNum === 0) return oldStr // 不改变长度
   if (typeof maxNum !== 'number') {
@@ -310,7 +310,7 @@ const getFileRelativeSite = () => {
 
 // 自动添加黑名单，自动添加白名单 权限
 const authList = (fsPath) => {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项默认值
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
   let match = false // 默认没被添加进黑名单
   let support = true // 默认允许
   const prohibit = config.configObj.prohibitAutoAdd // 黑名单

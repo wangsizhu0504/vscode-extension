@@ -252,8 +252,8 @@
     "description": "Antd select",
     "body": [
       "<a-select value='$1' onChange='$2'>",
-      "  <a-option value=\"$3\">$4</a-option>",
-      "  <a-option value=\"$5\">$6</a-option>",
+      "  <a-select-option value=\"$3\">$4</a-select-option>",
+      "  <a-select-option value=\"$5\">$6</a-select-option>",
       "</a-select>"
     ]
   },
@@ -294,36 +294,11 @@
       "</a-tooltip>"
     ]
   },
-  "Antd timeline": {
-    "prefix": "a-timeline",
-    "description": "Antd timeline",
-    "body": [
-      "<a-timeline>",
-      "  <a-timeline-item>$1</a-timeline-item>",
-      "  <a-timeline-item>$2</a-timeline-item>",
-      "</a-timeline>"
-    ]
-  },
   "Antd icon": {
     "prefix": "a-icon",
     "description": "Antd icon",
     "body": [
       "<a-icon type=\"$1\" />"
-    ]
-  },
-  "Antd popconfirm": {
-    "prefix": "a-popconfirm",
-    "description": "Antd popconfirm",
-    "body": [
-      "<a-popconfirm ",
-      "  title=\"$1\"",
-      "  onConfirm='$2'",
-      "  onCancel={$3}",
-      "  okText=\"$4\"",
-      "  cancelText=\"$5\"",
-      ">",
-      "  $6",
-      "</a-popconfirm>"
     ]
   }
 }

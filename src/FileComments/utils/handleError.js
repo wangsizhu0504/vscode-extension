@@ -13,7 +13,8 @@ const global = require('./CONST')
 const path = require('path')
 
 const showErrorMessage = (tag, e) => {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项默认值
+  console.log(e)
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
   if (!config.configObj.showErrorMessage) return // 关闭报错
   if (typeof e !== 'string') {
     e = `message: ${e.message}\nstack: ${e.stack}`
@@ -23,7 +24,7 @@ const showErrorMessage = (tag, e) => {
 }
 
 process.on('uncaughtException', function (e) {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项默认值
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
   if (!config.configObj.showErrorMessage) return // 关闭报错
   const msg = JSON.stringify(e)
   vscode.window.showErrorMessage('wszfileheader: uncaughtException崩溃', msg)
@@ -34,7 +35,7 @@ process.on('uncaughtException', function (e) {
 let content = ''
 
 function writeLog (tag, msg = '') {
-  const config = vscode.workspace.getConfiguration('fileheader') // 配置项默认值
+  const config = vscode.workspace.getConfiguration('wsz-vscode-plugin') // 配置项默认值
   if (!config.configObj.writeLog) return
   const errPath = global.context.globalState.get(global.globalStateData.errPath)
   if (global.errPath === global.initErrPath) {
@@ -50,7 +51,7 @@ function writeLog (tag, msg = '') {
     vscode.window.showErrorMessage('错误日志地址不存在', '请按快捷键ctrl+p,重新输入:>空格errPathSet')
     return
   }
-  const fileUrl = `${global.errPath}${path.sep}koroFileHeaderLog.txt`
+  const fileUrl = `${global.errPath}${path.sep}wsz-vscode-plugin.txt`
   content = `${content}\n${tag}: ${msg}`
   fs.writeFileSync(fileUrl, content, 'utf8')
 }

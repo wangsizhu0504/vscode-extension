@@ -69,7 +69,7 @@ class FunctionParams {
       languageGetParams.init(this.option.lineProperty)
       // 匹配到将param 变成数组
       if (languageGetParams.match) {
-        this.config = vscode.workspace.getConfiguration('fileheader')
+        this.config = vscode.workspace.getConfiguration('wsz-vscode-plugin')
         const maxNum = this.config.configObj.functionWideNum
         const key = util.spaceStringFn('param', maxNum)
         this.paramsData[key] = languageGetParams.res

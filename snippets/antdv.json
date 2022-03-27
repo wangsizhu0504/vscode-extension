@@ -1,7 +1,7 @@
 {
   
   "Antd table columns": {
-    "prefix": "a-columns",
+    "prefix": "antd-columns",
     "description": "Antd table columns",
     "body": [
       "const columns = [",
@@ -43,7 +43,7 @@
     ]
   },
   "Antd table rowSelection": {
-    "prefix": "a-rowSelection",
+    "prefix": "antd-rowSelection",
     "description": "Antd table rowSelection",
     "body": [
       "const rowSelection = {",
@@ -53,7 +53,7 @@
     ]
   },
   "Antd table pagination": {
-    "prefix": "a-table:pagination",
+    "prefix": "antd-table:pagination",
     "description": "Antd table pagination",
     "body": [
       "const pagination = {",
@@ -73,28 +73,28 @@
     "prefix": "baseMessage:success",
     "description": "Base success message",
     "body": [
-      "this.$baseMessage($1)"
+      "this.\\$baseMessage($1)"
     ]
   },
   "Antd base warning message": {
     "prefix": "baseMessage:warning",
     "description": "Base warning message",
     "body": [
-      "this.$baseMessage($1,'warning')"
+      "this.\\$baseMessage($1,'warning')"
     ]
   },
   "Antd base confirm": {
     "prefix": "baseConfirm",
     "description": "Base warning message",
     "body": [
-      "this.$baseConfirm({",
+      "this.\\$baseConfirm({",
       "  title: '$1',",
       "  content: '$2',",
       "  confirmLoading: this.submitLoading,",
       "  centered: true,",
       "  okText: '确认',",
       "  cancelText: '取消',",
-      " onOk: () => {",
+      "  onOk: () => {",
       "    return new Promise(async (resolve) => {",
       "      $3",
       "      resolve();",
@@ -108,7 +108,7 @@
     "prefix": "baseConfirm:icon",
     "description": "Base icon confirm",
     "body": [
-      "this.$baseConfirm({",
+      "this.\\$baseConfirm({",
       "  title: '$1',",
       "  content: '$2',",
       "  centered: true,",
@@ -136,7 +136,7 @@
     "prefix": "baseMessage:error",
     "description": "Base error message",
     "body": [
-      "this.$baseMessage($1,'error')"
+      "this.\\$baseMessage('$1','error')"
     ]
   },
   "Antd info message": {

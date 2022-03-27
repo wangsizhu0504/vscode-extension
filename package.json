@@ -246,6 +246,16 @@
 					"command": "wsz-vscode-plugin.deleteAllLogMessages",
 					"when": "editorFocus",
 					"group": "navigation@4"
+				},
+				{
+					"command": "wsz-vscode-plugin.wszfileheader",
+					"when": "editorFocus",
+					"group": "navigation@5"
+				},
+				{
+					"command": "wsz-vscode-plugin.wszfilecursorTip",
+					"when": "editorFocus",
+					"group": "navigation@6"
 				}
 			]
 		},

@@ -61,7 +61,7 @@ class FunctionTplStr {
    * @return: 函数注释的模板字符串
    */
   constructor (data, fileEnd, lineSpace, nextLine) {
-    this.config = vscode.workspace.getConfiguration('fileheader')
+    this.config = vscode.workspace.getConfiguration('wsz-vscode-plugin')
     this.fileEnd = fileEnd
     this.nextLine = nextLine
     // 加上用户设置的长度

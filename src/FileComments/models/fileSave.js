@@ -50,7 +50,7 @@ function watchSaveFn () {
   vscode.workspace.onWillSaveTextDocument((file) => {
     if (!file.document.isDirty) return // 文件没有修改 不操作
     const editor = vscode.editor || vscode.window.activeTextEditor
-    const config = vscode.workspace.getConfiguration('fileheader')
+    const config = vscode.workspace.getConfiguration('wsz-vscode-plugin')
     try {
       fileNameArr = updateFileNameArr(fileNameArr, file.document.fileName)
       const lastItem = fileNameArr[fileNameArr.length - 1]

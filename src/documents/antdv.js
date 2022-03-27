@@ -144,7 +144,7 @@ xs: '480px',sm: '576px',md: '768px',lg: '992px',xl: '1200px',xxl: '1600px',\n
 | rotate | 图标旋转角度（1.4.0 后新增,IE9 无效） | number | - | — |
 | component | 控制如何渲染图标,通常是一个渲染根标签为 <svg> 的 Vue 组件,会使 type 属性失效 | ComponentType<CustomIconComponentProps> | — | — |
 | twoToneColor | 仅适用双色图标。设置双色图标的主要颜色 | string (十六进制颜色) | - | — |\n
-## 注意：Icon 组件中图标渲染的优先级为 component > children > type, 传入 props 时,优先级高的直接生效,优先级低的则失效\n
+### 注意：Icon 组件中图标渲染的优先级为 component > children > type, 传入 props 时,优先级高的直接生效,优先级低的则失效\n
 Icon 中的 component 组件的接受的属性如下\n
 | 字段 | 说明 | 类型 |
 | :--- | :--- | :--- |
@@ -535,7 +535,8 @@ Icon 中的 component 组件的接受的属性如下\n
 | openChange | 弹出日历和关闭日历的回调 | function(status) |
 | panelChange | 日期面板变化时的回调 | function(value, mode) |
 | change | 时间发生变化的回调 | function(date: moment | string, dateString: string) |
-    | ok | 点击确定按钮的回调 | function() |`,
+| ok | 点击确定按钮的回调 | function() |
+`,
     "a-month-picker": `[月份选择器 :https://www.antdv.com/components/date-picker-cn/#API](https://www.antdv.com/components/date-picker-cn/#API) \n
 
 ## API
@@ -572,7 +573,8 @@ Icon 中的 component 组件的接受的属性如下\n
 | :--- | :--- | :--- |
 | openChange | 弹出日历和关闭日历的回调 | function(status) |
 | panelChange | 日期面板变化时的回调 | function(value, mode) |
-    | change | 时间发生变化的回调 | function(date: moment | string, dateString: string) |`,
+| change | 时间发生变化的回调 | function(date: moment or string, dateString: string) |
+`,
     "a-week-picker": `[周选择器 :https://www.antdv.com/components/date-picker-cn/#API](https://www.antdv.com/components/date-picker-cn/#API) \n
 
 ## API
@@ -608,7 +610,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | :--- | :--- | :--- |
 | openChange | 弹出日历和关闭日历的回调 | function(status) |
 | panelChange | 日期面板变化时的回调 | function(value, mode) |
-    | change | 时间发生变化的回调 | function(date: moment | string, dateString: string) |`,
+| change | 时间发生变化的回调 | function(date: moment or string, dateString: string) |`,
     "a-range-picker": `[时间范围 :https://www.antdv.com/components/date-picker-cn/#API](https://www.antdv.com/components/date-picker-cn/#API) \n
 
 ## API
@@ -738,7 +740,13 @@ Icon 中的 component 组件的接受的属性如下\n
 | validator | 自定义校验 | function(rule, value, callback) |
 | whitespace | 必选时,空格是否会被视为错误 | boolean |\n
 
-示例 ：v-decorator='['price',{initialValue: 1,rules: [{ validator: checkPrice }]}]`,
+示例 :
+'''javascript 
+
+v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
+
+'''
+`,
     "a-form-model": `[model 表单 :https://www.antdv.com/components/form-model-cn/](https://www.antdv.com/components/form-model-cn/) \n
     
 ## API
@@ -880,7 +888,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | compact | 是否用紧凑模式。 | boolean | - | false |
-| size | Input.Group 中所有的 Input 的大小 | string | large default small | default |`,
+| size | 所有 Input 的大小 | string | large default small | default |`,
     "a-input-password": `[密码框 :https://www.antdv.com/components/input-cn/#Input.Password-(1.14.0-中新增)](https://www.antdv.com/components/input-cn/#Input.Password-(1.14.0-中新增)) \n
     
 ## API
@@ -974,7 +982,7 @@ Icon 中的 component 组件的接受的属性如下\n
 
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
-    | change | 变化回调 | Function(e) |`,
+| change | 变化回调 | Function(e) |`,
     "a-rate": `[ Rate 评分 :https://www.antdv.com/components/rate-cn/](https://www.antdv.com/components/rate-cn/) \n
 
 ## API
@@ -1121,7 +1129,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | switch 状态发生变化时的回调函数 | (checked:Boolean, event: Event) |
-    | click | 点击时回调函数 | (checked: boolean, event: Event) |`,
+| click | 点击时回调函数 | (checked: boolean, event: Event) |`,
     "a-time-picker": `[时间选择器 :https://www.antdv.com/components/time-picker-cn/](https://www.antdv.com/components/time-picker-cn/) \n
 
 ## API
@@ -1482,14 +1490,14 @@ Icon 中的 component 组件的接受的属性如下\n
 
 ## API
 
-| 参数 | 说明 | 类型 | 默认值 | 版本 |
-| :--- | :--- | :--- | :--- | :--- | :-- | :-- |
-| bordered | 是否展示边框 | boolean | false |  |
-| colon | 配置 'Descriptions.Item' 的 'colon' 的默认值 | boolean | true |  |
-| column | 一行的 'DescriptionItems' 数量,可以写成像素值或支持响应式的对象写法 '{ xs: 8, sm: 16, md: 24}' | number | 3 |  |
-| layout | 描述布局 | 'horizontal | vertical' | 'horizontal' |  |
-| size | 设置列表的大小。可以设置为 'middle' 、'small', 或不填（只有设置 'bordered={true}' 生效） | 'default | middle | small' | 'default' |  |
-| title | 描述列表的标题,显示在最顶部 | string , VNode , slot | - |  |
+| 参数 | 说明 | 类型 | 默认值 |
+| :--- | :--- | :--- | :--- | 
+| bordered | 是否展示边框 | boolean | false |
+| colon | 配置 'Descriptions.Item' 的 'colon' 的默认值 | boolean | true | 
+| column | 一行的 'DescriptionItems' 数量,可以写成像素值或支持响应式的对象写法 '{ xs: 8, sm: 16, md: 24}' | number | 3 |  
+| layout | 描述布局 | 'horizontal | vertical' | 'horizontal' |  
+| size | 设置列表的大小。可以设置为 'middle' 、'small', 或不填（只有设置 'bordered={true}' 生效） | 'default , middle , small' | 'default' |  
+| title | 描述列表的标题,显示在最顶部 | string , VNode , slot | - |  
 `,
     "a-descriptions-item": `[Descriptions 描述列表 :https://www.antdv.com/components/descriptions-cn/](https://www.antdv.com/components/descriptions-cn/) \n
 | 参数         | 说明           | 类型                    | 默认值 | 版本  |
@@ -1513,22 +1521,22 @@ Icon 中的 component 组件的接受的属性如下\n
 
 ## API
 
-| 参数 | 说明 | 类型 | 默认值 | 版本 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| bordered | 是否展示边框 | boolean | false |  |
-| footer | 列表底部 | string,slot | - |  |
-| grid | 列表栅格配置 | object | - |  |
-| header | 列表头部 | string,slot | - |  |
-| itemLayout | 设置 'List.Item' 布局, 设置成 'vertical' 则竖直样式显示, 默认横排 | string | - |  |
-| loading | 当卡片内容还在加载中时,可以用 'loading' 展示一个占位 | boolean,[object](https://www.antdv.com/components/spin-cn/#API) | false |  |
-| loadMore | 加载更多 | string,slot | - |  |
-| locale | 默认文案设置,目前包括空数据文案 | object | emptyText: '暂无数据' |  |
-| pagination | 对应的 'pagination' [配置](https://www.antdv.com/components/pagination-cn/#API), 设置 'false' 不显示 | boolean,object | false |  |
-| size | list 的尺寸 | 'default' , 'middle' , 'small' | 'default' |  |
-| split | 是否展示分割线 | boolean | true |  |
-| dataSource | 列表数据源 | any[] | - | 1.5.0 |
-| renderItem | 自定义'Item'函数,也可使用 #renderItem="{item, index}" | ({item, index}) => vNode |  | - |  |
-| rowKey | 各项 key 的取值,可以是字符串或一个函数 | item => string,number |  |  |
+| 参数 | 说明 | 类型 | 默认值 | 
+| :--- | :--- | :--- | :--- | 
+| bordered | 是否展示边框 | boolean | false |  
+| footer | 列表底部 | string,slot | - |  
+| grid | 列表栅格配置 | object | - |  
+| header | 列表头部 | string,slot | - |  
+| itemLayout | 设置 'List.Item' 布局, 设置成 'vertical' 则竖直样式显示, 默认横排 | string | - |  
+| loading | 当卡片内容还在加载中时,可以用 'loading' 展示一个占位 | boolean,[object](https://www.antdv.com/components/spin-cn/#API) | false |  
+| loadMore | 加载更多 | string,slot | - |  
+| locale | 默认文案设置,目前包括空数据文案 | object | emptyText: '暂无数据' |  
+| pagination | 对应的 'pagination' [配置](https://www.antdv.com/components/pagination-cn/#API), 设置 'false' 不显示 | boolean,object | false |  
+| size | list 的尺寸 | 'default' , 'middle' , 'small' | 'default' |  
+| split | 是否展示分割线 | boolean | true |  
+| dataSource | 列表数据源 | any[] | - |
+| renderItem | 自定义'Item'函数,也可使用 #renderItem="{item, index}" | ({item, index}) => vNode | - | 
+| rowKey | 各项 key 的取值,可以是字符串或一个函数 | item => string,number |  |
 
 ### pagination 分页的配置项。
 
@@ -1555,9 +1563,9 @@ Icon 中的 component 组件的接受的属性如下\n
 ### API
 
 | 参数 | 说明 | 类型 | 默认值 |
-| :--- | :--- | :--- | :--- | :--- |
-| actions | 列表操作组,根据 'itemLayout' 的不同, 位置在卡片底部或者最右侧 | Array\<vNode>/ | slot | - |
-| extra | 额外内容, 通常用在 'itemLayout' 为 'vertical' 的情况下, 展示右侧内容; 'horizontal' 展示在列表元素最右侧 | string,slot | - |    
+| :--- | :--- | :--- | :--- |
+| actions | 列表操作组,根据 'itemLayout' 的不同, 位置在卡片底部或者最右侧 | Array\<vNode>/ | slot | 
+| extra | 额外内容, 通常用在 'itemLayout' 为 'vertical' 的情况下, 展示右侧内容; 'horizontal' 展示在列表元素最右侧 | string,slot | 
 `,
     "a-list-item-meta": `[通用列表 :https://www.antdv.com/components/list-cn/](https://www.antdv.com/components/list-cn/) \n
 | 参数        | 说明               | 类型         | 默认值 |
@@ -1793,12 +1801,12 @@ Icon 中的 component 组件的接受的属性如下\n
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | 
 | activeKey(v-model) | 当前激活 tab 面板的 key | string | 无 |
-| animated | 是否使用动画切换 Tabs,在 'tabPosition=top | bottom' 时有效 | boolean , {inkBar:boolean, tabPane:boolean} | true, 当 type="card" 时为 false |
+| animated | 是否使用动画切换 Tabs,在 'tabPosition=top , bottom' 时有效 | boolean , {inkBar:boolean, tabPane:boolean} | true, 当 type="card" 时为 false |
 | hideAdd | 是否隐藏加号图标,在 'type="editable-card"' 时有效 | boolean | false |
 | size | 大小,提供 'large' 'default' 和 'small' 三种大小 | string | 'default' |
-| tabBarStyle | tab bar 的样式对象 | object | - |  |
+| tabBarStyle | tab bar 的样式对象 | object | - | 
 | tabPosition | 页签位置,可选值有 'top' 'right' 'bottom' 'left' | string | 'top' |
 | type | 页签的基本样式,可选 'line'、'card' 'editable-card' 类型 | string | 'line' |
 | tabBarGutter | tabs 之间的间隙 | number | 无 |
@@ -1881,17 +1889,19 @@ Icon 中的 component 组件的接受的属性如下\n
 | pending | 指定最后一个幽灵节点是否存在或内容 | boolean,string,slot | false |
 | pendingDot | 当最后一个幽灵节点存在時,指定其时间图点 | string,slot | '<LoadingOutlined />' |
 | reverse | 节点排序 | boolean | false |
-| mode | 通过设置 'mode' 可以改变时间轴和内容的相对位置 | 'left' , 'alternate' , 'right' |
+| mode | 通过设置 'mode' 可以改变时间轴和内容的相对位置 | 'left' , 'alternate' , 'right' |\n
 
-    '''html
+### 示例
 
-    <a-timeline>
-        <a-timeline-item>创建服务现场 2015-09-01</a-timeline-item>
-        <a-timeline-item>初步排除网络异常 2015-09-01</a-timeline-item>
-        <a-timeline-item>技术测试异常 2015-09-01</a-timeline-item>
-        <a-timeline-item>网络异常正在修复 2015-09-01</a-timeline-item>
-    </a-timeline>
-
+    ''' html
+    <template>
+        <a-timeline>
+            <a-timeline-item>创建服务现场 2015-09-01</a-timeline-item>
+            <a-timeline-item>初步排除网络异常 2015-09-01</a-timeline-item>
+            <a-timeline-item>技术测试异常 2015-09-01</a-timeline-item>
+            <a-timeline-item>网络异常正在修复 2015-09-01</a-timeline-item>
+        </a-timeline>
+    </template>
     '''
 `,
     "a-timeline-item": `[ Timeline 时间轴 :https://www.antdv.com/components/timeline-cn/](https://www.antdv.com/components/timeline-cn/) \n
@@ -2038,37 +2048,37 @@ Icon 中的 component 组件的接受的属性如下\n
 `,
     "a-drawer": `[屏幕边缘滑出的浮层面板 :https://www.antdv.com/components/drawer-cn/](https://www.antdv.com/components/drawer-cn/) \n
 
-    ## API
-    
-    | 参数 | 说明 | 类型 | 默认值 |
-    | :--- | :--- | :--- | :--- | 
-    | closable | 是否显示右上角的关闭按钮 | boolean | true | 
-    | destroyOnClose | 关闭时销毁 Drawer 里的子元素 | boolean | false |
-    | bodyStyle | 可用于设置 Drawer 内容部分的样式 | CSSProperties | - |  
-    | getContainer | 指定 Drawer 挂载的 HTML 节点 | HTMLElement , '() => HTMLElement' , Selectors | 'body' | 
-    | maskClosable | 点击蒙层是否允许关闭 | boolean | true |
-    | mask | 是否展示遮罩 | Boolean | true | 
-    | maskStyle | 遮罩样式 | CSSProperties | {} | 
-    | title | 标题 | string , slot | - | 
-    | visible(v-model) | Drawer 是否可见 | boolean | - | 
-    | wrapClassName | 对话框外层容器的类名 | string | - | 
-    | wrapStyle | 可用于设置 Drawer 最外层容器的样式,和 drawerStyle 的区别是作用节点包括 mask | Object | - | 
-    | drawerStyle | 用于设置 Drawer 弹出层的样式 | object | - | 
-    | headerStyle | 用于设置 Drawer 头部的样式 | object | - |  
-    | bodyStyle | 可用于设置 Drawer 内容部分的样式 | object | - | 
-    | width | 宽度 | string , number | 378 | 
-    | height | 高度, 在 'placement' 为 'top' 或 'bottom' 时使用 | string , number | 378 | 
-    | zIndex | 设置 Drawer 的 'z-index' | Number | 1000 | 
-    | placement | 抽屉的方向 | 'top' , 'right' , 'bottom' , 'left' | 'right' | 
-    | handle | 设置后抽屉直接挂载到 DOM 上,你可以通过该 handle 控制抽屉打开关闭 | VNode , slot| - |
-    | keyboard | 是否支持键盘 esc 关闭 | boolean | true | 
-    | afterVisibleChange | 切换抽屉时动画结束后的回调 | function(visible) | - |  
-    
-    ## 事件
-    
-    | 名称               | 描述                                 | 类型              | 默认值 |
-    | :----------------- | :----------------------------------- | :---------------- | :----- |
-    | close              | 点击遮罩层或右上角叉或取消按钮的回调 | function(e)       | 无     |  
+## API
+
+| 参数 | 说明 | 类型 | 默认值 |
+| :--- | :--- | :--- | :--- | 
+| closable | 是否显示右上角的关闭按钮 | boolean | true | 
+| destroyOnClose | 关闭时销毁 Drawer 里的子元素 | boolean | false |
+| bodyStyle | 可用于设置 Drawer 内容部分的样式 | CSSProperties | - |  
+| getContainer | 指定 Drawer 挂载的 HTML 节点 | HTMLElement , '() => HTMLElement' , Selectors | 'body' | 
+| maskClosable | 点击蒙层是否允许关闭 | boolean | true |
+| mask | 是否展示遮罩 | Boolean | true | 
+| maskStyle | 遮罩样式 | CSSProperties | {} | 
+| title | 标题 | string , slot | - | 
+| visible(v-model) | Drawer 是否可见 | boolean | - | 
+| wrapClassName | 对话框外层容器的类名 | string | - | 
+| wrapStyle | 可用于设置 Drawer 最外层容器的样式,和 drawerStyle 的区别是作用节点包括 mask | Object | - | 
+| drawerStyle | 用于设置 Drawer 弹出层的样式 | object | - | 
+| headerStyle | 用于设置 Drawer 头部的样式 | object | - |  
+| bodyStyle | 可用于设置 Drawer 内容部分的样式 | object | - | 
+| width | 宽度 | string , number | 378 | 
+| height | 高度, 在 'placement' 为 'top' 或 'bottom' 时使用 | string , number | 378 | 
+| zIndex | 设置 Drawer 的 'z-index' | Number | 1000 | 
+| placement | 抽屉的方向 | 'top' , 'right' , 'bottom' , 'left' | 'right' | 
+| handle | 设置后抽屉直接挂载到 DOM 上,你可以通过该 handle 控制抽屉打开关闭 | VNode , slot| - |
+| keyboard | 是否支持键盘 esc 关闭 | boolean | true | 
+| afterVisibleChange | 切换抽屉时动画结束后的回调 | function(visible) | - |  
+
+## 事件
+
+| 名称               | 描述                                 | 类型              | 默认值 |
+| :----------------- | :----------------------------------- | :---------------- | :----- |
+| close              | 点击遮罩层或右上角叉或取消按钮的回调 | function(e)       | 无     |  
 `,
     "a-modal": `[模态对话框:https://www.antdv.com/components/modal-cn/](https://www.antdv.com/components/modal-cn/) \n
 ## API
@@ -2268,8 +2278,8 @@ Icon 中的 component 组件的接受的属性如下\n
 
 ### 基本使用
 
-    '''html
-    <template>
+'''html
+<template>
     <a-anchor>
         <a-anchor-link href="#components-anchor-demo-basic" title="Basic demo" />
         <a-anchor-link
@@ -2280,8 +2290,8 @@ Icon 中的 component 组件的接受的属性如下\n
         <a-anchor-link href="#API" title="API">
         </a-anchor-link>
     </a-anchor>
-    </template>
-    '''
+</template>
+'''
 
 `,
     "a-anchor-link": `[antd-design-vue :https://www.antdv.com/components/anchor-cn/](https://www.antdv.com/components/anchor-cn/) \n
@@ -2306,6 +2316,19 @@ Icon 中的 component 组件的接受的属性如下\n
 | click    | 点击按钮的回调函数 | Function |      |
     `,
     "a-config-provider": `[全局化配置 :https://www.antdv.com/components/config-provider-cn/](https://www.antdv.com/components/config-provider-cn/) \n
+
+## API
+
+| 参数 | 说明 | 类型 | 默认值 |
+| :--- | :--- | :--- | :--- | 
+| autoInsertSpaceInButton | 设置为 'false' 时,移除按钮中 2 个汉字之间的空格 | boolean | true |  
+| csp | 设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置 | { nonce: string } | - | 
+| renderEmpty | 自定义组件空状态| slot-scope , Function(componentName: string): VNode | - |  
+| getPopupContainer | 弹出框（Select, Tooltip, Menu 等等）渲染父节点,默认渲染到 body 上。 | Function(triggerNode, dialogContext) | () => document.body |  
+| locale | 语言包配置,语言包可到 [ant-design-vue/es/locale](http://unpkg.com/ant-design-vue/es/locale/) 目录下寻找 | object | - |
+| pageHeader | 统一设置 pageHeader 的 ghost,参考 [pageHeader](<(/components/page-header)>) | { ghost: boolean } | 'true' |
+| transformCellText | Table 数据渲染前可以再次改变,一般用户空数据的默认配置 | Function({ text, column, record, index }) => any | - |
+
 
 ## 使用
 
@@ -2342,17 +2365,7 @@ ConfigProvider 使用 Vue 的 [provide / inject](https://vuejs.org/v2/api/#provi
 </a-config-provider>
 '''
 
-## API
-
-| 参数 | 说明 | 类型 | 默认值 |
-| :--- | :--- | :--- | :--- | 
-| autoInsertSpaceInButton | 设置为 'false' 时,移除按钮中 2 个汉字之间的空格 | boolean | true |  
-| csp | 设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置 | { nonce: string } | - | 
-| renderEmpty | 自定义组件空状态| slot-scope , Function(componentName: string): VNode | - |  
-| getPopupContainer | 弹出框（Select, Tooltip, Menu 等等）渲染父节点,默认渲染到 body 上。 | Function(triggerNode, dialogContext) | () => document.body |  
-| locale | 语言包配置,语言包可到 [ant-design-vue/es/locale](http://unpkg.com/ant-design-vue/es/locale/) 目录下寻找 | object | - |
-| pageHeader | 统一设置 pageHeader 的 ghost,参考 [pageHeader](<(/components/page-header)>) | { ghost: boolean } | 'true' |
-| transformCellText | Table 数据渲染前可以再次改变,一般用户空数据的默认配置 | Function({ text, column, record, index }) => any | - |`,
+`,
     "a-divider": `[分割线 :https://www.antdv.com/components/divider-cn/](https://www.antdv.com/components/divider-cn/) \n
 
 ## API
