@@ -58,7 +58,7 @@ function registerTaurusConsoleLog () {
       if (selectedVar.trim().length !== 0) {
         editor.edit((editBuilder) => {
           jsDebugMessage.line(document, lineOfSelectedVar, selectedVar);
-          jsDebugMessage.msg(editBuilder, document, selectedVar, lineOfSelectedVar, properties.wrapLogMessage, properties.logMessagePrefix, properties.quote, properties.addSemicolonInTheEnd, properties.insertEnclosingClass, properties.insertEnclosingFunction, properties.delimiterInsideMessage, properties.includeFileNameAndLineNum, tabSize);
+          jsDebugMessage.msg(editBuilder, document, selectedVar, lineOfSelectedVar, properties.wrapLogMessage, properties.logMessagePrefix, properties.quote, properties.addSemicolonInTheEnd, properties.insertEnclosingClass, properties.insertEnclosingFunction, properties.delimiterInsideMessage, tabSize);
         });
       }
     }
@@ -196,7 +196,6 @@ function getExtensionProperties (workspaceConfig) {
   const insertEnclosingFunction = workspaceConfig.insertEnclosingFunction;
   const quote = workspaceConfig.quote || '"';
   const delimiterInsideMessage = workspaceConfig.delimiterInsideMessage || "~";
-  const includeFileNameAndLineNum = workspaceConfig.includeFileNameAndLineNum || false;
   const extensionProperties = {
     wrapLogMessage,
     logMessagePrefix,
@@ -205,7 +204,6 @@ function getExtensionProperties (workspaceConfig) {
     insertEnclosingFunction,
     quote,
     delimiterInsideMessage,
-    includeFileNameAndLineNum,
   };
   return extensionProperties;
 }
