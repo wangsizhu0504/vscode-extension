@@ -1,9 +1,9 @@
 {
 	"name": "wsz-vscode",
 	"displayName": "wsz-vscode",
-	"description": "web开发工具集合(自用)",
+	"description": "自己使用的vscode 插件，包含主题,代码段提示",
 	"publisher": "wangsizhu1996",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
