@@ -3,7 +3,7 @@
 	"displayName": "wsz-vscode",
 	"description": "web开发工具集合(自用)",
 	"publisher": "wangsizhu1996",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"engines": {
 		"vscode": "^1.63.0"
 	},

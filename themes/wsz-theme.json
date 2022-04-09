@@ -97,7 +97,7 @@
         "debugIcon.startForeground": "#8cf06b",
         "descriptionForeground": "#dddddd",
         "dropdown.background": "#2A2D33",
-        "dropdown.border": "#73737Faa",
+        // "dropdown.border": "#73737Faa",
         "dropdown.foreground": "#dddddd",
         "dropdown.listBackground": "#23272F",
         "diffEditor.border": "#1C1E21",
@@ -244,7 +244,7 @@
         "input.border": "#9AA2A630",
         "input.placeholderForeground": "#9AA2A660",
         "inputOption.activeBackground": "#598DEFE6",
-        "inputOption.activeBorder": "#9AA2A6",
+        // "inputOption.activeBorder": "#9AA2A6",
         "inputOption.activeForeground": "#fff",
         "inputValidation.errorBackground": "#21252B",
         "inputValidation.errorBorder": "#E51400",
@@ -392,7 +392,7 @@
         "sideBarSectionHeader.background": "#282c34",
         "sideBarSectionHeader.foreground": "#9DA5B3",
         // 状态栏 状态栏显示在工作台的底部。
-        "statusBar.background": "#5f5f5f",
+        "statusBar.background": "#216af1",
         "statusBar.foreground": "#eeebeb",
         "statusBar.border": "#1a1a1a",
         "statusBar.debuggingBackground": "#5f5f5f",
@@ -405,10 +405,10 @@
         "statusBarItem.hoverBackground": "#fafafa0c",
         "statusBarItem.prominentBackground": "#404040",
         "statusBarItem.prominentHoverBackground": "#598DEF66",
-        "statusBarItem.remoteBackground": "#00000000",
         "statusBarItem.errorBackground": "#232323",
-        "statusBarItem.errorForeground": "#ff5976",
-        "statusBarItem.remoteForeground": "#8cf06b",
+        "statusBarItem.errorForeground": "#f7052d",
+        "statusBarItem.remoteForeground": "#fff",
+        "statusBarItem.remoteBackground": "#404040",
         // 符号变量 出现在大纲视图、面包屑导航和建议小部件中的符号图标的主题颜色
         "symbolIcon.arrayForeground": "#B0B7C3", //颜色同变量
         "symbolIcon.booleanForeground": "#ff5976",
@@ -470,20 +470,20 @@
         // 终端
         "terminal.ansiBlack": "#2A2D33",
         "terminal.ansiRed": "#fc6a67",
-        "terminal.ansiGreen": "#a9dc76",
+        "terminal.ansiGreen": "#60eb6a",
         "terminal.ansiYellow": "#ffd866",
         "terminal.ansiBlue": "#78dce8",
         "terminal.ansiMagenta": "#e991e3",
         "terminal.ansiCyan": "#78e8c6",
-        "terminal.ansiWhite": "#dddddd",
+        "terminal.ansiWhite": "#f5f5f5",
         "terminal.ansiBrightBlack": "#78dce8",
         "terminal.ansiBrightRed": "#fc6a67",
-        "terminal.ansiBrightGreen": "#a9dc76",
+        "terminal.ansiBrightGreen": "#79c82a",
         "terminal.ansiBrightYellow": "#ffd866",
         "terminal.ansiBrightBlue": "#78dce8",
         "terminal.ansiBrightMagenta": "#e991e3",
         "terminal.ansiBrightCyan": "#78e8c6",
-        "terminal.ansiBrightWhite": "#dddddd",
+        "terminal.ansiBrightWhite": "#f5f5f5",
         "terminal.background": "#2A2D33",
         "terminal.foreground": "#dddddd",
         "terminalCursor.background": "#ffd866",
@@ -538,7 +538,7 @@
             ],
             "settings": {
                 "foreground": "#fc9867",
-                "fontStyle": "italic bold"
+                "fontStyle": "italic"
             }
         },
         {
@@ -624,7 +624,7 @@
             ],
             "settings": {
                 "foreground": "#78dce8",
-                "fontStyle": "bold"
+                // "fontStyle": "bold"
             }
         },
         {
@@ -937,8 +937,8 @@
                 "entity.name.tag.style.html"
             ],
             "settings": {
-                "foreground": "#04cab0",
-                "fontStyle": "bold italic"
+                "foreground": "#35bdab",
+                "fontStyle": "italic"
             }
         },
         {
@@ -989,7 +989,7 @@
             ],
             "settings": {
                 "foreground": "#e3e3e3",
-                "fontStyle": "bold"
+                // "fontStyle": "bold"
             }
         },
         {
@@ -1072,7 +1072,7 @@
             ],
             "settings": {
                 "foreground": "#78dce8",
-                "fontStyle": "bold"
+                // "fontStyle": "bold"
             }
         },
         {
