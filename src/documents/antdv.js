@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
-    "a-row": `[antd-design-vue (栅格化系统)：https://www.antdv.com/components/grid-cn/#components-grid-demo-basic-grid](https://www.antdv.com/components/grid-cn/#components-grid-demo-basic-grid) \n
+    "a-row": `[antd-design-vue (栅格化系统)：https://www.antdv.com/components/grid-cn/#components-grid-demo-basic-grid](https://1x.antdv.com/components/grid-cn/#components-grid-demo-basic-grid) \n
 
 ## API
 
@@ -11,7 +11,7 @@ exports.default = {
 | gutter | 栅格间隔,可以写成像素值或支持响应式的对象写法来设置水平间隔 { xs: 8, sm: 16, md: 24}。或者使用数组形式同时设置 [水平间距, 垂直间距]（1.5.0 后支持）。 | number/object/array | — | 0 |
 | justify | flex 布局下的水平排列方式： | string | start end center space-around space-between | start |
 | type | 布局模式,可选 flex,现代浏览器 下有效 | string | flex | - |`,
-    "a-col": `[antd-design-vue (栅格化系统)：https://www.antdv.com/components/grid-cn/#components-grid-demo-more-responsive](https://www.antdv.com/components/grid-cn/#components-grid-demo-more-responsive) \n
+    "a-col": `[antd-design-vue (栅格化系统)：https://www.antdv.com/components/grid-cn/#components-grid-demo-more-responsive](https://1x.antdv.com/components/grid-cn/#components-grid-demo-more-responsive) \n
 
 ## API
 
@@ -33,7 +33,7 @@ exports.default = {
 IE9 响应式不工作怎么办？\n
 可以引入 [matchMedia polyfill](https://github.com/paulirish/matchMedia.js/) 添加支持。
 `,
-    "a-layout": `[antd-design-vue (Layout 布局) :https://www.antdv.com/components/layout-cn/#components-layout-demo-basic-structure](https://www.antdv.com/components/layout-cn/#components-layout-demo-basic-structure) \n
+    "a-layout": `[antd-design-vue (Layout 布局) :https://1x.antdv.com/components/layout-cn/#components-layout-demo-basic-structure](https://1x.antdv.com/components/layout-cn/#components-layout-demo-basic-structure) \n
 
 ## API
 
@@ -42,7 +42,7 @@ IE9 响应式不工作怎么办？\n
 | class | 容器 class | string | - | - |
 | style | 指定样式 | object	 | - | - |
 | hasSider | 表示子元素里有 Sider,一般不用指定。可用于服务端渲染时避免样式闪动 | boolean | - | - |`,
-    "a-sider": `[antd-design-vue (Layout 布局)  :https://www.antdv.com/components/layout-cn/#Layout.Sider](https://www.antdv.com/components/layout-cn/#Layout.Sider) \n
+    "a-sider": `[antd-design-vue (Layout 布局)  :https://1x.antdv.com/components/layout-cn/#Layout.Sider](https://1x.antdv.com/components/layout-cn/#Layout.Sider) \n
 
 ## API
 
@@ -70,7 +70,7 @@ IE9 响应式不工作怎么办？\n
 ### breakpoint width\n
 xs: '480px',sm: '576px',md: '768px',lg: '992px',xl: '1200px',xxl: '1600px',\n
     `,
-    "a-layout-header": `[antd-design-vue :https://www.antdv.com/components/layout-cn/#Layout](https://www.antdv.com/components/layout-cn/#Layout) \n
+    "a-layout-header": `[antd-design-vue :https://1x.antdv.com/components/layout-cn/#Layout](https://1x.antdv.com/components/layout-cn/#Layout) \n
     
 ## API
 
@@ -79,7 +79,7 @@ xs: '480px',sm: '576px',md: '768px',lg: '992px',xl: '1200px',xxl: '1600px',\n
 | class | 容器 class | string | - | - |
 | style | 指定样式 | object	 | - | - |
 | hasSider | 表示子元素里有 Sider,一般不用指定。可用于服务端渲染时避免样式闪动 | boolean | - | - |`,
-    "a-layout-content": `[antd-design-vue :https://www.antdv.com/components/layout-cn/#Layout](https://www.antdv.com/components/layout-cn/#Layout) \n
+    "a-layout-content": `[antd-design-vue :https://1x.antdv.com/components/layout-cn/#Layout](https://1x.antdv.com/components/layout-cn/#Layout) \n
      
 ## API
 
@@ -88,7 +88,7 @@ xs: '480px',sm: '576px',md: '768px',lg: '992px',xl: '1200px',xxl: '1600px',\n
 | class | 容器 class | string | - | - |
 | style | 指定样式 | object	 | - | - |
 | hasSider | 表示子元素里有 Sider,一般不用指定。可用于服务端渲染时避免样式闪动 | boolean | - | - |`,
-    "a-layout-footer": `[antd-design-vue :https://www.antdv.com/components/layout-cn/#Layout](https://www.antdv.com/components/layout-cn/#Layout) \n
+    "a-layout-footer": `[antd-design-vue :https://1x.antdv.com/components/layout-cn/#Layout](https://1x.antdv.com/components/layout-cn/#Layout) \n
      
 ## API
 
@@ -97,7 +97,7 @@ xs: '480px',sm: '576px',md: '768px',lg: '992px',xl: '1200px',xxl: '1600px',\n
 | class | 容器 class | string | - | - |
 | style | 指定样式 | object	 | - | - |
 | hasSider | 表示子元素里有 Sider,一般不用指定。可用于服务端渲染时避免样式闪动 | boolean | - | - |`,
-    "a-space": `[Space 间距 :https://www.antdv.com/components/space-cn/#components-space-demo-basic-usage](https://www.antdv.com/components/space-cn/#components-space-demo-basic-usage) \n
+    "a-space": `[Space 间距 :https://1x.antdv.com/components/space-cn/#components-space-demo-basic-usage](https://1x.antdv.com/components/space-cn/#components-space-demo-basic-usage) \n
 
 ## API
 
@@ -106,7 +106,7 @@ xs: '480px',sm: '576px',md: '768px',lg: '992px',xl: '1200px',xxl: '1600px',\n
 | align | 对齐方式	 | string | start , end , center , baseline | - |
 | direction | 间距方向 | string ｜ vertical , horizontal | horizontal |
 | size | 间距大小	 | string | small , middle , large , number , small |`,
-    "a-button": `[按钮 :https://www.antdv.com/components/button-cn/](https://www.antdv.com/components/button-cn/) \n
+    "a-button": `[按钮 :https://1x.antdv.com/components/button-cn/](https://1x.antdv.com/components/button-cn/) \n
     
 ## API
 
@@ -131,7 +131,7 @@ xs: '480px',sm: '576px',md: '768px',lg: '992px',xl: '1200px',xxl: '1600px',\n
 如何移除 2 个汉字之间的空格 \n
 设置 ConfigProvider 的 autoInsertSpaceInButton 为 false。
 `,
-    "a-icon": `[图标 :https://www.antdv.com/components/icon-cn/](https://www.antdv.com/components/icon-cn/) \n
+    "a-icon": `[图标 :https://1x.antdv.com/components/icon-cn/](https://1x.antdv.com/components/icon-cn/) \n
 
 ## API
 
@@ -153,7 +153,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | class | 计算后的 svg 类名 | string  | 
 | style | 计算后的 svg 元素样式 | CSSProperties | 
 | fill | svg 元素填充的颜色 | string |`,
-    "a-affix": `[Affix 固钉:https://www.antdv.com/components/affix-cn/#components-affix-demo-basic](https://www.antdv.com/components/affix-cn/#components-affix-demo-basic) \n
+    "a-affix": `[Affix 固钉:https://1x.antdv.com/components/affix-cn/#components-affix-demo-basic](https://1x.antdv.com/components/affix-cn/#components-affix-demo-basic) \n
 
 ## API
 
@@ -170,7 +170,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | change | 固定状态改变时触发的回调函数 | Function(affixed) |\n
 ### 注意：Affix 内的元素不要使用绝对定位,如需要绝对定位的效果,可以直接设置 Affix 为绝对定位：\n
 <a-affix :style="{ position: 'absolute', top: y, left: x}"></a-affix>`,
-    "a-breadcrumb": `[Breadcrumb 面包屑 :https://www.antdv.com/components/breadcrumb-cn/](https://www.antdv.com/components/breadcrumb-cn/) \n
+    "a-breadcrumb": `[Breadcrumb 面包屑 :https://1x.antdv.com/components/breadcrumb-cn/](https://1x.antdv.com/components/breadcrumb-cn/) \n
 
 ## API
 
@@ -193,7 +193,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | click | 单击事件 | (e:MouseEvent)=>void |`,
-    "a-dropdown": `[Dropdown 下拉菜单 :https://www.antdv.com/components/dropdown-cn/](https://www.antdv.com/components/dropdown-cn/) \n
+    "a-dropdown": `[Dropdown 下拉菜单 :https://1x.antdv.com/components/dropdown-cn/](https://1x.antdv.com/components/dropdown-cn/) \n
 
 ## API
 
@@ -214,7 +214,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | visibleChange | 菜单显示状态改变时调用,参数为 visible | function(visible) |`,
-    "a-dropdown-button": `[Dropdown 下拉菜单 :https://www.antdv.com/components/dropdown-cn/#components-dropdown-demo-button-with-dropdown-menu](https://www.antdv.com/components/dropdown-cn/#components-dropdown-demo-button-with-dropdown-menu) \n
+    "a-dropdown-button": `[Dropdown 下拉菜单 :https://1x.antdv.com/components/dropdown-cn/#components-dropdown-demo-button-with-dropdown-menu](https://1x.antdv.com/components/dropdown-cn/#components-dropdown-demo-button-with-dropdown-menu) \n
 
 ## API
 
@@ -235,7 +235,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | :--- | :--- | :--- |
 | click | 点击左侧按钮的回调,和 Button 一致 | Function |
 | visibleChange | 菜单显示状态改变时调用,参数为 visible | function(visible) |`,
-    "a-menu": `[菜单 :https://www.antdv.com/components/menu-cn/](https://www.antdv.com/components/menu-cn/) \n
+    "a-menu": `[菜单 :https://1x.antdv.com/components/menu-cn/](https://1x.antdv.com/components/menu-cn/) \n
     
 ## API
 
@@ -263,7 +263,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | openChange | SubMenu 展开/关闭的回调             | function(openKeys: stringArray)         |
 | select     | 被选中时调用                        | function({ item, key, selectedKeys }) |
 `,
-    "a-menu-item": `[ 菜单项 :https://www.antdv.com/components/menu-cn/#Menu.Item](https://www.antdv.com/components/menu-cn/#Menu.Item) \n
+    "a-menu-item": `[ 菜单项 :https://1x.antdv.com/components/menu-cn/#Menu.Item](https://1x.antdv.com/components/menu-cn/#Menu.Item) \n
     
 ## API
 
@@ -272,7 +272,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | disabled | 是否禁用 | boolean | — | false |
 | key | item 的唯一标志 | string | — | - |
 | title | 设置收缩时展示的悬浮标题 | string | - | - |`,
-    "a-sub-menu": `[ 菜单项 :https://www.antdv.com/components/menu-cn/#Menu.SubMenu](https://www.antdv.com/components/menu-cn/#Menu.SubMenu) \n
+    "a-sub-menu": `[ 菜单项 :https://1x.antdv.com/components/menu-cn/#Menu.SubMenu](https://1x.antdv.com/components/menu-cn/#Menu.SubMenu) \n
 
 ## API
 
@@ -287,7 +287,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | titleClick | 点击子菜单标题 | ({ key, domEvent }) |`,
-    "a-menu-item-group": `[Menu.ItemGroup :https://www.antdv.com/components/menu-cn/#Menu.ItemGroup](https://www.antdv.com/components/menu-cn/#Menu.ItemGroup) \n
+    "a-menu-item-group": `[Menu.ItemGroup :https://1x.antdv.com/components/menu-cn/#Menu.ItemGroup](https://1x.antdv.com/components/menu-cn/#Menu.ItemGroup) \n
 ## API
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -298,7 +298,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | titleClick | 点击子菜单标题 | ({ key, domEvent }) |`,
-    "a-page-header": `[PageHeader 页头 :https://www.antdv.com/components/page-header-cn/](https://www.antdv.com/components/page-header-cn/) \n
+    "a-page-header": `[PageHeader 页头 :https://1x.antdv.com/components/page-header-cn/](https://1x.antdv.com/components/page-header-cn/) \n
     
 ## API
 
@@ -319,7 +319,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | back | 返回按钮的点击事件 | function(e) |`,
-    "a-pagination": `[分页 :https://www.antdv.com/components/pagination-cn/](https://www.antdv.com/components/pagination-cn/) \n
+    "a-pagination": `[分页 :https://1x.antdv.com/components/pagination-cn/](https://1x.antdv.com/components/pagination-cn/) \n
 
 ## API
 
@@ -347,7 +347,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | :--- | :--- | :--- |
 | change | 页码改变的回调,参数是改变后的页码及每页条数 | Function(page, pageSize) |
 | showSizeChange | pageSize 变化的回调 | Function(current, size) |`,
-    "a-steps": `[Steps 步骤条 :https://www.antdv.com/components/steps-cn/](https://www.antdv.com/components/steps-cn/) \n
+    "a-steps": `[Steps 步骤条 :https://1x.antdv.com/components/steps-cn/](https://1x.antdv.com/components/steps-cn/) \n
 
 ## API
 
@@ -367,7 +367,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 点击切换步骤时触发 | (current) => void |`,
-    "a-step": `[Steps.Step :https://www.antdv.com/components/steps-cn/#Steps.Step](https://www.antdv.com/components/steps-cn/#Steps.Step) \n
+    "a-step": `[Steps.Step :https://1x.antdv.com/components/steps-cn/#Steps.Step](https://1x.antdv.com/components/steps-cn/#Steps.Step) \n
 
 ## API
 
@@ -379,7 +379,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | title | 标题 | string ,slot | — | - |
 | subTitle | 子标题 | string ,slot | — | - |
 | disabled | 禁用点击 | boolean | — | false |`,
-    "a-auto-complete": `[antd-design-vue :https://www.antdv.com/components/auto-complete-cn/](https://www.antdv.com/components/auto-complete-cn/) \n
+    "a-auto-complete": `[antd-design-vue :https://1x.antdv.com/components/auto-complete-cn/](https://1x.antdv.com/components/auto-complete-cn/) \n
     
 ## API
 
@@ -411,7 +411,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | search | 搜索补全项的时候调用 | function(value) |
 | select | 被选中时调用,参数为选中项的 value 值 | function(value, option) |
 | dropdownVisibleChange | 展开下拉菜单的回调 | function(open) |\n`,
-    "a-cascader": `[级联选择 :https://www.antdv.com/components/cascader-cn/](https://www.antdv.com/components/cascader-cn/) \n
+    "a-cascader": `[级联选择 :https://1x.antdv.com/components/cascader-cn/](https://1x.antdv.com/components/cascader-cn/) \n
 
 ## API
 
@@ -460,7 +460,7 @@ Icon 中的 component 组件的接受的属性如下\n
 
 ### 注意,如果需要获得中国省市区数据,可以参考 react 组件的实现[china-division](https://gist.github.com/afc163/7582f35654fd03d5be7009444345ea17)
 `,
-    "a-checkbox": `[Checkbox 多选框 :https://www.antdv.com/components/checkbox-cn/](https://www.antdv.com/components/checkbox-cn/) \n
+    "a-checkbox": `[Checkbox 多选框 :https://1x.antdv.com/components/checkbox-cn/](https://1x.antdv.com/components/checkbox-cn/) \n
 
 ## API
 
@@ -477,7 +477,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 变化时回调函数 | Function(e:Event) |\n`,
-    "a-checkbox-group": `[Checkbox 多选框组 :https://www.antdv.com/components/checkbox-cn/](https://www.antdv.com/components/checkbox-cn/) \n
+    "a-checkbox-group": `[Checkbox 多选框组 :https://1x.antdv.com/components/checkbox-cn/](https://1x.antdv.com/components/checkbox-cn/) \n
 
 ## API
 
@@ -495,7 +495,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | :--- | :--- | :--- |
 | change | 变化时回调函数 | Function(checkedValue) |\n`,
 
-    "a-date-picker": `[时间选择器 :https://www.antdv.com/components/date-picker-cn/#API](https://www.antdv.com/components/date-picker-cn/#API) \n
+    "a-date-picker": `[时间选择器 :https://1x.antdv.com/components/date-picker-cn/#API](https://1x.antdv.com/components/date-picker-cn/#API) \n
 
 ## API
 
@@ -537,7 +537,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | change | 时间发生变化的回调 | function(date: moment | string, dateString: string) |
 | ok | 点击确定按钮的回调 | function() |
 `,
-    "a-month-picker": `[月份选择器 :https://www.antdv.com/components/date-picker-cn/#API](https://www.antdv.com/components/date-picker-cn/#API) \n
+    "a-month-picker": `[月份选择器 :https://1x.antdv.com/components/date-picker-cn/#API](https://1x.antdv.com/components/date-picker-cn/#API) \n
 
 ## API
 
@@ -575,7 +575,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | panelChange | 日期面板变化时的回调 | function(value, mode) |
 | change | 时间发生变化的回调 | function(date: moment or string, dateString: string) |
 `,
-    "a-week-picker": `[周选择器 :https://www.antdv.com/components/date-picker-cn/#API](https://www.antdv.com/components/date-picker-cn/#API) \n
+    "a-week-picker": `[周选择器 :https://1x.antdv.com/components/date-picker-cn/#API](https://1x.antdv.com/components/date-picker-cn/#API) \n
 
 ## API
 
@@ -611,7 +611,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | openChange | 弹出日历和关闭日历的回调 | function(status) |
 | panelChange | 日期面板变化时的回调 | function(value, mode) |
 | change | 时间发生变化的回调 | function(date: moment or string, dateString: string) |`,
-    "a-range-picker": `[时间范围 :https://www.antdv.com/components/date-picker-cn/#API](https://www.antdv.com/components/date-picker-cn/#API) \n
+    "a-range-picker": `[时间范围 :https://1x.antdv.com/components/date-picker-cn/#API](https://1x.antdv.com/components/date-picker-cn/#API) \n
 
 ## API
 
@@ -655,7 +655,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | ok | 点击确定按钮的回调 | (dates: [moment, moment]   [string, string]) |
 | calendarChange | 待选日期发生变化的回调 | (dates: [moment, moment]   [string, string], dateStrings: [string, string]) |`,
 
-    "a-form": `[ 表单 :https://www.antdv.com/components/form-cn/](https://www.antdv.com/components/form-cn/) \n
+    "a-form": `[ 表单 :https://1x.antdv.com/components/form-cn/](https://1x.antdv.com/components/form-cn/) \n
 
 ## API
 
@@ -705,7 +705,7 @@ Icon 中的 component 组件的接受的属性如下\n
 | :--- | :--- | :--- |
 | submit | 数据验证成功后回调事件 | Function(e:Event) |`,
 
-    "a-form-item": `[ 表单项 :https://www.antdv.com/components/form-cn/#Form.Item](https://www.antdv.com/components/form-cn/#Form.Item) \n
+    "a-form-item": `[ 表单项 :https://1x.antdv.com/components/form-cn/#Form.Item](https://1x.antdv.com/components/form-cn/#Form.Item) \n
 
 ## API
 
@@ -747,7 +747,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 
 '''
 `,
-    "a-form-model": `[model 表单 :https://www.antdv.com/components/form-model-cn/](https://www.antdv.com/components/form-model-cn/) \n
+    "a-form-model": `[model 表单 :https://1x.antdv.com/components/form-model-cn/](https://1x.antdv.com/components/form-model-cn/) \n
     
 ## API
 
@@ -790,7 +790,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | submit | 数据验证成功后回调事件 | (e:Event) |
 | validate | 任一表单项被校验后触发 | 被校验的表单项 prop 值,校验是否通过,错误消息（如果存在） |`,
 
-    "a-form-model-item": `[model 表单项 :https://www.antdv.com/components/form-cn/#Form.Item](https://www.antdv.com/components/form-cn/#Form.Item) \n
+    "a-form-model-item": `[model 表单项 :https://1x.antdv.com/components/form-cn/#Form.Item](https://1x.antdv.com/components/form-cn/#Form.Item) \n
 
 ## API
 
@@ -826,7 +826,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | type | 内建校验类型 | string |
 | validator | 自定义校验 | function(rule, value, callback) |
 | whitespace | 必选时,空格是否会被视为错误 | boolean |`,
-    "a-input": `[ 输入框 :https://www.antdv.com/components/input-cn/](https://www.antdv.com/components/input-cn/) \n
+    "a-input": `[ 输入框 :https://1x.antdv.com/components/input-cn/](https://1x.antdv.com/components/input-cn/) \n
 
 ## API
 
@@ -851,7 +851,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :--- | :--- | :--- |
 | change | 输入框内容变化时的回调 | function(e) |
 | pressEnter | 按下回车的回调 | function(e) |`,
-    "a-textarea": `[ 输入域 :https://www.antdv.com/components/input-cn/#Input.TextArea](https://www.antdv.com/components/input-cn/#Input.TextArea) \n
+    "a-textarea": `[ 输入域 :https://1x.antdv.com/components/input-cn/#Input.TextArea](https://1x.antdv.com/components/input-cn/#Input.TextArea) \n
     
 ## API
 
@@ -867,7 +867,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | pressEnter | 按下回车的回调 | function(e) |`,
-    "a-input-search": `[Input 搜索输入框  :https://www.antdv.com/components/input-cn/#Input.Search](https://www.antdv.com/components/input-cn/#Input.Search) \n
+    "a-input-search": `[Input 搜索输入框  :https://1x.antdv.com/components/input-cn/#Input.Search](https://1x.antdv.com/components/input-cn/#Input.Search) \n
     
 ## API
 
@@ -881,7 +881,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | search | 点击搜索或按下回车键时的回调 | function(value, event) |`,
-    "a-input-group": `[输入组 :https://www.antdv.com/components/input-cn/#Input.Group](https://www.antdv.com/components/input-cn/#Input.Group) \n
+    "a-input-group": `[输入组 :https://1x.antdv.com/components/input-cn/#Input.Group](https://1x.antdv.com/components/input-cn/#Input.Group) \n
 
 ## API
 
@@ -889,7 +889,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :--- | :--- | :--- | :--- | :--- |
 | compact | 是否用紧凑模式。 | boolean | - | false |
 | size | 所有 Input 的大小 | string | large default small | default |`,
-    "a-input-password": `[密码框 :https://www.antdv.com/components/input-cn/#Input.Password-(1.14.0-中新增)](https://www.antdv.com/components/input-cn/#Input.Password-(1.14.0-中新增)) \n
+    "a-input-password": `[密码框 :https://1x.antdv.com/components/input-cn/#Input.Password-(1.14.0-中新增)](https://1x.antdv.com/components/input-cn/#Input.Password-(1.14.0-中新增)) \n
     
 ## API
 
@@ -897,7 +897,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :--- | :--- | :--- | :--- | :--- |
 | visibilityToggle | 是否显示切换按钮 | boolean | - | true |\n
 `,
-    "a-input-number": `[数字输入框 :https://www.antdv.com/components/input-number-cn/](https://www.antdv.com/components/input-number-cn/) \n
+    "a-input-number": `[数字输入框 :https://1x.antdv.com/components/input-number-cn/](https://1x.antdv.com/components/input-number-cn/) \n
 
 ## API
 
@@ -922,7 +922,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :--- | :--- | :--- |
 | change | 变化回调 | (value: number , string) |
 | pressEnter | 按下回车的回调 | (e) |`,
-    "a-mentions": `[ Mentions 提及 :https://www.antdv.com/components/mentions-cn/](https://www.antdv.com/components/mentions-cn/) \n
+    "a-mentions": `[ Mentions 提及 :https://1x.antdv.com/components/mentions-cn/](https://1x.antdv.com/components/mentions-cn/) \n
 
 ## API
 
@@ -948,14 +948,14 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | focus | 获得焦点时回调 | function |
 | search | 文本框值变化时回调 | function(value: string, prefix: string) |
 | select | 选择选项时触发 | function(option: OptionProps, prefix: string) |`,
-    "a-mentions-option": `[ 提及选项 :https://www.antdv.com/components/mentions-cn/#API](https://www.antdv.com/components/mentions-cn/#API) \n
+    "a-mentions-option": `[ 提及选项 :https://1x.antdv.com/components/mentions-cn/#API](https://1x.antdv.com/components/mentions-cn/#API) \n
 
 ## API
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | value | 选择时填充的值。 | string | - | - |`,
-    "a-radio": `[Radio 单选框 :https://www.antdv.com/components/radio-cn/](https://www.antdv.com/components/radio-cn/) \n
+    "a-radio": `[Radio 单选框 :https://1x.antdv.com/components/radio-cn/](https://1x.antdv.com/components/radio-cn/) \n
 
 ## API
 
@@ -965,7 +965,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | checked | 指定当前是否选中 | boolean | - | false |
 | defaultChecked | 初始是否选中 | boolean | - | false |
 | value | 根据 value 进行比较,判断是否选中 | string | - | - |`,
-    "a-radio-group": `[Radio 单选框组 :https://www.antdv.com/components/radio-cn/](https://www.antdv.com/components/radio-cn/) \n
+    "a-radio-group": `[Radio 单选框组 :https://1x.antdv.com/components/radio-cn/](https://1x.antdv.com/components/radio-cn/) \n
 
 ## API
 
@@ -983,7 +983,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | 事件名称 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | change | 变化回调 | Function(e) |`,
-    "a-rate": `[ Rate 评分 :https://www.antdv.com/components/rate-cn/](https://www.antdv.com/components/rate-cn/) \n
+    "a-rate": `[ Rate 评分 :https://1x.antdv.com/components/rate-cn/](https://1x.antdv.com/components/rate-cn/) \n
 
 ## API
 
@@ -1008,7 +1008,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | focus | 获取焦点时的回调 | Function() |
 | hoverChange | 鼠标经过时数值变化的回调 | Function(value: number) |
 | keydown | 按键回调 | Function(event) |`,
-    "a-select": `[Select 选择器 :https://www.antdv.com/components/select-cn/](https://www.antdv.com/components/select-cn/) \n
+    "a-select": `[Select 选择器 :https://1x.antdv.com/components/select-cn/](https://1x.antdv.com/components/select-cn/) \n
 
 ## API
 
@@ -1067,7 +1067,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | search | 文本框值变化时回调 | function(value: string) |
 | select | 被选中时调用,参数为选中项的 value (或 key)值  | function(value, option:Option) |
 | dropdownVisibleChange | 展开下拉菜单的回调 | function(open) |\n`,
-    "a-select-option": `[Select 选择器 :https://www.antdv.com/components/select-cn/](https://www.antdv.com/components/select-cn/) \n
+    "a-select-option": `[Select 选择器 :https://1x.antdv.com/components/select-cn/](https://1x.antdv.com/components/select-cn/) \n
 
 ## API
 
@@ -1078,7 +1078,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | title | 选中该 Option 后,Select 的 title | string | - |
 | value | 默认根据此属性值进行筛选 | string/number | - |
 | class | Option 器类名 | string | - |`,
-    "a-slider": `[Slider 滑动输入条 :https://www.antdv.com/components/slider-cn/](https://www.antdv.com/components/slider-cn/) \n
+    "a-slider": `[Slider 滑动输入条 :https://1x.antdv.com/components/slider-cn/](https://1x.antdv.com/components/slider-cn/) \n
 
 ## API
 
@@ -1109,7 +1109,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | afterChange | 与 mouseup 触发时机一致,把当前值作为参数传入。 | Function(value) |
 | change | 当 Slider 的值发生改变时,会触发 change 事件,并把改变后的值作为参数传入 | Function(value) |`,
 
-    "a-switch": `[Switch 开关 :https://www.antdv.com/components/switch-cn/](https://www.antdv.com/components/switch-cn/) \n
+    "a-switch": `[Switch 开关 :https://1x.antdv.com/components/switch-cn/](https://1x.antdv.com/components/switch-cn/) \n
     
 ## API
 
@@ -1130,7 +1130,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :--- | :--- | :--- |
 | change | switch 状态发生变化时的回调函数 | (checked:Boolean, event: Event) |
 | click | 点击时回调函数 | (checked: boolean, event: Event) |`,
-    "a-time-picker": `[时间选择器 :https://www.antdv.com/components/time-picker-cn/](https://www.antdv.com/components/time-picker-cn/) \n
+    "a-time-picker": `[时间选择器 :https://1x.antdv.com/components/time-picker-cn/](https://1x.antdv.com/components/time-picker-cn/) \n
 
 ## API
 
@@ -1170,7 +1170,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | change | 时间发生变化的回调 | function(time: moment | string, timeString: string) |
 | openChange | 面板打开/关闭时的回调 | (open: boolean): void |`,
 
-    "a-transfer": `[Transfer 穿梭框 :https://www.antdv.com/components/transfer-cn/](https://www.antdv.com/components/transfer-cn/) \n
+    "a-transfer": `[Transfer 穿梭框 :https://1x.antdv.com/components/transfer-cn/](https://1x.antdv.com/components/transfer-cn/) \n
     
 ## API
 
@@ -1210,7 +1210,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | selectedKeys | 选中的条目 | string[] |
 | itemSelect | 勾选条目 | (key: string, selected: boolean) |
 | itemSelectAll | 勾选一组条目 | (keys: string[], selected: boolean) |`,
-    "a-tree-select": `[TreeSelect 树型选择控件:https://www.antdv.com/components/tree-select-cn/](https://www.antdv.com/components/tree-select-cn/) \n
+    "a-tree-select": `[TreeSelect 树型选择控件:https://1x.antdv.com/components/tree-select-cn/](https://1x.antdv.com/components/tree-select-cn/) \n
 
 ## API
 
@@ -1257,7 +1257,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | search | 文本框值变化时回调 | (value) |
 | select | 被选中时调用 | (value, node, extra) |
 | treeExpand | 展开节点时调用 | (expandedKeys) |`,
-    "a-upload": `[Upload 上传 :https://www.antdv.com/components/upload-cn/](https://www.antdv.com/components/upload-cn/) \n
+    "a-upload": `[Upload 上传 :https://1x.antdv.com/components/upload-cn/](https://1x.antdv.com/components/upload-cn/) \n
 
 ## API
 
@@ -1293,7 +1293,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | preview | 点击文件链接或预览图标时的回调 | Function(file) |
 | download | 点击下载文件时的回调,如果没有指定,则默认跳转到文件 url 对应的标签页。 | Function(file) |
 | reject | 拖拽文件不符合 accept 类型时的回调 | Function(fileList) |\n`,
-    "a-upload-dragger": `[Upload 拖拽上传 :https://www.antdv.com/components/upload-cn/#components-upload-demo-drag-and-drop](https://www.antdv.com/components/upload-cn/#components-upload-demo-drag-and-drop) \n
+    "a-upload-dragger": `[Upload 拖拽上传 :https://1x.antdv.com/components/upload-cn/#components-upload-demo-drag-and-drop](https://1x.antdv.com/components/upload-cn/#components-upload-demo-drag-and-drop) \n
 
 ## API
 
@@ -1329,7 +1329,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | preview | 点击文件链接或预览图标时的回调 | Function(file) |
 | download | 点击下载文件时的回调,如果没有指定,则默认跳转到文件 url 对应的标签页。 | Function(file) |
 | reject | 拖拽文件不符合 accept 类型时的回调 | Function(fileList) |\n`,
-    "a-avatar": `[Avatar 头像 :https://www.antdv.com/components/avatar-cn/](https://www.antdv.com/components/avatar-cn/) \n
+    "a-avatar": `[Avatar 头像 :https://1x.antdv.com/components/avatar-cn/](https://1x.antdv.com/components/avatar-cn/) \n
     
 ## API
 
@@ -1342,7 +1342,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | srcSet | 设置图片类头像响应式资源地址 | string | — | - |
 | alt | 图像无法显示时的替代文本 | string | — | — |
 | loadError | 图片加载失败的事件,返回 false 会关闭组件默认的 fallback 行为 | () => boolean | — | - |`,
-    "a-badge": `[ Badge 徽标数 :https://www.antdv.com/components/badge-cn/](https://www.antdv.com/components/badge-cn/) \n
+    "a-badge": `[ Badge 徽标数 :https://1x.antdv.com/components/badge-cn/](https://1x.antdv.com/components/badge-cn/) \n
 
 ## API
 
@@ -1358,7 +1358,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | text | 在设置了 status 的前提下有效,设置状态点的文本 | string | — | - |
 | numberStyle | 设置状态点的样式 | object | — | - |
 | title | 设置鼠标放在状态点上时显示的文字 | string | — | - |`,
-    "a-calendar": `[Calendar 日历 :https://www.antdv.com/components/calendar-cn/](https://www.antdv.com/components/calendar-cn/) \n
+    "a-calendar": `[Calendar 日历 :https://1x.antdv.com/components/calendar-cn/](https://1x.antdv.com/components/calendar-cn/) \n
 
 ## API
 
@@ -1385,7 +1385,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | panelChange | 日期面板变化回调 | function(date: moment | string, mode: string) |
 | select | 点击选择日期回调 | function(date: moment | string） |
 | change | 日期变化时的回调, 面板变化有可能导致日期变化。 | function(date: moment | string） |`,
-    "a-card": `[Card 卡片 :https://www.antdv.com/components/card-cn/](https://www.antdv.com/components/card-cn/) \n
+    "a-card": `[Card 卡片 :https://1x.antdv.com/components/card-cn/](https://1x.antdv.com/components/card-cn/) \n
 
 ## API
 
@@ -1412,7 +1412,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | 事件 | 说明 | 回调参数 |
 | :--- | :--- | :--- |
 | tabChange | 页签切换的回调 | (key) => void |`,
-    "a-card-meta": `[Card 卡片 :https://www.antdv.com/components/card-cn/#components-card-demo-grid-card](https://www.antdv.com/components/card-cn/#components-card-demo-grid-card) \n
+    "a-card-meta": `[Card 卡片 :https://1x.antdv.com/components/card-cn/#components-card-demo-grid-card](https://1x.antdv.com/components/card-cn/#components-card-demo-grid-card) \n
 
 ## API
 
@@ -1421,7 +1421,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | avatar | 头像/图标 | slot | — | — |
 | description | 描述内容 | string/slot | - | - |
 | title | 标题内容 | string/slot | - | - |`,
-    "a-carousel": `[Carousel 走马灯 :https://www.antdv.com/components/carousel-cn/](https://www.antdv.com/components/carousel-cn/) \n
+    "a-carousel": `[Carousel 走马灯 :https://1x.antdv.com/components/carousel-cn/](https://1x.antdv.com/components/carousel-cn/) \n
 
 ## API
 
@@ -1443,7 +1443,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | goTo(slideNumber, dontAnimate) | 切换到指定面板, dontAnimate = true 时,不使用动画 |
 | next()                         | 切换到下一面板                                    |
 | prev()                         | 切换到上一面板                                    |`,
-    "a-collapse": `[Collapse 折叠面板 :https://www.antdv.com/components/collapse-cn/](https://www.antdv.com/components/collapse-cn/) \n
+    "a-collapse": `[Collapse 折叠面板 :https://1x.antdv.com/components/collapse-cn/](https://1x.antdv.com/components/collapse-cn/) \n
 
 ## API
 
@@ -1463,7 +1463,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | 事件名称 | 说明           | 回调参数      | 版本 |
 | :------- | :------------- | :------------ | :--- |
 | change   | 切换面板的回调 | function(key) |      |`,
-    "a-collapse-panel": `[Collapse 折叠面板 :https://www.antdv.com/components/collapse-cn/](https://www.antdv.com/components/collapse-cn/) \n
+    "a-collapse-panel": `[Collapse 折叠面板 :https://1x.antdv.com/components/collapse-cn/](https://1x.antdv.com/components/collapse-cn/) \n
 
 ## API
 
@@ -1475,7 +1475,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | key         | 对应 activeKey                 | string , number       | 无     |
 | showArrow   | 是否展示当前面板上的箭头       | boolean                | 'true' |
 | extra       | 自定义渲染每个面板右上角的内容 | VNode , slot          | -      |`,
-    "a-comment": `[Comment 评论 :https://www.antdv.com/components/comment-cn/](https://www.antdv.com/components/comment-cn/) \n
+    "a-comment": `[Comment 评论 :https://1x.antdv.com/components/comment-cn/](https://1x.antdv.com/components/comment-cn/) \n
 ## API
 
 | 参数 | 描述                                            | 类型         | 
@@ -1486,7 +1486,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | content  | 评论的主要内容                                         | string,slot |
 | datetime | 展示时间描述   
 `,
-    "a-descriptions": `[Descriptions 描述列表 :https://www.antdv.com/components/descriptions-cn/](https://www.antdv.com/components/descriptions-cn/) \n
+    "a-descriptions": `[Descriptions 描述列表 :https://1x.antdv.com/components/descriptions-cn/](https://1x.antdv.com/components/descriptions-cn/) \n
 
 ## API
 
@@ -1499,7 +1499,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | size | 设置列表的大小。可以设置为 'middle' 、'small', 或不填（只有设置 'bordered={true}' 生效） | 'default , middle , small' | 'default' |  
 | title | 描述列表的标题,显示在最顶部 | string , VNode , slot | - |  
 `,
-    "a-descriptions-item": `[Descriptions 描述列表 :https://www.antdv.com/components/descriptions-cn/](https://www.antdv.com/components/descriptions-cn/) \n
+    "a-descriptions-item": `[Descriptions 描述列表 :https://1x.antdv.com/components/descriptions-cn/](https://1x.antdv.com/components/descriptions-cn/) \n
 | 参数         | 说明           | 类型                    | 默认值 | 版本  |
 | :------------ | :------------- | :---------------------- | :----- | :---- |
 | label        | 内容的描述     | string , VNode , slot | -      |
@@ -1507,7 +1507,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 
 ### span 是 Descriptions.Item 的数量。 span={2} 会占用两个 DescriptionsItem 的宽度。
 `,
-    "a-empty": `[Empty 空状态 :https://www.antdv.com/components/empty-cn/](https://www.antdv.com/components/empty-cn/) \n
+    "a-empty": `[Empty 空状态 :https://1x.antdv.com/components/empty-cn/](https://1x.antdv.com/components/empty-cn/) \n
 
 ## API
 
@@ -1517,7 +1517,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | imageStyle  | 图片样式                                     | CSSProperties    | -      |      |
 | image       | 设置显示图片,为 string 时表示自定义图片地址 | string , v-slot | false  |      |
 `,
-    "a-list": `[通用列表:https://www.antdv.com/components/list-cn/](https://www.antdv.com/components/list-cn/) \n
+    "a-list": `[通用列表:https://1x.antdv.com/components/list-cn/](https://1x.antdv.com/components/list-cn/) \n
 
 ## API
 
@@ -1528,10 +1528,10 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | grid | 列表栅格配置 | object | - |  
 | header | 列表头部 | string,slot | - |  
 | itemLayout | 设置 'List.Item' 布局, 设置成 'vertical' 则竖直样式显示, 默认横排 | string | - |  
-| loading | 当卡片内容还在加载中时,可以用 'loading' 展示一个占位 | boolean,[object](https://www.antdv.com/components/spin-cn/#API) | false |  
+| loading | 当卡片内容还在加载中时,可以用 'loading' 展示一个占位 | boolean,[object](https://1x.antdv.com/components/spin-cn/#API) | false |  
 | loadMore | 加载更多 | string,slot | - |  
 | locale | 默认文案设置,目前包括空数据文案 | object | emptyText: '暂无数据' |  
-| pagination | 对应的 'pagination' [配置](https://www.antdv.com/components/pagination-cn/#API), 设置 'false' 不显示 | boolean,object | false |  
+| pagination | 对应的 'pagination' [配置](https://1x.antdv.com/components/pagination-cn/#API), 设置 'false' 不显示 | boolean,object | false |  
 | size | list 的尺寸 | 'default' , 'middle' , 'small' | 'default' |  
 | split | 是否展示分割线 | boolean | true |  
 | dataSource | 列表数据源 | any[] | - |
@@ -1544,7 +1544,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :------- | :----------------- | :-------------------------- | :------- |
 | position | 指定分页显示的位置 | 'top' , 'bottom' , 'both' | 'bottom' |
 
-更多配置项,请查看 ['Pagination'](https://www.antdv.com/components/pagination-cn/#API)。 
+更多配置项,请查看 ['Pagination'](https://1x.antdv.com/components/pagination-cn/#API)。 
 
 ### List grid
 
@@ -1558,7 +1558,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | lg     | '≥992px' 展示的列数  | number                                   |
 | xl     | '≥1200px' 展示的列数 | number                                   |
 | xxl    | '≥1600px' 展示的列数 | number                                   |`,
-    "a-list-item": `[通用列表 :https://www.antdv.com/components/list-cn/](https://www.antdv.com/components/list-cn/) \n
+    "a-list-item": `[通用列表 :https://1x.antdv.com/components/list-cn/](https://1x.antdv.com/components/list-cn/) \n
 
 ### API
 
@@ -1567,14 +1567,14 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | actions | 列表操作组,根据 'itemLayout' 的不同, 位置在卡片底部或者最右侧 | Array\<vNode>/ | slot | 
 | extra | 额外内容, 通常用在 'itemLayout' 为 'vertical' 的情况下, 展示右侧内容; 'horizontal' 展示在列表元素最右侧 | string,slot | 
 `,
-    "a-list-item-meta": `[通用列表 :https://www.antdv.com/components/list-cn/](https://www.antdv.com/components/list-cn/) \n
+    "a-list-item-meta": `[通用列表 :https://1x.antdv.com/components/list-cn/](https://1x.antdv.com/components/list-cn/) \n
 | 参数        | 说明               | 类型         | 默认值 |
 | :---------- | :----------------- | :----------- | :----- |
 | avatar      | 列表元素的图标     | slot         | -      |
 | description | 列表元素的描述内容 | string,slot | -      |
 | title       | 列表元素的标题     | string,slot | -      | 
 `,
-    "a-popover": `[Popover 气泡卡片 :https://www.antdv.com/components/popover-cn/](https://www.antdv.com/components/popover-cn/) \n
+    "a-popover": `[Popover 气泡卡片 :https://1x.antdv.com/components/popover-cn/](https://1x.antdv.com/components/popover-cn/) \n
 
 ## API
 
@@ -1587,7 +1587,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 
 请确保 'Popover' 的子元素能接受 'mouseenter'、'mouseleave'、'focus'、'click' 事件。
 `,
-    "a-statistic": `[ Statistic 统计数值 :https://www.antdv.com/components/statistic-cn/](https://www.antdv.com/components/statistic-cn/) \n
+    "a-statistic": `[ Statistic 统计数值 :https://1x.antdv.com/components/statistic-cn/](https://1x.antdv.com/components/statistic-cn/) \n
 
 ## API
 
@@ -1603,7 +1603,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | value            | 数值内容         | string , number             | -      |
 | valueStyle       | 设置数值的样式   | style                        | -      | 
 `,
-    "a-statistic-countdown": `[Statistic 倒计时 :https://www.antdv.com/components/statistic-cn/](https://www.antdv.com/components/statistic-cn/) \n
+    "a-statistic-countdown": `[Statistic 倒计时 :https://1x.antdv.com/components/statistic-cn/](https://1x.antdv.com/components/statistic-cn/) \n
 
 ### API
 
@@ -1622,7 +1622,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :------- | :--------------- | :--------- |
 | finish   | 倒计时完成时触发 | () => void |
     `,
-    "a-table": `[Table 表格 :https://www.antdv.com/components/table-cn/](https://www.antdv.com/components/table-cn/) \n
+    "a-table": `[Table 表格 :https://1x.antdv.com/components/table-cn/](https://1x.antdv.com/components/table-cn/) \n
 
 ### API
 
@@ -1762,7 +1762,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 
 适用于 'customRow' 'customHeaderRow' 'customCell' 'customHeaderCell'。遵循[Vue jsx](https://github.com/vuejs/babel-plugin-transform-vue-jsx)语法。
     `,
-    "a-table-column": `[Table 表格 :https://www.antdv.com/components/table-cn/#Column](https://www.antdv.com/components/table-cn/#Column) \n
+    "a-table-column": `[Table 表格 :https://1x.antdv.com/components/table-cn/#Column](https://1x.antdv.com/components/table-cn/#Column) \n
 
 列描述数据对象,是 columns 中的一项,Column 使用相同的 API。
 
@@ -1797,7 +1797,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | slots | 使用 columns 时,可以通过该属性配置支持 slot 的属性,如 slots: { filterIcon: 'XXX'} | object | - |
 | scopedSlots | 使用 columns 时,可以通过该属性配置支持 slot-scope 的属性,如 scopedSlots: { customRender: 'XXX'} | object | - |
 `,
-    "a-tabs": `[选项卡切换组件 :https://www.antdv.com/components/tabs-cn/](https://www.antdv.com/components/tabs-cn/) \n
+    "a-tabs": `[选项卡切换组件 :https://1x.antdv.com/components/tabs-cn/](https://1x.antdv.com/components/tabs-cn/) \n
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1830,7 +1830,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | tabScroll | 滚动 TabBar 是触发 | { direction: 'left' , 'right' , 'top' , 'bottom' } |
 | tabClick | tab 被点击的回调 | Function |
 `,
-    "a-tab-pane": `[选项卡切换组件 :https://www.antdv.com/components/tabs-cn/](https://www.antdv.com/components/tabs-cn/) \n
+    "a-tab-pane": `[选项卡切换组件 :https://1x.antdv.com/components/tabs-cn/](https://1x.antdv.com/components/tabs-cn/) \n
 
 ## API
 
@@ -1848,7 +1848,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | tab       | 选项卡头显示文字                                | -    |
 
 `,
-    "a-tag": `[ 标签 :https://www.antdv.com/components/tag-cn/](https://www.antdv.com/components/tag-cn/) \n
+    "a-tag": `[ 标签 :https://1x.antdv.com/components/tag-cn/](https://1x.antdv.com/components/tag-cn/) \n
 
 ## API
 
@@ -1866,7 +1866,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :------- | :----------- | :---------- |
 | close    | 关闭时的回调 | (e) => void |
 `,
-    "a-checkable-tag": `[可选择标签 :https://www.antdv.com/components/tag-cn/#components-tag-demo-basic-usage](https://www.antdv.com/components/tag-cn/#components-tag-demo-basic-usage) \n
+    "a-checkable-tag": `[可选择标签 :https://1x.antdv.com/components/tag-cn/#components-tag-demo-basic-usage](https://1x.antdv.com/components/tag-cn/#components-tag-demo-basic-usage) \n
 
 ### API
 
@@ -1880,7 +1880,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :------- | :------------------- | :---------------- |
 | change   | 点击标签时触发的回调 | (checked) => void |
 `,
-    "a-timeline": `[ Timeline 时间轴 :https://www.antdv.com/components/timeline-cn/](https://www.antdv.com/components/timeline-cn/) \n
+    "a-timeline": `[ Timeline 时间轴 :https://1x.antdv.com/components/timeline-cn/](https://1x.antdv.com/components/timeline-cn/) \n
 
 ### API
 
@@ -1904,7 +1904,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
     </template>
     '''
 `,
-    "a-timeline-item": `[ Timeline 时间轴 :https://www.antdv.com/components/timeline-cn/](https://www.antdv.com/components/timeline-cn/) \n
+    "a-timeline-item": `[ Timeline 时间轴 :https://1x.antdv.com/components/timeline-cn/](https://1x.antdv.com/components/timeline-cn/) \n
     
 ### API
 
@@ -1915,7 +1915,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | position | 自定义节点位置                                  | 'left' , 'right' | -      |      |
 
     `,
-    "a-tooltip": `[警告提示 :https://www.antdv.com/components/tooltip-cn/](https://www.antdv.com/components/tooltip-cn/) \n
+    "a-tooltip": `[警告提示 :https://1x.antdv.com/components/tooltip-cn/](https://1x.antdv.com/components/tooltip-cn/) \n
 ## API
 
 | 参数  | 说明     | 类型         | 默认值 |
@@ -1954,7 +1954,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 请确保 'Tooltip' 的子元素能接受 'mouseenter'、'mouseleave'、'focus'、'click' 事件。
 
     `,
-    "a-tree": `[多层次的结构列表 :https://www.antdv.com/components/tree-cn/](https://www.antdv.com/components/tree-cn/) \n
+    "a-tree": `[多层次的结构列表 :https://1x.antdv.com/components/tree-cn/](https://1x.antdv.com/components/tree-cn/) \n
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -2024,7 +2024,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 
 文件图标通过 switcherIcon 来实现,如果不需要你可以覆盖对应的样式
 `,
-    "a-alert": `[警告提示:https://www.antdv.com/components/alert-cn/](https://www.antdv.com/components/alert-cn/) \n
+    "a-alert": `[警告提示:https://1x.antdv.com/components/alert-cn/](https://1x.antdv.com/components/alert-cn/) \n
 
 ## API
 
@@ -2046,7 +2046,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :------- | :------------------- | :---------------------- |
 | close    | 关闭时触发的回调函数 | (e: MouseEvent) => void | 
 `,
-    "a-drawer": `[屏幕边缘滑出的浮层面板 :https://www.antdv.com/components/drawer-cn/](https://www.antdv.com/components/drawer-cn/) \n
+    "a-drawer": `[屏幕边缘滑出的浮层面板 :https://1x.antdv.com/components/drawer-cn/](https://1x.antdv.com/components/drawer-cn/) \n
 
 ## API
 
@@ -2080,7 +2080,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :----------------- | :----------------------------------- | :---------------- | :----- |
 | close              | 点击遮罩层或右上角叉或取消按钮的回调 | function(e)       | 无     |  
 `,
-    "a-modal": `[模态对话框:https://www.antdv.com/components/modal-cn/](https://www.antdv.com/components/modal-cn/) \n
+    "a-modal": `[模态对话框:https://1x.antdv.com/components/modal-cn/](https://1x.antdv.com/components/modal-cn/) \n
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -2119,7 +2119,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | cancel   | 点击遮罩层或右上角叉或取消按钮的回调 | function(e) |
 | ok       | 点击确定回调                         | function(e) |
 `,
-    "a-popconfirm": `[弹出气泡式的确认框 :https://www.antdv.com/components/popconfirm-cn/](https://www.antdv.com/components/popconfirm-cn/) \n
+    "a-popconfirm": `[弹出气泡式的确认框 :https://1x.antdv.com/components/popconfirm-cn/](https://1x.antdv.com/components/popconfirm-cn/) \n
 
 ## API
 
@@ -2149,7 +2149,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 
 请确保 'Popconfirm' 的子元素能接受 'mouseenter'、'mouseleave'、'focus'、'click' 事件。
 `,
-    "a-progress": `[展示操作的当前进度:https://www.antdv.com/components/progress-cn/](https://www.antdv.com/components/progress-cn/) \n
+    "a-progress": `[展示操作的当前进度:https://1x.antdv.com/components/progress-cn/](https://1x.antdv.com/components/progress-cn/) \n
 
 ## API
 
@@ -2192,7 +2192,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | strokeWidth | 仪表盘进度条线的宽度,单位是进度条画布宽度的百分比 | number | 6 |
 | width | 仪表盘进度条画布宽度,单位 px | number | 132 |
 `,
-    "a-result": `[结果:https://www.antdv.com/components/result-cn/](https://www.antdv.com/components/result-cn/) \n
+    "a-result": `[结果:https://1x.antdv.com/components/result-cn/](https://1x.antdv.com/components/result-cn/) \n
 
 ## API
 
@@ -2204,7 +2204,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | icon     | 自定义 icon               | #icon                        | -       |
 | extra    | 操作区                    | #extra                       | -       | 
 `,
-    "a-skeleton": `[ 骨架屏 :https://www.antdv.com/components/skeleton-cn/](https://www.antdv.com/components/skeleton-cn/) \n
+    "a-skeleton": `[ 骨架屏 :https://1x.antdv.com/components/skeleton-cn/](https://1x.antdv.com/components/skeleton-cn/) \n
 
 ## API
 
@@ -2237,7 +2237,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | width | 设置段落占位图的宽度,若为数组时则为对应的每行宽度,反之则是最后一行的宽度 | number , string , Array<number , string> | - |
 `,
 
-    "a-spin": `[加载 :https://www.antdv.com/components/spin-cn/](https://www.antdv.com/components/spin-cn/) \n
+    "a-spin": `[加载 :https://1x.antdv.com/components/spin-cn/](https://1x.antdv.com/components/spin-cn/) \n
 
 ## API
 
@@ -2250,7 +2250,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | tip              | 当作为包裹元素时,可以自定义描述文案         | string        | -         |
 | wrapperClassName | 包装器的类属性                               | string        | -         |
     `,
-    "a-anchor": `[Anchor 锚点 :https://www.antdv.com/components/anchor-cn/](https://www.antdv.com/components/anchor-cn/) \n
+    "a-anchor": `[Anchor 锚点 :https://1x.antdv.com/components/anchor-cn/](https://1x.antdv.com/components/anchor-cn/) \n
 
 ## API
 
@@ -2294,14 +2294,14 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 '''
 
 `,
-    "a-anchor-link": `[antd-design-vue :https://www.antdv.com/components/anchor-cn/](https://www.antdv.com/components/anchor-cn/) \n
+    "a-anchor-link": `[antd-design-vue :https://1x.antdv.com/components/anchor-cn/](https://1x.antdv.com/components/anchor-cn/) \n
 ## API
 | 成员   | 说明                             | 类型         | 默认值 | 版本  |
 | :----- | :------------------------------- | :----------- | :----- | :---- |
 | href   | 锚点链接                         | string       |        |       |
 | title  | 文字内容                         | string,slot |        |       |
 | target | 该属性指定在何处显示链接的资源。 | string       |        | 1.5.0 |`,
-    "a-back-top": `[返回页面顶部 :https://www.antdv.com/components/back-top-cn/](https://www.antdv.com/components/back-top-cn/) \n
+    "a-back-top": `[返回页面顶部 :https://1x.antdv.com/components/back-top-cn/](https://1x.antdv.com/components/back-top-cn/) \n
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -2315,7 +2315,7 @@ v-decorator='['price',{ initialValue: 1, rules: [{ validator: checkPrice }] } ]'
 | :------- | :----------------- | :------- | :--- |
 | click    | 点击按钮的回调函数 | Function |      |
     `,
-    "a-config-provider": `[全局化配置 :https://www.antdv.com/components/config-provider-cn/](https://www.antdv.com/components/config-provider-cn/) \n
+    "a-config-provider": `[全局化配置 :https://1x.antdv.com/components/config-provider-cn/](https://1x.antdv.com/components/config-provider-cn/) \n
 
 ## API
 
@@ -2366,7 +2366,7 @@ ConfigProvider 使用 Vue 的 [provide / inject](https://vuejs.org/v2/api/#provi
 '''
 
 `,
-    "a-divider": `[分割线 :https://www.antdv.com/components/divider-cn/](https://www.antdv.com/components/divider-cn/) \n
+    "a-divider": `[分割线 :https://1x.antdv.com/components/divider-cn/](https://1x.antdv.com/components/divider-cn/) \n
 
 ## API
 
@@ -2376,7 +2376,7 @@ ConfigProvider 使用 Vue 的 [provide / inject](https://vuejs.org/v2/api/#provi
 | orientation | 分割线标题的位置           | enum: 'left' 'right'          | 'center'     |       
 | type        | 水平还是垂直类型           | enum: 'horizontal' 'vertical' | 'horizontal' |       
 `,
-    "a-locale-provider": `[antd-design-vue :https://www.antdv.com/components/locale-provider-cn/](https://www.antdv.com/components/locale-provider-cn/) \n
+    "a-locale-provider": `[antd-design-vue :https://1x.antdv.com/components/locale-provider-cn/](https://1x.antdv.com/components/locale-provider-cn/) \n
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | locale | 语言包配置,语言包可到 ant-design-vue/lib/locale-provider/ 目录下寻找 | object | - | — |`

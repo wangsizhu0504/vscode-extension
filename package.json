@@ -3,7 +3,7 @@
 	"displayName": "wsz-vscode",
 	"description": "自己使用的vscode 插件，包含主题,代码段提示",
 	"publisher": "wangsizhu1996",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
