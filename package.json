@@ -65,14 +65,14 @@
     "keybindings": [],
     "themes": [
       {
-        "label": "Kriszu Light theme",
-        "uiTheme": "vs",
-        "path": "./themes/kriszu-light-theme.json"
-      },
-      {
         "label": "Kriszu Dark theme",
         "uiTheme": "vs-dark",
         "path": "./themes/kriszu-dark-theme.json"
+      },
+      {
+        "label": "Kriszu Light theme",
+        "uiTheme": "vs",
+        "path": "./themes/kriszu-light-theme.json"
       }
     ]
   },
