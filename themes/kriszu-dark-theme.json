@@ -1,7 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
   "name": "kriszu Dark theme",
-  "author": "Zeno Rocha",
   "maintainers": [
     "kriszu  <wangsizhu0504@outlook.com>"
   ],
@@ -108,10 +107,10 @@
     "breadcrumb.activeSelectionForeground": "#eeeeee15",
     "breadcrumbPicker.background": "#191a1d",
     "editor.foreground": "#dbd7caee",
-    "editor.background": "#191a1d",
-    "editorWidget.background": "#191a1d",
+    "editor.background": "#2f2f34",
+    "editorWidget.background": "#2f2f34",
     "editor.foldBackground": "#eeeeee10",
-    "editor.lineHighlightBackground": "#292929",
+    "editor.lineHighlightBackground": "#292727",
     "editorLineNumber.foreground": "#dedcd530",
     "editorLineNumber.activeForeground": "#bfbaaa",
     "editorIndentGuide.background": "#ffffff15",
@@ -119,7 +118,7 @@
     "editorWhitespace.foreground": "#ffffff15",
     "editor.findMatchBackground": "#e6cc7722",
     "editor.findMatchHighlightBackground": "#e6cc7744",
-    "editor.inactiveSelectionBackground": "#eeeeee08",
+    "editor.inactiveSelectionBackground": "#dcdada08",
     "editor.selectionBackground": "#eeeeee15",
     "editor.selectionHighlightBackground": "#eeeeee08",
     "editor.wordHighlightBackground": "#1c6b4805",
@@ -132,7 +131,7 @@
     "scrollbarSlider.hoverBackground": "#dedcd530",
     "scrollbarSlider.activeBackground": "#dedcd530",
     "editorOverviewRuler.border": "#111",
-    "panel.background": "#191a1d",
+    "panel.background": "#2f2f34",
     "panel.border": "#42b883",
     "panelTitle.activeBorder": "#42b883",
     "panelTitle.activeForeground": "#f6f6f4",
@@ -182,7 +181,7 @@
     "problemsErrorIcon.foreground": "#cb7676",
     "problemsWarningIcon.foreground": "#d4976c",
     "problemsInfoIcon.foreground": "#6394bf",
-    "editorError.foreground": "#cb7676",
+    "editorError.foreground": "#fa0000",
     "editorWarning.foreground": "#d4976c",
     "editorInfo.foreground": "#6394bf",
     "editorHint.foreground": "#42b883",
@@ -464,7 +463,7 @@
         "variable.parameter.function.language.special"
       ],
       "settings": {
-        "foreground": "#646cff",
+        "foreground": "#d4976c",
         "fontStyle": "italic"
       }
     },
@@ -514,21 +513,21 @@
         "punctuation.definition.string.end.markdown",
         "string.quoted",
         "string",
-        "punctuation.definition.string",
         "string punctuation.section.embedded source"
       ],
       "settings": {
-        "foreground": "#96c93cf8"
+        "foreground": "#ffffffde"
       }
     },
     {
       "name": "String quotes (temporary vscode fix)",
       "scope": [
+        "punctuation.definition.string",
         "punctuation.definition.string.begin",
         "punctuation.definition.string.end"
       ],
       "settings": {
-        "foreground": "#dee492"
+        "foreground": "#42B883"
       }
     },
     {
@@ -1151,7 +1150,7 @@
         "invalid.deprecated.entity.other.attribute-name.html"
       ],
       "settings": {
-        "foreground": "#62e884",
+        "foreground": "#e0a569",
         "fontStyle": "italic"
       }
     },
