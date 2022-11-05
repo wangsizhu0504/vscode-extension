@@ -3,7 +3,7 @@
   "displayName": "kriszu-vscode",
   "description": "自己使用的vscode 插件，包含主题,代码段提示",
   "publisher": "wangsizhu0504",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.73.0"
   },
