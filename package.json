@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wangsizhu0504/kriszu-vscode"
+    "url": "https://github.com/krismile-space/vscode-extension"
   },
   "categories": [
     "Snippets",
@@ -21,10 +21,6 @@
       {
         "language": "vue",
         "path": "./snippets/vue.json"
-      },
-      {
-        "language": "jade",
-        "path": "./snippets/vue-pug.json"
       },
       {
         "language": "html",
@@ -68,11 +64,6 @@
         "label": "Kriszu Dark theme",
         "uiTheme": "vs-dark",
         "path": "./themes/kriszu-dark-theme.json"
-      },
-      {
-        "label": "Kriszu Light theme",
-        "uiTheme": "vs",
-        "path": "./themes/kriszu-light-theme.json"
       }
     ]
   },
@@ -93,5 +84,8 @@
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@kriszu/eslint-config":"^0.1.5"
   }
 }
