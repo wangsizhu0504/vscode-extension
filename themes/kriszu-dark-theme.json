@@ -316,7 +316,6 @@
       "name": "Comments(注释)",
       "scope": [
         "comment",
-        "comment.block",
         "punctuation.definition.comment",
         "string.comment",
         "unused.comment",
@@ -337,7 +336,7 @@
         "variable.other.constant.tsx"
       ],
       "settings": {
-        "foreground": "#d4a7f4"
+        "foreground": "#e06c75"
       }
     },
     {
@@ -356,7 +355,7 @@
         "meta.block variable.other"
       ],
       "settings": {
-        "foreground": "#6ebd46"
+        "foreground": "#d19a66"
       }
     },  
     {
@@ -426,7 +425,7 @@
         "string punctuation.section.embedded source"
       ],
       "settings": {
-        "foreground": "#f2f2f2"
+        "foreground": "#98c379"
       }
     },
     {
@@ -470,7 +469,7 @@
         "storage.type.ocaml"
       ],
       "settings": {
-        "foreground": "#2f54eb"
+        "foreground": "#d19a66"
       }
     },
     {
@@ -481,7 +480,7 @@
         "constant.character.escape.backslash.regexp"
       ],
       "settings": {
-        "foreground": "#e7ee98"
+        "foreground": "#56b6c2"
       }
     },
     {
@@ -504,7 +503,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#e6630c",
+        "foreground": "#c678dd",
         "fontStyle": "bold"
       }
     },
@@ -519,7 +518,7 @@
         "keyword.other.substitution"
       ],
       "settings": {
-        "foreground": "#ff9d00"
+        "foreground": "#c678dd"
       }
     },
     {
@@ -547,7 +546,7 @@
         "keyword.operator.function.infix"
       ],
       "settings": {
-        "foreground": "#8fbaf6"
+        "foreground": "#61afef"
       }
     },
     {
@@ -622,7 +621,7 @@
         "entity.name.class"
       ],
       "settings": {
-        "foreground": "#97e1f1"
+        "foreground": "#d19a66"
       }
     },
     {
@@ -631,7 +630,7 @@
         "entity.other.inherited-class"
       ],
       "settings": {
-        "foreground": "#66b395",
+        "foreground": "#42d392",
       }
     },
     {
@@ -727,7 +726,7 @@
         "meta.variable.assignment.destructured.object.coffee variable variable"
       ],
       "settings": {
-        "foreground": "#7098d4"
+        "foreground": "#e06c75"
       }
     },
     {
