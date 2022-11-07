@@ -769,7 +769,7 @@
       "scope": [ "entity.name.section.vue"],
       "settings": {
         "foreground": "#13e48d",
-        "fontStyle": "bold italic"
+        "fontStyle": "bold"
       }
     },
     // CSS
